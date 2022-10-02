@@ -1,0 +1,67 @@
+    <!-- heder -->
+    <%- include('include/header.ejs') %>
+    <!-- header -->
+        <!--==================================*
+                   Main Section
+        *====================================-->
+        <div class="main-content-inner">
+       
+            <div class="row">
+                <!-- Primary table -->
+                <div class="col-12 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="header-title">Individual Premium User</h4>
+                            <div class="table-responsive datatable-primary">
+                                <table id="dataTable2" class="text-center">
+                                    <thead class="text-capitalize">
+                                    <tr>
+                                        <th>Name</th>
+                                        
+                                        <th>Mobile Number</th>
+                                        <th>Zip Code</th>
+                                        <th>Email Address</th>
+                                        <th scope="col">action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% if(users2){ %>
+                                            <% users2.forEach(function(u,i){%>
+                                   <% if(u.user_type === 'premium'){%>
+                                    <tr>
+                                        <td><%= u.fname + ' ' + u.lname %></td>
+                                        
+                                        <td><%= u.mobile %></td>
+                                        <td><%= u.pincode %></td>
+                                        <td><%= u.email %></td>
+                                        <td>
+                                            <ul class="d-flex justify-content-center">
+                                                <li class="mr-3"><button type="button" class="btn btn-secondary"><i class="fa fa-edit"></i></button></li>
+                                                <a href="/free-user-delete/<%= u._id %>">    <li><button type="button" class="btn btn-danger"><i class="ti-trash"></i></button></li></a> 
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <%} %>
+                                    <%}) %>
+                                    <%} %>
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Primary table -->
+            </div>
+        </div>
+        <!--==================================*
+                   End Main Section
+        *====================================-->
+    </div>
+    <!--=================================*
+           End Main Content Section
+    *===================================-->
+
+     <!-- heder -->
+     <%- include('include/footer.ejs') %>
+     <!-- header -->

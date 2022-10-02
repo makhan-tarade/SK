@@ -1,0 +1,2356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior-konnect || My Hub</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- sort -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/myhub.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+            .activity-more-popup {
+    width: 240px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    position: absolute;
+    top: 71% !important;
+    left: 74.5% !important;
+    z-index: 2;
+    display: none;
+}
+
+        .active {
+            color: #225C7B !important;
+            text-decoration: underline !important;
+            text-underline-offset: 17px;
+            text-decoration-thickness: 4px !important;
+        }
+
+        .form-select:focus {
+            box-shadow: none !important;
+            color: #225C7B !important;
+            border-color: #225C7B !important;
+        }
+
+        .btn:focus {
+            box-shadow: none !important;
+        }
+        .bi-trash{
+            color: #225C7B;
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- heder -->
+    <%- include('include/navbar.ejs') %>
+        <!-- header -->
+
+        
+        <!-- Hero section start -->
+        <%- include('include/hero.ejs') %>
+        <!-- Hero section end -->
+
+        <!-- <i class="bi bi-headset support"></i> -->
+
+        <i class="fa-solid fa-people-group  support"></i>
+        <!-- main  -->
+        <!-- Activity navbar start -->
+        <div class="container">
+      <!-- Activity navbar start -->
+      <div class="acctivity_navbar">
+
+        <ul class="activity_nav">
+            <li><a href="/home"><i class="fa-solid fa-house" style="color: #225C7B"></i>
+                    &nbsp; Feed</a></li>
+            <li><a   href="/myprofile">About Us</a></li>
+            <li><a class="active" href="/myhub">My Hub</a></li>
+            <li><a href="/communities">Communities</a></li>
+            <li><a href="/konnects">Konnects(<% if(my_kon){%> <%= my_kon.konnects.length %> <%}%>)</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/photos">Gallery</a></li>
+            <!--<li><a href="intiative.html">Activity</a></li>-->
+            <!--<li><a href="myprofile.html">About</a></li>-->
+            <li><a onclick="activity_more_open()">More <i class="bi bi-chevron-down"></i></a></li>
+            <li class="nav_more"><a><i class="bi bi-three-dots"></i></a></li>
+        </ul>
+        <!-- <hr class="activity-hr"> -->
+    </div>
+        </div>
+        <!-- Activity navbar end -->
+
+
+        <section class="container">
+            <div class="row">
+                <!-- left section start -->
+                <div class="col-lg-8 space-top1">
+
+                    <!-- Health start -->
+                    <div id="health">
+                        <!-- <h2 class="sec-heading">My hub</h2> -->
+                        <div class="myhub-sec">
+                            <div class="my-hub-menu">
+                                <ul>
+                                    <li class="li3" onclick="family()">Family</li>
+                                    <li class="li1" onclick="health()">Health</li>
+                                    <li class="li4" onclick="doctor()">Doctor</li>
+                                    <li class="li2" onclick="community_pillar()">Community Pillar</li>
+                                    <li class="li5" onclick="public_service()">Public Service</li>
+                                    <!-- <li class="plusleft"><span
+                                            class="plus"><i class="bi bi-plus-lg"></i></span></li> -->
+                                </ul>
+
+                            </div>
+
+
+                            <div class="community-pillar-tab" style="padding-bottom: 20px;">
+                                <div class="health-section">
+                                    <div class="row">
+                                        <div class="col-md-3 ">
+                                            <div>
+                                                <p class="health-p">Name</p>
+                                            </div>
+                                            <div class="health-p2">
+                                                <p><% if(username){%><%= username %><%}%></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div>
+                                                <p class="health-p">Birthdate:</p>
+                                            </div>
+                                            <div class="health-p2">
+                                                
+                                                <p><% if(dob) {%><%= dob %><%}%></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 ">
+                                            <div>
+                                                <p class="health-p">Gender:</p>
+                                            </div>
+                                            <div class="health-p2">
+                                                <p><% if(contact) {%> <%= contact.gender %> <%}%></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 ">
+                                            <div>
+                                                <p class="health-p">Blood Group:</p>
+                                            </div>
+                                            <div class="health-p2">
+                                                <p><% if(contact) {%> <%= contact.blood_group %> <%}%></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <p class="health-p3">Report</p>
+
+
+
+                                        <% if (health.health){ for(var i=0; i < health.health.length; i++) { %>
+
+                                            <div class="col-lg-2 col-md-2 col-sm-6">
+                                                <div class="pdf">
+                                                    <div class="row">
+                                                        <div class="col-7">
+                                                            <div class="pdf-img">
+                                                                <img src="assets/img/pdf.png" alt="">
+                                                            </div>
+
+
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <div class="pdf-download">
+                                                                <a href="media/health/<%= health.health[i].attachment %>"
+                                                                    download>
+                                                                    <p><i class="bi bi-download"></i></p>
+                                                                </a>
+                                                                <p><i class="bi bi-share-fill"></i></p>
+                                                                <!-- <p><i class="bi bi-trash3-fill"></i></p> -->
+                                                                <a href="/delete-health/<%= i%>"
+                                                                    onclick="return confirm('Are you sure you want to delete this attachment?');">
+                                                                    <p><i class="bi bi-trash3-fill"></i></p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <%}}%>
+
+
+                                                <div class="col-lg-2 col-md-2 col-sm-6" data-toggle="modal"
+                                                    data-target="#reportModal">
+                                                    <div class="pdf">
+                                                        <div class="row">
+                                                            <p class="pdf-plus"><i class="bi bi-plus-lg"></i></p>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                    </div>
+
+
+                                    <div class="row">
+                                        <p class="health-p3">Prescription</p>
+
+                                        <% if (health.prescription){ for(var i=0; i < health.prescription.length; i++) {
+                                            %>
+                                            <div class="col-lg-2 col-md-2 col-sm-6">
+                                                <div class="pdf">
+                                                    <div class="row">
+                                                        <div class="col-7">
+                                                            <div class="pdf-img">
+                                                                <img src="assets/img/pdf.png" alt="">
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <div class="pdf-download">
+                                                                <a href="media/health/<%= health.prescription[i].attachment %>"
+                                                                    download>
+                                                                    <p><i class="bi bi-download"></i></p>
+                                                                </a>
+                                                                <p><i class="bi bi-share-fill"></i></p>
+                                                                <a href="/delete-prescription/<%= i%>"
+                                                                    onclick="return confirm('Are you sure you want to delete this attachment?');">
+                                                                    <p><i class="bi bi-trash3-fill"></i></p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <%}}%>
+
+                                                <div class="col-lg-2 col-md-2 col-sm-6" data-toggle="modal"
+                                                    data-target="#exampleModalCenter666">
+                                                    <div class="pdf">
+                                                        <div class="row">
+                                                            <p class="pdf-plus"><i class="bi bi-plus-lg"></i></p>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-11">
+                                            <p class="health-p3">Brief About Doctor</p>
+                                        </div>
+                                        <div class="col-1  mt-4" data-toggle="modal" data-target="#addDoctorModal">
+                                            <span class="plus"><i class="bi bi-plus-lg"></i></span>
+                                        </div>
+
+                                        <% if(doctor) { doctor.forEach(function(d,i){ %> 
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="pdf1">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <div class="pdf1-img">
+                                                                <img src="<%= d.profile_pic %>"
+                                                                    alt="">
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="pdf1-download">
+                                                                <p class="pdf-text1">Dr. <%= d.name %>
+                                                                </p>
+                                                                <p class="pdf-text2"><%= d.degination %></p>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 pencil">
+                                                            <p class="pdf-i" data-toggle="modal" data-target="#edit-DoctorModal-<%= d._id %>"> <img src="assets/img/edit.svg" alt=""></p>
+                                                        </div>
+                                                        <div class="col-1">
+                                                            <p class="pdf-i1"> <a href="/doctor-delete/<%= d._id %>"><i class="bi bi-trash"></i></a>
+                                                            </p>
+                                                        </div>
+
+                                                        <p class="pdf-text3">
+                                                            <%= d.description %>
+                                                        </p>
+                                                        <div class="row"></div>
+                                                        <div class="col-2 pdf-icon">
+                                                            <p><i class="bi bi-chat-dots"></i></p>
+                                                        </div>
+                                                        <div class="col-2 pdf-icon">
+                                                            <p><i class="bi bi-telephone"></i></p>
+                                                        </div>
+                                                        <div class="col-2 pdf-icon">
+                                                            <p><i class="bi bi-camera-video"></i></p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                           
+                                            <%})} %>
+                                               
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Health end -->
+
+                    <!-- Community pillar start -->
+                    <div id="community-pillar">
+                        <!-- <h2 class="sec-heading">My Hub</h2> -->
+                        <div class="myhub-sec">
+                            <div class="my-hub-menu">
+                                <ul>
+                                    <li class="li3" onclick="family()">Family</li>
+                                    <li class="li1" onclick="health()">Health</li>
+                                    <li class="li4" onclick="doctor()">Doctor</li>
+                                    <li class="li2" onclick="community_pillar()">Community Pillar</li>
+                                    <li class="li5" onclick="public_service()">Public Service</li>
+                                </ul>
+
+                            </div>
+
+
+                            <div class="community-pillar-tab">
+
+                                <div class="action-sec">
+                                    <div class="search-com-pil">
+                                        <i class="bi bi-search"></i> <input type="text" placeholder="Search..." id="searchinputpillar" onkeyup="searchpillarFunction()" > <i
+                                            class="bi bi-mic" style="color:  #225C7B "></i>
+                                    </div>
+                                    <button class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModalCenter2">Invite</button>
+                                    <!-- <button class="btn btn-primary"><i class="bi bi-camera-video"></i> Group Call</button> -->
+
+                                    <label for="">Sort by: &nbsp; &nbsp;</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Recently added</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <div class="row" style="padding: 0 20px;">
+                                   
+                                    <% users.forEach(function(c, i){%>                                       
+                                        <% if(c.degination && c.degination !='' && c.degination != 'MBBS' && c.degination != 'MD' && c.degination != 'BDS'){%> 
+                                        <div class="col-lg-4">
+                                            <div class="c-p-card">
+                                                <center>
+                                                    <div class="img-center">
+                                                        <img src="<%= c.profile_pic  ? c.profile_pic : 'assets/img/avtar.png' %>" alt="">
+                                                    </div>
+                                                </center>
+                                                <div class="contentpillar"></div>
+                                                <h2><%= c.fname+' '+c.lname%></h2>
+                                                <h6><%= c.mobile%></h6>
+                                                <p><%= c.degination%></p>
+                                               
+                                               </div>
+                                                    <div class="btn-sec1">
+                                                        <button class="btn btn-primary"><i class="bi bi-chat-dots"></i></button>
+                                                        <button class="btn btn-primary"><i class="bi bi-telephone"></i></button>
+                                                        <button class="btn btn-primary"><i class="bi bi-camera-video"></i></button>
+                                                        <!-- <form action="?remove-friends/<%= myid%>" method="post" style="display: inline-block;">
+                                                            <button type="submit" class="btn btn-primary new-dlt"
+                                                                onclick="return confirm('Are you sure you want to delete this konnect?');"><i
+                                                                    class="bi bi-trash3"></i></button>
+                                                        </form> -->
+                                                        <button type="submit" class="btn btn-primary new-dlt"><i class="bi bi-trash3"></i></button>
+                                                    </div>                                                                                          
+                                              
+                            
+                                            </div>
+                                            
+                                        </div>
+                                        <%} %>
+                                        <%}) %>
+                                   
+                                </div>
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Community pillar end -->
+
+
+                    <!-- Family tab start -->
+                    <div id="family">
+                        <!-- <h2 class="sec-heading">My Hub</h2> -->
+                        <div class="myhub-sec">
+                            <div class="my-hub-menu">
+                                <ul>
+                                    <li class="li3" onclick="family()">Family</li>
+                                    <li class="li1" onclick="health()">Health</li>
+                                    <li class="li4" onclick="doctor()">Doctor</li>
+                                    <li class="li2" onclick="community_pillar()">Community Pillar</li>
+                                    <li class="li5" onclick="public_service()">Public Service</li>
+                                </ul>
+
+                            </div>
+
+
+                            <div class="community-pillar-tab">
+
+                                <div class="action-sec">
+                                    <div class="search-com-pil">
+                                        <i class="bi bi-search"></i> <input type="text" placeholder="Search..." id="searchinput" onkeyup="searchFunction()" > <i
+                                            class="bi bi-mic" style="color:  #225C7B "></i>
+                                    </div>
+                                    <button class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModalCenter2">Invite</button>
+                                    <!-- <button class="btn btn-primary"><i class="bi bi-camera-video"></i> Group Call</button> -->
+
+                                    <label for="">Sort by: &nbsp; &nbsp;</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Recently added</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <div class="row" style="padding: 0 20px;">
+                                        <% if(my_kon){ my_kon.konnects.forEach(function(k,i){%>
+                                            
+                                            <% if(k.relation === 'friend'){ %>                                         
+                                                <div class="col-lg-4">
+                                                    <div class="c-p-card">
+                                                        <center>
+                                                            <div class="img-center">
+                                                                <img src="<%= k.user.profile_pic  ? k.user.profile_pic : 'assets/img/avtar.png' %>"
+                                                                    alt="">
+                                                            </div>
+                                                        </center>
+                                    
+                                                        <div class="content">
+                                                        <h2>
+                                                            <%= k.user.fname +' '+ k.user.lname %></h2>
+                                                <h6><%= k.user.mobile %></h6>
+                                                <p><%= k.user.address %></p> </div>
+                                                <button class="btn btn-primary family-btn family-btn-family"
+                                                    data-toggle="modal" data-target="#<%= k.user._id %>">Add
+                                                    Family</button>
+                                    
+                                            </div>
+                                        </div>
+                                        <%} else if (k.relation !== 'friend'){%>
+                                            <div class="col-lg-4">
+                                                <div class="c-p-card">
+                                                    <center>
+                                                        <div class="img-center">
+                                                            <img src="<%= k.user.profile_pic  ? k.user.profile_pic : 'assets/img/avtar.png' %>"
+                                                                alt="">
+                                                        </div>
+                                                    </center>
+                                
+                                                    <div class="content">
+                                                    <h2>
+                                                        <%= k.user.fname +' '+ k.user.lname %></h2>
+                                            <h6><%= k.user.mobile %></h6>
+                                            <p><%= k.user.address %></p> </div>
+                                            <div class="btn-sec1">
+                                                <button class="btn btn-primary"><i class="bi bi-chat-dots"></i></button>
+                                                <button class="btn btn-primary"><i class="bi bi-telephone"></i></button>
+                                                <button class="btn btn-primary"><i
+                                                        class="bi bi-camera-video"></i></button>
+                                                <button class="btn btn-primary"><i class="bi bi-trash3"></i></button>
+                                            </div>
+                                
+                                        </div>
+                                    </div>
+                                            <%}%>
+                                        <%})}%>
+                                    
+                                        
+                                    
+
+                                    
+
+                                </div>
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Family tab end -->
+
+                    <!-- Doctor tab start -->
+                    <div id="doctor">
+                        <!-- <h2 class="sec-heading">My Hub</h2> -->
+                        <div class="myhub-sec">
+                            <div class="my-hub-menu">
+                                <ul>
+                                    <li class="li3" onclick="family()">Family</li>
+                                    <li class="li1" onclick="health()">Health</li>
+                                    <li class="li4" onclick="doctor()">Doctor</li>
+                                    <li class="li2" onclick="community_pillar()">Community Pillar</li>
+                                    <li class="li5" onclick="public_service()">Public Service</li>
+                                </ul>
+
+                            </div>
+
+
+                            <div class="community-pillar-tab">
+
+                                <div class="action-sec">
+                                    <div class="search-com-pil">
+                                        <i class="bi bi-search"></i> <input type="text" placeholder="Search..." id="searchinputdoctor" onkeyup="searchdoctorFunction()" ><i
+                                            class="bi bi-mic" style="color:  #225C7B "></i>
+                                    </div>
+                                    <button class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModalCenter2">Invite</button>
+                                    <!-- <button class="btn btn-primary"><i class="bi bi-camera-video"></i> Group Call</button> -->
+
+                                    <label for="">Sort by: &nbsp; &nbsp;</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Recently added</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <div class="row" style="padding: 0 20px;">
+
+                                    <% if(users.length>0){ users.forEach(function(u,i){  %>
+                                        <% if (u.degination){%>
+                                        <% if(u.degination === 'doctor' || u.degination === 'MBBS' || u.degination === 'MD' || u.degination === 'BDS'){ %>
+                                    <div class="col-lg-4">
+                                        <div class="c-p-card">
+                                            <center>
+                                                <div class="img-center">
+                                                    <img src="assets/img/shivaji2.jpg" alt="">
+                                                </div>
+                                            </center>
+                                            <div class="contentdoctor"></div>
+                                            <h2><%= u.fname +''+ u.lname %></h2>
+                                            <h6><%= u.mobile %></h6>
+                                            <p><%= u.degination %></p> </div>
+                                            <!-- <button class="btn btn-primary family-btn family-btn-family" data-toggle="modal"
+                                            data-target="#exampleModalCenter3">Add Family</button> -->
+                                            <div class="btn-sec1">
+                                                <button class="btn btn-primary"><i class="bi bi-chat-dots"></i></button>
+                                                <button class="btn btn-primary"><i class="bi bi-telephone"></i></button>
+                                                <button class="btn btn-primary"><i
+                                                        class="bi bi-camera-video"></i></button>
+                                                <button class="btn btn-primary"><i class="bi bi-trash3"></i></button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <% }} %>
+                                   
+                                    <%})}%>
+
+                                </div>
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Doctor tab end -->
+
+                    <!-- Public service tab start -->
+                    <div id="public-service">
+                        <!-- <h2 class="sec-heading">My Hub</h2> -->
+                        <div class="myhub-sec">
+                            <div class="my-hub-menu">
+                                <ul>
+                                    <li class="li3" onclick="family()">Family</li>
+                                    <li class="li1" onclick="health()">Health</li>
+                                    <li class="li4" onclick="doctor()">Doctor</li>
+                                    <li class="li2" onclick="community_pillar()">Community Pillar</li>
+                                    <li class="li5" onclick="public_service()">Public Service</li>
+                                </ul>
+
+                            </div>
+
+
+                            <div class="community-pillar-tab">
+
+                                <div class="action-sec">
+                                    <div class="search-pub-service" style="width: 28%;">
+                                        <i class="bi bi-search"></i> <input type="text" placeholder="Search by Zipcode">
+                                    </div>
+
+                                    <div class="search-pub-service search-pub-service2"
+                                    style="margin-left: 0; width:28%">
+                                    <i class="bi bi-search"></i> <input type="text"
+                                        placeholder="Search/Add by name"id="searchinputpublic" onkeyup="searchpublicFunction()" >
+                                </div>
+
+                                    <label class="label2" for="">Sort by:</label>
+                                    <select class="form-select select2" aria-label="Default select example">
+                                        <option selected>Recently added</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <div class="row" style="padding: 0 20px;">
+                                    <% if(pub){ %>
+                                        <% pub.forEach(function(c,i){%>
+                                    <div class="col-md-6 col-sm-12">
+
+                                        <div class="service-sec">
+                                            <div class="contentpublic">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="img-service">
+                                                        <img src="/<%= c.service_pic %>" alt="public service pic">
+                                                    </div>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="service-main">
+                                                        <h1 class="service1">   <%= c.service_no%></h1>
+                                                        <p class="service2">  <%= c.service_name%></p>
+                                                        <p class="service3"> <%= c.service_address%></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <%}) %>
+                                    <% } %>
+                                </div>
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Public service tab end -->
+
+
+
+                </div>
+                <!-- left section end -->
+
+                <!-- right section start -->
+
+                <%- include('include/right_section1.ejs'); %>
+
+                    <!-- right section end -->
+            </div>
+
+        </section>
+
+        <!-- main -->
+
+
+        <!-- ==========================================================popup1 start raj ================================================== -->
+        <!-- profile btn popup1 start-->
+        <!-- Modal -->
+        <div class="modal fade" id="reportModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header pop1-header">
+                        <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Add Health Detail </h5>
+                        <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+
+                        <form id="health-form" action="/add-health" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <p class="pop1-p">Title</p>
+
+                                <input type="text" name="title" class="form-control" id="report-title"
+                                    aria-describedby="emailHelp" placeholder="Enter Title">
+
+                            </div>
+
+                            <div class="form-group">
+                                <p class="pop1-p">Description*</p>
+
+                                <div class="form-floating">
+                                    <textarea name="description" class="form-control" placeholder="Leave a comment here"
+                                        id="report-descripton" style="height: 100px"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <p class="pop1-p">Report Date</p>
+
+                                <input type="date" name="report_date" class="form-control" id="report-title"
+                                    aria-describedby="emailHelp" placeholder="Enter Title">
+
+                            </div>
+
+                            <div class="form-group">
+                                <p class="pop1-p">Attachment</p>
+                                <div class="ABC">
+                                    <input type="file" name="attachment" class="form-control-file imgchoose"
+                                        id="report-file" required>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer pop1-foot">
+
+                                <button type="button" class="btn btn-secondary pop1-btn2" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary pop1-btn1">Add </button>
+        
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter666" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header pop1-header">
+                        <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Add Health Detail </h5>
+                        <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+
+                        <form id="health-form" action="/add-health-prescription" method="post"
+                            enctype="multipart/form-data">
+                            <div class="form-group">
+                                <p class="pop1-p">Title</p>
+
+                                <input type="text" name="title" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter Title">
+
+                            </div>
+
+                            <div class="form-group">
+                                <p class="pop1-p">Description*</p>
+
+                                <div class="form-floating">
+                                    <textarea name="description" class="form-control" placeholder="Leave a comment here"
+                                        id="floatingTextarea2" style="height: 100px"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <p class="pop1-p">Priscription Date</p>
+
+                                <input type="date" name="pris_date" class="form-control" id="report-title"
+                                    aria-describedby="emailHelp" placeholder="Enter Title">
+
+                            </div>
+
+                            <div class="form-group">
+                                <p class="pop1-p">Attachment</p>
+                                <div class="ABC">
+                                    <input type="file" name="attachment" class="form-control-file imgchoose"
+                                        id="exampleFormControlFile1" required>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer pop1-foot">
+
+                                <button type="button" class="btn btn-secondary pop1-btn2" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary pop1-btn1">Add </button>
+        
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="addDoctorModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header pop1-header">
+                        <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Add Doctor </h5>
+                        <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form action="/doctor-register" method="post" enctype="multipart/form-data">
+
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="pop-img back-pop-img">
+                                        <img id="doctor-img" src="assets/img/popupvector.png" alt="your image"
+                                            style=" width: 100%; height: 100%;" />
+                                    </div>
+        
+                                    <p class="pop1-p">Upload A Photo</p>
+        
+                                    <div class="ABC">
+                                        <input type="file" name="profile_pic" class="form-control-file imgchoose"
+                                            id="exampleFormControlFile11" onchange="readURL_c(this);" required>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <p class="pop1-p">Doctor name *</p>
+
+                                <input required type="text" name="name" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter Title">
+
+                            </div>
+
+                            <div class="form-group">
+                                <p class="pop1-p">Degination </p>
+
+                                <select name="degination" class="form-select form-select-lg mb-3"
+                                    aria-label=".form-select-lg example" id="ddlProducts">
+
+
+                                    <option selected class="please-select">Please select</option>
+                                    <option value="Doctor">Doctor</option>
+                                    <option value="UI/Ux Designer">UI/Ux Designer</option>
+                                    <option value="Developer">Developer</option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="form-group">
+                                <p class="pop1-p">Email *</p>
+
+                                <input required type="email" name="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email" style="text-transform: none;">
+
+                            </div>
+
+                            <div class="form-group">
+                                <p class="pop1-p">Phone *</p>
+
+                                <input required type="tel" name="mobile" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter phone no ">
+
+                            </div>
+
+                            <div class="form-group">
+                                <p class="pop1-p">Description*</p>
+
+                                <div class="form-floating">
+                                    <textarea name="description" class="form-control" placeholder="Leave a comment here"
+                                        id="floatingTextarea2" style="height: 100px"></textarea>
+
+                                </div>
+
+                            </div>
+
+                            <div class="modal-footer pop1-foot">
+
+                                <button type="button" class="btn btn-secondary pop1-btn2" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary pop1-btn1">Add </button>
+        
+                            </div>
+                            </form>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- edit doctor start -->
+        <% if(doctor) { doctor.forEach(function(d,i){%>
+        <div class="modal fade" id="edit-DoctorModal-<%= d._id %>" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header pop1-header">
+                    <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Edit Doctor </h5>
+                    <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="/doctor-edit" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="id" value="<%= d._id %>">
+
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="pop-img back-pop-img">
+                                    <img id="doctor-img" src="<%= d.profile_pic %>" alt="your image"
+                                        style=" width: 100%; height: 100%;" />
+                                </div>
+    
+                                <p class="pop1-p">Upload A Photo</p>
+    
+                                <div class="ABC">
+                                    <input type="file" name="profile_pic" class="form-control-file imgchoose"
+                                        id="exampleFormControlFile11" onchange="readURL_c(this);" required>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <p class="pop1-p">Doctor name *</p>
+
+                            <input required type="text" name="name" value="<%= d.name %>" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter Title">
+
+                        </div>
+
+                        <div class="form-group">
+                            <p class="pop1-p">Degination </p>
+
+                            <select name="degination" class="form-select form-select-lg mb-3"
+                                aria-label=".form-select-lg example" id="ddlProducts">
+
+
+                                <option selected value="<%= d.degination %>"><%= d.degination %></option>
+                                <option value="Doctor">Doctor</option>
+                                <option value="UI/Ux Designer">UI/Ux Designer</option>
+                                <option value="Developer">Developer</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+                            <p class="pop1-p">Email *</p>
+
+                            <input required type="email" name="email" value="<%= d.email %>" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email" style="text-transform: none;">
+
+                        </div>
+
+                        <div class="form-group">
+                            <p class="pop1-p">Phone *</p>
+
+                            <input required type="tel" name="mobile" value="<%= d.mobile %>" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter phone no ">
+
+                        </div>
+
+                        <div class="form-group">
+                            <p class="pop1-p">Description*</p>
+
+                            <div class="form-floating">
+                                <textarea name="description" class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea2" style="height: 100px"><%= d.description %></textarea>
+
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer pop1-foot">
+
+                            <button type="button" class="btn btn-secondary pop1-btn2" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary pop1-btn1">Add </button>
+    
+                        </div>
+                        </form>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <%})}%>
+        <!-- edit doctor end -->
+
+        <!-- profile btn popup1 edit end-->
+
+
+        <!-- popup2 start -->
+
+        <!-- profile btn popup start-->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header pop1-header">
+                        <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Edit About</h5>
+                        <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body ">
+                        <br>
+                        <p class="pop1-p">Bio*</p>
+
+                        <p class="pop1-p2">I’m a Web Graphic UI/Ux designer based in Ahmedabad, Gujarat, India. I
+                            specialize
+                            in Website Design, Application Design, Banner Design, Logo Design, and Front-End
+                            Development.
+                            I’ve been told I have perseverance and my attention to detail is utmost. I’d love to stay
+                            updated with any newfangled.</p>
+
+                        <br>
+                    </div>
+                    <div class="modal-footer pop1-foot">
+
+                        <button type="button" class="btn btn-secondary pop1-btn2" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary pop1-btn1">Save </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- profile btn popup1 edit end-->
+
+
+
+
+        <!-- popup2 end -->
+
+        <!-- popup3  start-->
+        <!-- profile btn popup1 start-->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header pop1-header">
+                        <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Invite To Senior Konnect </h5>
+                        <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+
+                        <form action="/invite-friends" method="post" enctype="application/x-www-form-urlencoded">
+
+                            <div class="row">
+                                <div class="form-group col-5">
+                                    <p class="pop1-p">Email Address</p>
+
+                                    <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter Email Address" style="text-transform: none;" required>
+
+                                </div>
+                                <div class="col-2 OR">
+                                    <span>OR</span>
+
+
+                                </div>
+
+                                <div class="form-group col-5">
+                                    <p class="pop1-p">Mobile Number</p>
+
+                                    <input type="text" name="mobile" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter Mobile Number">
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="form-group">
+                                <p class="pop1-p">Description*</p>
+
+
+
+                                <div class="form-floating">
+                                    <textarea name="description" class="form-control" placeholder="Leave a comment here"
+                                        id="floatingTextarea2" style="height: 100px" required></textarea>
+                                    <label for="floatingTextarea2">Enter Description </label>
+                                </div>
+
+                            </div>
+
+                            <div class="modal-footer pop1-foot">
+
+                                <button type="button" class="btn btn-secondary pop1-btn2" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary pop1-btn1">Save</button>
+        
+                            </div>
+
+                        </form>
+
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModalCenter212" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header pop1-header">
+                        <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Edit Profile</h5>
+                        <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+
+                        <form action="/profile_pic_work" method="post" enctype="multipart/form-data">
+
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="pop-img" style="width: 200px; height: 200px;">
+                                        <img id="blah" src="assets/img/popupvector.png" alt="your image"
+                                            style="border-radius: 50% !important; width: 100%; height: 100%;" />
+                                    </div>
+                                    <p class="pop1-p">Upload A Photo</p>
+
+                                    <div class="ABC">
+                                        <input type="file" name="profile_pic" class="form-control-file imgchoose"
+                                            id="exampleFormControlFile1" onchange="readURL(this);" required>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="form-group">
+                                <p class="pop1-p">Degination</p>
+
+                                <select name="degination" class="form-select form-select-lg mb-3"
+                                    aria-label=".form-select-lg example" id="mySelect" onchange="myFunction5()">
+
+
+                                    <option selected class="please-select">Please select</option>
+                                    
+                                    <option value="Doctor">Doctor</option>
+                                    <option value="UI/Ux Designer">UI/Ux Designer</option>
+                                    <option value="Developer">Developer</option>
+                                </select>
+
+                            </div>
+
+                            <div class="form-group" id="drop1">
+                                <p class="pop1-p">Doctor</p>
+
+                                <select name="doctor" class="form-select form-select-lg mb-3"
+                                    aria-label=".form-select-lg example" id="ddlProducts2" >
+
+
+                                    <option selected class="please-select">Please select</option>
+                                    
+                                    <option value="MBBS">MBBS</option>
+                                    <option value="MD">MD</option>
+                                    <option value="BDS" >BDS</option>
+                                </select>
+
+                            </div>
+                            <div class="form-group" id="drop2">
+                                <p class="pop1-p">UI/Ux Designer</p>
+
+                                <select name="designer" class="form-select form-select-lg mb-3"
+                                    aria-label=".form-select-lg example" id="ddlProducts2" >
+
+
+                                    <option selected class="please-select">Please select</option>
+                                    
+                                    <option value="UI/Ux Designer">UI/Ux Designer</option>
+                                    <option value="UI/Ux Designer1">UI/Ux Designer1</option>
+                                    <option value="UI/Ux Designer2" >UI/Ux Designer2</option>
+                                </select>
+
+                            </div>
+                            <div class="form-group" id="drop3">
+                                <p class="pop1-p">Developer</p>
+
+                                <select name="developer" class="form-select form-select-lg mb-3"
+                                    aria-label=".form-select-lg example" id="ddlProducts2" >
+
+
+                                    <option selected class="please-select">Please select</option>
+                                    
+                                    <option value="HTML">HTML</option>
+                                    <option value="PHP">PHP</option>
+                                    <option value="JAVA" >JAVA</option>
+                                </select>
+
+                            </div>
+                            <p id="demo1"></p>
+
+                            <Script>
+                                $('#drop1').hide();
+                                $('#drop2').hide();
+                                $('#drop3').hide();
+                              var a =  $('#ddlProducts1').val();
+                              function myFunction5() {
+                                    var x = $("#mySelect").val();                                    
+                                   
+                                    if (x === 'Doctor'){
+                                        $('#drop1').show();
+                                        $('#drop2').hide();
+                                        $('#drop3').hide();
+                                    } else if (x === 'UI/Ux Designer'){
+                                        $('#drop2').show();
+                                        $('#drop1').hide();
+                                        $('#drop3').hide();
+                                    } else if (x === 'Developer'){
+                                        $('#drop3').show();
+                                        $('#drop2').hide();
+                                        $('#drop1').hide();
+                                    }
+                                }
+                                
+                            </Script>
+
+
+
+                            <div class="modal-footer pop1-foot">
+
+                                <button type="button" class="btn btn-secondary pop1-btn2"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary pop1-btn1">Save</button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- profile btn popup1 edit end-->
+
+        <!-- pop3 end -->
+
+
+
+        <!-- pop4 start -->
+        <!-- profile btn popup1 start-->
+        <!-- Modal -->
+        <% if (users.length>0){%>
+            <% for (var i=0; i < users.length; i++){%>
+
+                <div class="modal fade" id="<%=users[i]._id%>" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header pop1-header">
+                                <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Select Relationship</h5>
+                                <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+
+                                <form action="add-friends/<%=users[i]._id%>" method="post">
+
+                                    <div class="form-group">
+                                        <p class="pop1-p">Relationship</p>
+
+                                        <select name="relation" class="form-select form-select-lg mb-3"
+                                            aria-label=".form-select-lg example" id="ddlProducts">
+
+
+                                            <option selected class="please-select">Please select</option>
+                                            <option value="mother">Mother</option>
+                                            <option value="father">Father</option>
+                                            <option value="son">Son</option>
+                                            <option value="brother">brother</option>
+                                            <option value="sister">Sister</option>
+                                            <option value="friend">Friend</option>
+
+
+                                            <!-- <option value="1">Animal Welfare</option> -->
+                                            <!-- <option value="2">Art And Culture</option> -->
+                                            <!-- <option value="3">Children</option> -->
+                                            <!-- <option value="1">Civil Rights and Social Actions</option> -->
+                                            <!-- <option value="2">Economic Empowerment</option> -->
+                                            <!-- <option value="3">Education</option> -->
+                                            <!-- <option value="1">Environment</option> -->
+
+                                            <!-- <option value="3">Human Rights</option> -->
+                                            <!-- <option value="2">Disaster and Humanitarian Relieg</option> -->
+                                            <!-- <option value="3">Politics</option> -->
+                                            <!-- <option value="1">Poverty Alleviation</option> -->
+                                            <!-- <option value="2">Science and Technology </option> -->
+                                            <!-- <option value="3">Veteran Support</option> -->
+                                        </select>
+
+                                    </div>
+
+
+                                    <div class="modal-footer pop1-foot">
+
+                                        <button type="button" class="btn btn-secondary pop1-btn2"
+                                            data-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-primary pop1-btn1 new-btn">Save</button>
+
+                                    </div>
+                                </form>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <%}}%>
+
+                
+                    <div class="modal fade" id="aadFriendsexampleModalCenter3" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header pop1-header">
+                                    <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Select Relationship</h5>
+                                    <button type="button" class="close pop1-close" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+
+
+                                    <form action="/add-friends/id" method="post">
+
+                                        <div class="form-group">
+                                            <p class="pop1-p">Relationship</p>
+
+                                            <select name="" class="form-select form-select-lg mb-3"
+                                                aria-label=".form-select-lg example" id="ddlProducts">
+
+
+                                                <option selected class="please-select">Please select</option>
+                                                <option value="mother">Mother</option>
+                                                <option value="father">Father</option>
+                                                <option value="brother">brother</option>
+                                                <option value="sister">Sister</option>
+                                                <option value="son">Son</option>
+
+                                                <!-- <option value="1">Animal Welfare</option> -->
+                                                <!-- <option value="2">Art And Culture</option> -->
+                                                <!-- <option value="3">Children</option> -->
+                                                <!-- <option value="1">Civil Rights and Social Actions</option> -->
+                                                <!-- <option value="2">Economic Empowerment</option> -->
+                                                <!-- <option value="3">Education</option> -->
+                                                <!-- <option value="1">Environment</option> -->
+
+                                                <!-- <option value="3">Human Rights</option> -->
+                                                <!-- <option value="2">Disaster and Humanitarian Relieg</option> -->
+                                                <!-- <option value="3">Politics</option> -->
+                                                <!-- <option value="1">Poverty Alleviation</option> -->
+                                                <!-- <option value="2">Science and Technology </option> -->
+                                                <!-- <option value="3">Veteran Support</option> -->
+                                            </select>
+
+                                        </div>
+
+
+                                        <div class="modal-footer pop1-foot">
+
+                                            <button type="button" class="btn btn-secondary pop1-btn2"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-primary pop1-btn1">Save</button>
+
+                                        </div>
+                                    </form>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div class="modal fade" id="exampleModalCenter32" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header pop1-header">
+                                    <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Doctor’s Details</h5>
+                                    <button type="button" class="close pop1-close" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+
+
+                                    <form>
+                                        <!-- <div class="form-group">
+                        <p class="pop1-p">Title</p>
+
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter Title">
+
+                    </div> -->
+                                        <!--  
+                    <div class="form-group">
+                        <p class="pop1-p">Role *</p>
+
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter Role ">
+
+                    </div> -->
+
+                                        <div class="form-group">
+                                            <p class="pop1-p">Relationship</p>
+
+                                            <select class="form-select form-select-lg mb-3"
+                                                aria-label=".form-select-lg example" id="ddlProducts">
+
+
+                                                <option selected class="please-select">Please select</option>
+                                                <!-- <option value="1">Animal Welfare</option>
+                            <option value="2">Art And Culture</option>
+                            <option value="3">Children</option>
+                            <option value="1">Civil Rights and Social Actions</option>
+                            <option value="2">Economic Empowerment</option>
+                            <option value="3">Education</option>
+                            <option value="1">Environment</option>
+                            <option value="2">Health</option>
+                            <option value="3">Human Rights</option>
+                            <option value="2">Disaster and Humanitarian Relieg</option>
+                            <option value="3">Politics</option>
+                            <option value="1">Poverty Alleviation</option>
+                            <option value="2">Science and Technology </option>
+                            <option value="3">Veteran Support</option> -->
+                                            </select>
+
+                                        </div>
+
+                                        <!--             <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label new-p" for="flexCheckChecked">
+                            I am currently volunteering in this role
+                        </label>
+                    </div>
+
+
+                    <div class="form-group" style="margin-top: 1.5%">
+                        <p class="pop1-p">Start Date</p>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                    id="ddlProducts">
+
+
+                                    <option selected class="please-select">Please select</option>
+                                    <option value="1">Animal Welfare</option>
+
+                                </select>
+
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                    id="ddlProducts">
+
+
+                                    <option selected class="please-select">Please select</option>
+                                    <option value="1">Animal Welfare</option>
+
+                                </select>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="form-group" style="margin-top: 1.5%">
+                        <p class="pop1-p">End Date</p>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                    id="ddlProducts">
+
+
+                                    <option selected class="please-select">Please select</option>
+                                    <option value="1">Animal Welfare</option>
+
+                                </select>
+
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                    id="ddlProducts">
+
+
+                                    <option selected class="please-select">Please select</option>
+                                    <option value="1">Animal Welfare</option>
+
+                                </select>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div> -->
+
+
+                                    </form>
+
+
+
+                                </div>
+                                <div class="modal-footer pop1-foot">
+
+                                    <button type="button" class="btn btn-secondary pop1-btn2"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary pop1-btn1">Save</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- profile btn popup1 edit end-->
+                    <!-- pop4 end -->
+
+
+                    <!-- pop 5 start -->
+                    <!-- profile btn popup1 start-->
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header pop1-header">
+                                    <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Select Doctor’s
+                                        Designation</h5>
+                                    <button type="button" class="close pop1-close" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+
+
+                                    <form>
+                                        <!-- <div class="form-group">
+                            <p class="pop1-p">Title</p>
+
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Enter Title">
+
+                        </div> -->
+                                        <!--  
+                        <div class="form-group">
+                            <p class="pop1-p">Role *</p>
+
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Enter Role ">
+
+                        </div> -->
+
+                                        <div class="form-group">
+                                            <p class="pop1-p">Relationship</p>
+
+                                            <select class="form-select form-select-lg mb-3"
+                                                aria-label=".form-select-lg example" id="ddlProducts">
+
+
+                                                <option selected class="please-select">Please select</option>
+                                                <!-- <option value="1">Animal Welfare</option>
+                                <option value="2">Art And Culture</option>
+                                <option value="3">Children</option>
+                                <option value="1">Civil Rights and Social Actions</option>
+                                <option value="2">Economic Empowerment</option>
+                                <option value="3">Education</option>
+                                <option value="1">Environment</option>
+                                <option value="2">Health</option>
+                                <option value="3">Human Rights</option>
+                                <option value="2">Disaster and Humanitarian Relieg</option>
+                                <option value="3">Politics</option>
+                                <option value="1">Poverty Alleviation</option>
+                                <option value="2">Science and Technology </option>
+                                <option value="3">Veteran Support</option> -->
+                                            </select>
+
+                                        </div>
+
+                                        <!--             <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label new-p" for="flexCheckChecked">
+                                I am currently volunteering in this role
+                            </label>
+                        </div>
+
+
+                        <div class="form-group" style="margin-top: 1.5%">
+                            <p class="pop1-p">Start Date</p>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="form-group" style="margin-top: 1.5%">
+                            <p class="pop1-p">End Date</p>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div> -->
+
+
+                                    </form>
+
+
+
+                                </div>
+                                <div class="modal-footer pop1-foot">
+
+                                    <button type="button" class="btn btn-secondary pop1-btn2"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary pop1-btn1">Save</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- profile btn popup1 edit end-->
+                    <!-- pop5 end -->
+
+
+
+
+
+
+                    <!-- ==================================================================================================================== -->
+                    <!-- profile btn popup start-->
+                    <div id="profile_opn">
+                        <div class="profile-btn-menu">
+                            <div class="profile-btn-menu-r1">
+                                <div>
+                                    <img src="assets/img/profile/profile.png" alt="">
+                                </div>
+                                <div>
+                                    <h2>Aarav Sexena</h2>
+                                    <p>Sr. UI/UX Designer</p>
+                                </div>
+                                <button type="button" class="btn-close" onclick="profile_close()"></button>
+                            </div>
+                            <hr class="hr1">
+                            <div class="profile-btn-menu-r2">
+                                <h2>Account</h2>
+                                <p><i class="bi bi-gear"></i> Settings & Privacy</p>
+                                <p><i class="bi bi-yin-yang"></i> About</p>
+                                <p><i class="bi bi-question-circle"> </i>Help</p>
+                                <p><i class="bi bi-translate"></i> Language</p>
+                            </div>
+                            <hr class="hr2">
+                            <div class="profile-btn-menu-r3">
+                                <h2>Manage</h2>
+                                <p><i class="bi bi-file-richtext"></i> <span>NGO:</span> Posts & Initiative</p>
+                                <p><i class="bi bi-hearts"></i>Smile India Foundation</p>
+                                <p><i class="fa-solid fa-people-group"></i><span>Commercial:</span> Real Estate</p>
+                            </div>
+                            <hr class="hr3">
+                            <div class="profile-btn-menu-r3">
+                                <p><a href="login.html"><i class="bi bi-box-arrow-right"></i> Logout</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- profile btn popup end-->
+
+                    <!-- search btn popup start -->
+                    <div class="search-popup">
+                        <h5 onclick="search_popup_close()">Clear</h5>
+                        <h4>Recent</h4>
+                        <p class="s-p-h-r"><i class="bi bi-clock"></i> UI Designer</p>
+                        <p class="s-p-h-r"><i class="bi bi-clock"></i> UI Designer</p>
+                        <p class="s-p-h-r"><i class="bi bi-clock"></i> Web Developer</p>
+                        <hr>
+                        <h4>Try Searching For</h4>
+                        <p class="s-p-h-r"><i class="bi bi-search"></i> UI UX</p>
+                        <p class="s-p-h-r"><i class="bi bi-search"></i> Sales</p>
+                        <p class="s-p-h-r"><i class="bi bi-search"></i> Graphic Designer</p>
+                        <p class="s-p-h-r"><i class="bi bi-search"></i> CEO</p>
+                    </div>
+                    <!-- search btn popup end -->
+
+                    <!-- activity more popup start -->
+                    <div class="activity-more-popup" id="more-menu">
+
+<!-- 
+                        <a href="/events" style="text-decoration:none">
+                            <p style="color:#225C7B;">Events</p>
+                        </a> -->
+                        <a href="/checks_in" style="text-decoration:none">
+                            <p>Check-Ins</p>
+                        </a>
+                        <a href="/sport" style="text-decoration:none">
+                            <p>Sports</p>
+                        </a>
+                        <a href="/music" style="text-decoration:none">
+                            <p>Music</p>
+                        </a>
+                        <a href="/movies" style="text-decoration:none">
+                            <p>Movies</p>
+                        </a>
+                        <a href="/tv_show" style="text-decoration:none">
+                            <p>TV Shows</p>
+                        </a>
+                        <a href="/books" style="text-decoration:none">
+                            <p>Books</p>
+                        </a>
+
+                    </div>
+                    <!-- activity more popup end -->
+
+                    <!-- create contact info popup start -->
+                    <div class="modal fade" id="exampleModalCenterContactInfo" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header pop1-header">
+                                    <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Contact Info </h5>
+                                    <button type="button" class="close pop1-close" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <% if (contact){%>
+
+                                        <!-- enctype="multipart/form-data" -->
+                                        <form action="/contact_info_edit/<%=contact._id%>" method="post">
+
+
+                                            <div class="form-group">
+                                                <p class="pop1-p">Address</p>
+                                                <div class="form-floating">
+                                                    <textarea name="address" class="form-control" placeholder=""
+                                                        id="floatingTextarea2"
+                                                        style="height: 100px"><%=contact.address%></textarea>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="form-group" style="margin-top:4%">
+                                                <p class="pop1-p">Mobile Number</p>
+
+                                                <input type="text" name="mobile" value="<%=contact.contact_mobile%>"
+                                                    class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp" placeholder="">
+
+                                            </div>
+
+                                            <div class="form-group" style="margin-top:4%">
+                                                <p class="pop1-p">Email</p>
+
+                                                <input type="email" name="email" value="<%=contact.contact_email%>"
+                                                    class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp" placeholder="">
+
+                                            </div>
+
+                                            <div class="form-group" style="margin-top:4%">
+                                                <p class="pop1-p">Birthday</p>
+
+                                                <input type="text" name="birthday" value="<%=contact.birthday%>"
+                                                    class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp" placeholder="">
+
+                                            </div>
+
+
+                                            <div class="modal-footer pop1-foot">
+
+                                                <button type="button" onclick="window.location.reload()"
+                                                    class="btn btn-secondary pop1-btn2"
+                                                    data-dismiss="modal">Cancel</button>
+                                                <button type="submit" class="btn btn-primary pop1-btn1">Save</button>
+
+                                            </div>
+
+                                        </form>
+
+                                        <%}%>
+
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- create contact info popup end -->
+
+                    <!-- create communities popup start -->
+                    <div class="modal fade" id="exampleModalCenterCreateCommunities2234" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header pop1-header">
+                                    <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Create Event </h5>
+                                    <button type="button" class="close pop1-close" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- enctype="multipart/form-data" -->
+                                    <form action="/create_events" method="post" enctype="multipart/form-data">
+
+                                        <div class="form-group">
+                                            <div class="pop-img">
+                                                <img id="bla" src="assets/img/popupvector.png" alt="your image" />
+                                            </div>
+                                            <p class="pop1-p">Upload A Photo</p>
+
+                                            <div class="ABC">
+                                                <input type="file" name="event_image"
+                                                    class="form-control-file imgchoose" id="exampleFormControlFile1"
+                                                    onchange="readURL(this);" required>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group" style="margin-top:4%">
+                                            <p class="pop1-p">Event Name*</p>
+
+                                            <input type="text" name="event_name" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="Enter Event Name*" required>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="pop1-p">Timezone</p>
+
+                                            <select name="time_zone" class="form-select form-select-lg mb-3"
+                                                aria-label=".form-select-lg example" id="ddlProducts">
+
+                                                <option selected class="please-select">Please select Timezone</option>
+                                                <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+                                                <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+                                                <option value="-10:00">(GMT -10:00) Hawaii</option>
+                                                <option value="-09:50">(GMT -9:30) Taiohae</option>
+                                                <option value="-09:00">(GMT -9:00) Alaska</option>
+                                                <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)
+                                                </option>
+                                                <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)
+                                                </option>
+                                                <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada),
+                                                    Mexico City</option>
+                                                <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada),
+                                                    Bogota, Lima</option>
+                                                <option value="-04:50">(GMT -4:30) Caracas</option>
+                                                <option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La
+                                                    Paz</option>
+                                                <option value="-03:50">(GMT -3:30) Newfoundland</option>
+                                                <option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown
+                                                </option>
+                                                <option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+                                                <option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
+                                                <option value="+00:00" selected="selected">(GMT) Western Europe Time,
+                                                    London, Lisbon,
+                                                    Casablanca</option>
+                                                <option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris
+                                                </option>
+                                                <option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
+                                                <option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St.
+                                                    Petersburg</option>
+                                                <option value="+03:50">(GMT +3:30) Tehran</option>
+                                                <option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi
+                                                </option>
+                                                <option value="+04:50">(GMT +4:30) Kabul</option>
+                                                <option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi,
+                                                    Tashkent</option>
+                                                <option value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi
+                                                </option>
+                                                <option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+                                                <option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                                                <option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+                                                <option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                                                <option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong
+                                                </option>
+                                                <option value="+08:75">(GMT +8:45) Eucla</option>
+                                                <option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk
+                                                </option>
+                                                <option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+                                                <option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok
+                                                </option>
+                                                <option value="+10:50">(GMT +10:30) Lord Howe Island</option>
+                                                <option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New
+                                                    Caledonia</option>
+                                                <option value="+11:50">(GMT +11:30) Norfolk Island</option>
+                                                <option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji,
+                                                    Kamchatka</option>
+                                                <option value="+12:75">(GMT +12:45) Chatham Islands</option>
+                                                <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
+                                                <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
+                                                <!-- <option value="1">Animal Welfare</option>
+                 
+                   <option value="3">Veteran Support</option> -->
+                                            </select>
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="form-group form-group5 col-6">
+                                                <div class="form-group">
+                                                    <p class="pop1-p">Start Date</p>
+
+                                                    <input type="date" name="start_date" class="form-control"
+                                                        aria-describedby="emailHelp" placeholder="">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group col-6">
+                                                <div class="form-group">
+                                                    <p class="pop1-p">Start time</p>
+
+                                                    <input type="time" name="start_time" class="form-control"
+                                                        aria-describedby="emailHelp" placeholder="">
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="form-group form-group5 col-6">
+                                                <div class="form-group">
+                                                    <p class="pop1-p">End Date (or expected)</p>
+
+                                                    <input type="date" name="end_date" class="form-control"
+                                                        aria-describedby="emailHelp" placeholder="">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group col-6">
+                                                <div class="form-group">
+                                                    <p class="pop1-p">End time</p>
+
+                                                    <input type="time" name="end_time" class="form-control"
+                                                        aria-describedby="emailHelp" placeholder="">
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <p class="pop1-p">Description*</p>
+
+                                            <div class="form-floating">
+                                                <textarea name="description" class="form-control"
+                                                    placeholder="Enter Description" id="floatingTextarea2"
+                                                    style="height: 100px" required></textarea>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="pop1-p">Visibility</p>
+
+                                            <select name="visibility" class="form-select form-select-lg mb-3"
+                                                aria-label=".form-select-lg example" id="ddlProducts">
+
+
+                                                <option selected class="please-select">Please select</option>
+                                                <option value="visible" class="please-select">Visible</option>
+                                                <option value="non visible" class="please-select">Non Visible</option>
+
+                                            </select>
+
+                                        </div>
+
+
+                                        <div class="form-group">
+
+                                            <div class="col-5 leftside">
+                                                <p class="pop1-p" style="margin-top:3%">Event*</p>
+
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input top1" type="radio" name="event_type"
+                                                        value="online" checked required>
+                                                    <label class="form-check-label top1"
+                                                        for="inlineRadio111">Online</label>
+                                                </div>
+
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input top1" type="radio" name="event_type"
+                                                        value="offline" required>
+                                                    <label class="form-check-label top1"
+                                                        for="inlineRadio211">Offline</label>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="form-group ">
+                                            <p class="pop1-p">Target Audience</p>
+
+                                            <input type="text" name="targeted_audience" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="Target Audience">
+                                        </div>
+
+                                        <div class="form-group ">
+                                            <p class="pop1-p">Registration or broadcast link</p>
+
+                                            <input type="text" name="reg_or_brod_link" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="Enter Registration or broadcast link">
+                                        </div>
+
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" name="broadcast" value="yes" class="form-check-input"
+                                                id="exampleCheck1">
+                                            <label class="form-check-label pop1-p" for="exampleCheck1">This is a
+                                                broadcast link</label>
+                                        </div>
+
+
+                                        <div class="modal-footer pop1-foot">
+
+                                            <button type="button" class="btn btn-secondary pop1-btn2"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="submit" class="btn btn-primary pop1-btn1">Create</button>
+                                        </div>
+
+                                    </form>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- create communities popup end -->
+
+
+                    <!-- ========================================================================================================================= -->
+                    <script>
+                        // Navbar
+                        $(".mobile-navbar").css("display", "none");
+                        function open_mobile_menu() {
+                            $(".mobile-navbar").css("display", "block");
+
+                        }
+                        function close_mobile_menu() {
+                            $(".mobile-navbar").css("display", "none");
+
+                        }
+
+                        // profile image - profile menu
+                        // $("#profile_opn").css("display", "none");
+                        function profile_opn() {
+                            $("#profile_opn").css("display", "block");
+
+                        }
+                        function profile_close() {
+                            $("#profile_opn").css("display", "none");
+
+                        }
+
+
+
+                        // search popup
+                        $(".search-popup").css("display", "none")
+
+                        function search_popup_open() {
+                            $(".search-popup").css("display", "block")
+
+                            $(".search-popup").mouseenter(enter);
+                            $(".search-popup").mouseleave(leave);
+                            function enter() {
+                                $(".search-popup").css("display", "block");
+                            }
+                            function leave() {
+                                $(".search-popup").css("display", "none");
+                            }
+                        }
+                        function search_popup_close() {
+                            // $(".search-popup").css("display", "none");
+                            $(".s-p-h-r").remove();
+                        }
+
+                        // Activity more popup
+                        // $(".activity-more-popup").css("display", "none")
+
+                        function activity_more_open() {
+                            $(".activity-more-popup").css("display", "block")
+
+                            $(".activity-more-popup").mouseenter(enter);
+                            $(".activity-more-popup").mouseleave(leave);
+                            function enter() {
+                                $(".activity-more-popup").css("display", "block");
+                            }
+                            function leave() {
+                                $(".activity-more-popup").css("display", "none");
+                            }
+                        }
+
+
+                        function readURL(input) {
+                            if (input.files && input.files[0]) {
+                                var reader = new FileReader();
+
+                                reader.onload = function (e) {
+                                    $('#blah2')
+                                        .attr('src', e.target.result);
+                                };
+
+                                reader.readAsDataURL(input.files[0]);
+                            }
+                        }
+
+
+                        // Myhub tabs
+                        // $("#health").css("display", "block");
+                        // $("#li1").css("color", "#225c7b");
+
+
+                        $("#health").css("display", "none");
+                        $("#community-pillar").css("display", "none");
+                        $("#family").css("display", "block");
+                        $(".li3").addClass(' new-active-btn'); $("#doctor").css("display", "none");
+                        $("#public-service").css("display", "none");
+                        $(".li1").removeClass('new-active-btn');
+                        $(".li2").removeClass('new-active-btn');
+                        $(".li5").removeClass('new-active-btn');
+                        $(".li4").removeClass('new-active-btn'); function health() {
+                            $("#health").css("display", "block");
+                            $("#community-pillar").css("display", "none");
+                            $("#family").css("display", "none");
+                            $("#doctor").css("display", "none");
+                            $("#public-service").css("display", "none");
+                            $(".li1").addClass('new-active-btn');
+                            $(".li5").removeClass('new-active-btn');
+                            $(".li2").removeClass('new-active-btn');
+                            $(".li3").removeClass('new-active-btn');
+                            $(".li4").removeClass('new-active-btn');
+                        } function
+                            community_pillar() {
+                            $("#health").css("display", "none");
+                            $("#community-pillar").css("display", "block");
+                            $("#family").css("display", "none");
+                            $("#doctor").css("display", "none");
+                            $("#public-service").css("display", "none");
+                            $(".li2").addClass('new-active-btn');
+                            $(".li1").removeClass('new-active-btn');
+                            $(".li5").removeClass('new-active-btn');
+                            $(".li3").removeClass('new-active-btn');
+                            $(".li4").removeClass('new-active-btn');
+                        } function family() {
+                            $("#health").css("display", "none");
+                            $("#community-pillar").css("display", "none");
+                            $("#family").css("display", "block");
+                            $("#doctor").css("display", "none");
+                            $("#public-service").css("display", "none");
+                            $(".li3").addClass('new-active-btn');
+                            $(".li1").removeClass('new-active-btn');
+                            $(".li2").removeClass('new-active-btn');
+                            $(".li5").removeClass('new-active-btn');
+                            $(".li4").removeClass('new-active-btn');
+                        } function doctor() {
+                            $("#health").css("display", "none");
+                            $("#community-pillar").css("display", "none");
+                            $("#family").css("display", "none");
+                            $("#doctor").css("display", "block");
+                            $("#public-service").css("display", "none");
+                            $(".li4").addClass('new-active-btn');
+                            $(".li1").removeClass('new-active-btn');
+                            $(".li2").removeClass('new-active-btn');
+                            $(".li3").removeClass('new-active-btn');
+                            $(".li5").removeClass('new-active-btn');
+                        } function
+                            public_service() {
+                            $("#health").css("display", "none");
+                            $("#community-pillar").css("display", "none");
+                            $("#family").css("display", "none");
+                            $("#doctor").css("display", "none");
+                            $("#public-service").css("display", "block");
+                            $(".li5").addClass('new-active-btn');
+                            $(".li1").removeClass('new-active-btn');
+                            $(".li2").removeClass('new-active-btn');
+                            $(".li3").removeClass('new-active-btn');
+                            $(".li4").removeClass('new-active-btn');
+                        }
+
+
+
+                        // pop img upload
+
+                        function readURL_c(input) {
+                            if (input.files && input.files[0]) {
+                                var reader = new FileReader();
+
+                                reader.onload = function (e) {
+                                    $('#doctor-img')
+                                        .attr('src', e.target.result);
+                                };
+
+                                reader.readAsDataURL(input.files[0]);
+                            }
+                        }
+                        
+
+
+
+
+                    </script>
+
+
+
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+                        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+                        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                        crossorigin="anonymous"></script>
+
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                        crossorigin="anonymous"></script>
+                    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                        crossorigin="anonymous"></script>
+
+                    <script src="assets/js/script.js"></script>
+                    <script src="assets/js/myhubScript.js"></script>
+
+                    <!-- sort & Search -->
+
+                    <script src="assets/js/grabit.js"></script>
+                    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+</body>
+
+</html>

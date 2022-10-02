@@ -1,0 +1,114 @@
+    <!-- heder -->
+    <%- include('include/header.ejs') %>
+        <!-- header -->
+<!--=========================*
+     <==================================*
+                   Main Section
+        *====================================-->
+        <div class="main-content-inner">
+       
+            <div class="row">
+                <!-- Primary table -->
+                <div class="col-12 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="header-title">Movies</h4>
+                            <div class="table-responsive datatable-primary">
+                                <table id="dataTable2" class="text-center">
+                                    <thead class="text-capitalize">
+                                    <tr>
+                                        <th>Movies-Pic</th>
+                                        <th>Movies Name</th>
+                                    
+                               
+                                        <th scope="col">action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                     
+                                            
+                                        <% if(movie){ %>
+                                            <% movie.forEach(function(c,i){%>
+                                                <tr>
+                                                    <td>
+                                                        <div class="img_pic">
+                                                            <img src="/<%= c.movies_pic %>" alt="movies">
+                                                        </div>
+                                                        
+                                                    </td>
+                                                    <td><%= c.movies_name%></td>
+                                                  
+                                                  
+                                                    <td>
+                                                        <ul class="d-flex justify-content-center">
+                                                            <li class="mr-3"><button type="button" class="btn btn-secondary"><i class="fa fa-edit"></i></button></li>
+                                                            <a href="/movies-delete/<%= c._id %>">    <li><button type="button" class="btn btn-danger"><i class="ti-trash"></i></button></li></a>
+                                                        </ul>
+                                                    </td>
+                                                
+                                                </tr>
+                                                <%}) %>
+                                            <% } %>
+                                   
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Primary table -->
+            </div>
+        </div>
+        <!--==================================*
+                   End Main Section
+        *====================================-->
+
+                                    <!--==================================*
+                Main Section start
+        *====================================-->
+    <div class="main-content-inner">
+        <div class="row">
+            <!-- Textual inputs -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="header-title">Movies Add Form</h4>
+
+
+                        <form action="/movies-add" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label">Movies</label>
+                                <input class="form-control" type="text" name="movies_name" placeholder="Movies name" id="example-text-input">
+                            </div>
+
+                       
+                          
+
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label">Movies Pic</label>
+                                <input class="form-control" type="file" name="movies_pic" placeholder="Movies pic" id="example-text-input">
+                            </div>
+
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+
+                          
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Textual inputs -->
+        </div>
+
+    </div>
+    <!--==================================*
+                   End Main Section
+        *====================================-->
+
+            <!-- footer -->
+    <%- include('include/footer.ejs') %>
+    <!-- footer -->

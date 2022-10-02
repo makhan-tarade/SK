@@ -1,0 +1,134 @@
+    <!-- heder -->
+    <%- include('include/header.ejs') %>
+        <!-- header -->
+<!--=========================*
+     <==================================*
+                   Main Section
+        *====================================-->
+        <div class="main-content-inner">
+       
+            <div class="row">
+                <!-- Primary table -->
+                <div class="col-12 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="header-title">Checkins</h4>
+                            <div class="table-responsive datatable-primary">
+                                <table id="dataTable2" class="text-center">
+                                    <thead class="text-capitalize">
+                                    <tr>
+                                        <th>checkin_Pic</th>
+                                        <th>City</th>
+                                        
+                                        <th>State</th>
+                                        <th>Country</th>
+                                        <th>Visited</th>
+                                    
+                                        <th scope="col">action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                     
+                                    <% if(checkin){ %>
+                                        <% checkin.forEach(function(c,i){%>
+                                            <tr>
+                                                <td>
+                                                    <div class="img_pic">
+                                                        <img src="/<%= c.checkin_pic %>" alt="checkinpic">
+                                                    </div>
+                                                    
+                                                </td>
+                                                <td><%= c.city%></td>
+                                              
+                                                <td><%= c.state %></td>
+                                                <td><%= c.country %></td>
+                                                
+                                                <td><%= c.visited %></td>
+                                              
+                                                <td>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li class="mr-3"><button type="button" class="btn btn-secondary"><i class="fa fa-edit"></i></button></li>
+                                                        <a href="/checkin-delete/<%= c._id %>">    <li><button type="button" class="btn btn-danger"><i class="ti-trash"></i></button></li></a> 
+                                                    </ul>
+                                                </td>
+                                            
+                                            </tr>
+                                            <%}) %>
+                                        <% } %>
+                                   
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Primary table -->
+            </div>
+        </div>
+        <!--==================================*
+                   End Main Section
+        *====================================-->
+
+                            <!--==================================*
+                Main Section start
+        *====================================-->
+    <div class="main-content-inner">
+        <div class="row">
+            <!-- Textual inputs -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="header-title">checkin Team Add Form</h4>
+
+
+                        <form action="/checkin-add" method="post" enctype="multipart/form-data">
+                            <!-- <div class="form-group">
+                                <label for="example-text-input" class="col-form-label">Sport team </label>
+                                <input class="form-control" type="text" name="city" placeholder="Sport team name" id="example-text-input">
+                            </div> -->
+
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label">City</label>
+                                <input class="form-control" type="text" name="city" placeholder="City name" id="example-text-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label">State</label>
+                                <input class="form-control" type="text" name="state" placeholder="State name" id="example-text-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label">Country</label>
+                                <input class="form-control" type="text" name="country" placeholder="Country name" id="example-text-input">
+                            </div>
+
+                          
+
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label">checkin  Pic</label>
+                                <input class="form-control" type="file" name="checkin_pic" placeholder="checkin pic" id="example-text-input">
+                            </div>
+
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+
+                          
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Textual inputs -->
+        </div>
+
+    </div>
+    <!--==================================*
+                   End Main Section
+        *====================================-->
+
+            <!-- footer -->
+    <%- include('include/footer.ejs') %>
+    <!-- footer -->

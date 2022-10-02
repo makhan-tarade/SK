@@ -1,0 +1,89 @@
+<!-- heder -->
+<%- include('include/header.ejs') %>
+    <!-- header -->
+    <!--=========================*
+     <==================================*
+                   Main Section
+        *====================================-->
+    <div class="main-content-inner">
+
+        <div class="row">
+            <!-- Primary table -->
+            <div class="col-12 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="header-title">Communities</h4>
+                        <div class="table-responsive datatable-primary">
+                            <table id="dataTable2" class="text-center">
+                                <thead class="text-capitalize">
+                                    <tr>
+                                        <th>Community Name</th>
+                                        <th>description</th>
+                                        <th>Privacy</th>
+                                        <th>rules</th>
+                                        <th>Start date</th>
+                                        <th>End Date</th>
+                                        <th scope="col">action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+
+                                    <% if(community){ %>
+                                        <% community.forEach(function(c,i){%>
+                                            <tr>
+                                                <td>
+                                                    <%= c.group_name %>
+                                                </td>
+
+                                                <td>
+                                                    <%= c.description %>
+                                                </td>
+                                                <td>
+                                                    <%= c.privacy %>
+                                                </td>
+
+                                                <td>
+                                                    <%= c.rules %>
+                                                </td>
+                                                <td>
+                                                    <%= c.start_date %>
+                                                </td>
+
+                                                <td>
+                                                    <%= c.end_date %>
+                                                </td>
+
+
+                                                <td>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li class="mr-3"><button type="button"
+                                                                class="btn btn-secondary"><i
+                                                                    class="fa fa-edit"></i></button></li>
+                                                        <a href="/community-delete/<%= c._id %>">
+                                                            <li><button type="button" class="btn btn-danger"><i
+                                                                        class="ti-trash"></i></button></li>
+                                                        </a>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <%}) %>
+                                                <% } %>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Primary table -->
+        </div>
+    </div>
+    <!--==================================*
+                   End Main Section
+        *====================================-->
+
+    <!-- footer -->
+    <%- include('include/footer.ejs') %>
+        <!-- footer -->

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior-konnect</title>
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="assets/css/individual_register.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css'>
+    <link rel="stylesheet" href="assets/country-code-selection/dist/style.css">
+
+    <link rel="stylesheet" href="assets/css/seniorkonnect.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #F1EFF0;
+        }
+
+        #span_vector {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #444444;
+            text-align: justify;
+        }
+
+        #footer {
+            background: #FFFFFF;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #666666;
+            text-align: center;
+        }
+
+        input {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500 !important;
+            font-size: 16px !important;
+            line-height: 19px;
+
+            color: #222222 !important;
+        }
+
+        input::placeholder {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500 !important;
+            font-size: 16px !important;
+            line-height: 19px;
+
+            color: #C4C3C7 !important;
+        }
+
+        .Ckeck {
+            margin-left: 8px;
+        }
+
+        .form-check-input:focus {
+            box-shadow: none !important;
+        }
+
+        .form-check-input {
+            border-color: #225C7B !important;
+        }
+
+        .form-check-input:checked {
+            background-color: #225C7B !important;
+        }
+
+
+        @media (max-width:576px) {
+            .already_acc {
+                margin-left: 6% !important;
+            }
+
+            .register_btn {
+                margin-left: 16% !important;
+            }
+
+            .navbar {
+                margin-top: 0 !important;
+            }
+        }
+    </style>
+    <script src='https://code.jquery.com/jquery-3.6.1.min.js'></script>
+</head>
+
+<body>
+
+
+    <!-- </div> -->
+    <div class="div_back">
+        <!-- navbar -->
+        <%- include('include/login-navbar.ejs') %>
+            <!-- navbar -->
+
+            <div class="hero desktop container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 column1">
+                        <br><br>
+                        <h2 class="welcome_back">
+                            Individual Register
+                        </h2>
+
+                        <img class="img_reg" src="assets/img/create_individual.png" height="400px" width="360px" />
+                        <br><br>
+                        <div class="container" style="padding: 0px 15px; text-align: justify;">
+                            <div class="row" style="margin: 15px 0px;">
+                                <div class="col-1">
+                                    <!-- <i class="bi bi-arrow-right" id="span_vector"></i> -->
+                                    <img src="assets/img/right-aero.png" alt="" style="width:20px ;">
+                                </div>
+                                <div class="col-11">
+                                    <span id="span_vector">For individuals to konnect , share interests, skills
+                                        and their stories.</span>
+                                </div>
+                            </div>
+                            <div class="row" style="margin: 15px 0px;">
+                                <div class="col-1">
+                                    <!-- <i class="bi bi-arrow-right" id="span_vector"></i> -->
+                                    <img src="assets/img/right-aero.png" alt="" style="width:20px ;">
+                                </div>
+                                <div class="col-11">
+                                    <span id="span_vector">For individuals to serve as community pillars or find
+                                        a community of enthusiastic volunteers.</span>
+                                </div>
+                            </div>
+                            <div class="row" style="margin: 15px 0px;">
+                                <div class="col-1">
+                                    <!-- <i class="bi bi-arrow-right" id="span_vector"></i> -->
+                                    <img src="assets/img/right-aero.png" alt="" style="width:20px ;">
+                                </div>
+                                <div class="col-11">
+                                    <span id="span_vector">For individuals to explore new ideas and activities
+                                        created to suit their lifestyle.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-6 col-md-12 col-sm-12  column pt-4">
+
+                        <a onclick="history.back()"
+                            style="text-decoration: none;color: #225C7B;font-size: 18px; font-weight: 500; cursor: pointer;"><img
+                                src="assets/img/Vector (1).png" style="padding: 20px;"><i class="bi bi-arrow-left"></i>
+                            Back</a>
+                        <a href="/login"
+                            style="text-decoration: none;color: #225C7B;font-size: 18px; font-weight: 500;margin-left: 339px"
+                            ;>Login Now</a>
+
+
+                        <!-- <div>
+
+            <h2 style="color: #222222;font-size: 24px;
+           line-height: 140px;font-family: 'Inter';
+          font-style: normal;font-weight: 700;"> Log In Or Register</h2>
+          </div> -->
+
+                        <div style="width: 90%; margin: auto;">
+
+                            <form id="user-restration-form" action="/user-registration" method="post">
+                                <input type="hidden" name="user_type" value="individual">
+
+                                <div class="form-group">
+                                    <h4 class="mt-2 account"> Create New Account</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="single_input">
+                                                <label class="label">First Name*</label>
+                                                <input type="text" name="fname" class="form-control"
+                                                    placeholder="Enter First Name"
+                                                    style="margin-left: 6px; padding:10px; margin-bottom: 15px;"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single_input">
+
+                                                <label class="label">Last Name*</label>
+                                                <input type="text" name="lname" class="form-control"
+                                                    placeholder="Enter Last Name"
+                                                    style="margin-left: 6px; padding: 10px; margin-bottom: 15px;"
+                                                    required>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="single_input">
+
+                                                <label class="label">Mobile Number*</label>
+                                                <input type="tel" id="mobile_code" name="mobile" class="form-control"
+                                                    placeholder="Enter Mobile Number"
+                                                    style="margin-left: 6px; padding: 10px; margin-bottom: 15px;"
+                                                    pattern="[6789][0-9]{9}" maxlength="10" required>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="single_input">
+
+                                                <label class="label">Zip Code*</label>
+                                                <input type="text" name="pincode" class="form-control pincode-input"
+                                                    placeholder="Enter Zip Code"
+                                                    style="margin-left: 6px; padding: 10px; margin-bottom: 15px;"
+                                                    pattern="[0-9]{6}" maxlength="6" required>
+                                            </div>
+                                            <div class="pin-validation">                                                
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single_input">
+
+                                                <label class="label">Email Address*</label>
+                                                <input type="email" name="email" class="form-control"
+                                                    placeholder="Enter Email Address"
+                                                    style="margin-left: 6px; padding: 10px; margin-bottom: 15px;"
+                                                    pattern="[^ @]*@[^ @]*" required>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+
+                                        <div class="col">
+                                            <div class="single_input Ckeck">
+                                                <input class="form-check-input" type="checkbox" name="check" value="1"
+                                                    id="flexCheckDefault" checked required>
+                                                <span>By clicking Register Now, you agree to the <a
+                                                        style="text-decoration: none; color: #225C7B; font-weight: 600;"
+                                                        href="/terms">Terms &
+                                                        Conditions</a></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <button style="background: #225C7B;color: white;" type="submit"
+                                        class="btn btn-primary register_btn"><a
+                                            style="text-decoration: none; color: #fff !important; font-weight: 700;">Register
+                                            Now
+                                        </a></button><br><br>
+
+                                    <span style="margin-left: 20%; " class="already_acc">Already Have An Account? <a
+                                            style="text-decoration: none; color: #225C7B; font-weight: 700;"
+                                            href="/login">Login
+                                            Now</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hero mobile container">
+                <div class="row">
+
+
+                    <div class="col-lg-6 col-md-12 col-sm-12  column">
+                        <!-- <div class="l-g-r">
+            <h2> Log In Or Register</h2>
+          </div> -->
+
+                        <div>
+
+                            <form id="user-restration-form-mobile" action="/user-registration" method="post">
+                                <input type="hidden" name="user_type" value="individual">
+
+                                <a onclick="history.back()"
+                                    style="text-decoration: none;color: #225C7B;font-weight: 500; cursor: pointer; margin-left:-40px;"><img
+                                        src="assets/img/Vector (1).png" style="padding: 20px;"><i
+                                        class="bi bi-arrow-left"></i>
+                                    Back</a>
+                                <a href="/login"
+                                    style="text-decoration: none;color: #225C7B;font-weight: 500;margin-left: 188px"
+                                    ;>Login
+                                    Now</a>
+
+                                <div class="form-group">
+                                    <h4 class="mt-2 account" style="margin-left:0 !important"> Create New Account</h4>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="single_input">
+                                                <label class="label">First Name*</label>
+                                                <input type="text" name="fname" class="form-control"
+                                                    placeholder="Enter First Name"
+                                                    style=" padding:10px; margin-bottom: 15px;" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single_input">
+
+                                                <label class="label">Last Name*</label>
+                                                <input type="text" name="lname" class="form-control"
+                                                    placeholder="Enter Last Name"
+                                                    style=" padding: 10px; margin-bottom: 15px;" required>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single_input">
+
+                                                <label class="label">Mobile Number*</label>
+                                                <input type="tel" id="mobile_code1" name="mobile" class="form-control"
+                                                    placeholder="Enter Mobile Number"
+                                                    style=" padding: 10px; margin-bottom: 15px;"
+                                                    pattern="[6789][0-9]{9}" maxlength="10" required>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single_input">
+
+                                                <label class="label">Zip Code*</label>
+                                                <input type="text" name="pincode" class="form-control pincode-input"
+                                                    placeholder="Enter Zip Code"
+                                                    style="margin-left: 6px; padding: 10px; margin-bottom: 15px;"
+                                                    pattern="[0-9]{6}" maxlength="6" required>
+                                            </div>
+                                            <div class="pin-validation">                                                
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single_input">
+
+                                                <label class="label">Email Address*</label>
+                                                <input type="email" name="email" class="form-control"
+                                                    placeholder="Enter Email Address"
+                                                    style=" padding: 10px; margin-bottom: 15px;" pattern="[^ @]*@[^ @]*"
+                                                    required>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="single_input">
+                                                <input class="form-check-input" type="checkbox" name="check" value="1"
+                                                    id="flexCheckDefault" checked required>
+                                                <span>By clicking Register Now, you agree to the <a
+                                                        style="text-decoration: none; color: #225C7B; font-weight: 600;"
+                                                        href="/comming_soon">Terms &
+                                                        Conditions</a></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <button style="background: #225C7B;color: white;" type="submit"
+                                        class="btn btn-primary register_btn"><a
+                                            style="text-decoration: none; color: #fff !important; font-weight: 700;">Register
+                                            Now
+                                        </a></button><br><br>
+
+                                    <span style="margin-left: 20%; " class="already_acc">Already Have An Account? <a
+                                            style="text-decoration: none; color: #225C7B; font-weight: 700;"
+                                            href="/login">Login
+                                            Now</a></span>
+                                </div>
+                            </form>
+                        </div>
+
+
+                        <!-- <a href="/register" style="text-decoration: none;color: #225C7B;font-weight: 500;"><img
+                            src="images/Vector (1).png" style="padding: 20px;">Back</a> -->
+
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 column1">
+
+                        <br><br>
+
+                        <h2 class="welcome_back">
+                            Individual User
+                        </h2>
+
+                        <img class="img_welcome" src="assets/img/create_individual.png" />
+                        <br><br>
+                        <div class="container" style="padding: 0px 15px; text-align: justify;">
+                            <div class="row" style="margin: 15px 0px;">
+                                <div class="col-1">
+                                    <!-- <i class="bi bi-arrow-right" id="span_vector"></i> -->
+                                    <img src="assets/img/right-aero.png" alt="" style="width:20px ;">
+                                </div>
+                                <div class="col-11">
+                                    <span id="span_vector">For individuals to konnect , share interests, skills
+                                        and their stories.</span>
+                                </div>
+                            </div>
+                            <div class="row" style="margin: 15px 0px;">
+                                <div class="col-1">
+                                    <!-- <i class="bi bi-arrow-right" id="span_vector"></i> -->
+                                    <img src="assets/img/right-aero.png" alt="" style="width:20px ;">
+                                </div>
+                                <div class="col-11">
+                                    <span id="span_vector">For individuals to serve as community pillars or find
+                                        a community of enthusiastic volunteers.</span>
+                                </div>
+                            </div>
+                            <div class="row" style="margin: 15px 0px;">
+                                <div class="col-1">
+                                    <!-- <i class="bi bi-arrow-right" id="span_vector"></i> -->
+                                    <img src="assets/img/right-aero.png" alt="" style="width:20px ;">
+                                </div>
+                                <div class="col-11">
+                                    <span id="span_vector">For individuals to explore new ideas and activities
+                                        created to suit their lifestyle.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+    <!-- Footer -->
+
+    <div class="container-fluid" style="padding: 0px 0px;">
+        <div class="row" id="footer" style="margin: 30px 0px 0px 0px; padding:20px 20px;">
+            <div class="col-12">
+                Copyright © 2022 <a style="text-decoration: none; color: #225C7B;" href="/" id="login-link">Resshu
+                    Connect Pvt. Ltd.</a> All Rights Reserved.
+            </div>
+        </div>
+    </div>
+
+
+    <!-- partial -->
+
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js'></script>
+    <script src="assets/country-code-selection/dist/script.js"></script>
+    <script src="assets/js/login_ajax.js"></script>
+    <script src='https://code.jquery.com/jquery-3.6.1.min.js'></script>
+
+</body>
+
+</html>

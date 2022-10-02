@@ -1,0 +1,112 @@
+    <!-- heder -->
+    <%- include('include/header.ejs') %>
+        <!-- header -->
+<!--=========================*
+     <==================================*
+                   Main Section
+        *====================================-->
+        <div class="main-content-inner">
+       
+            <div class="row">
+                <!-- Primary table -->
+                <div class="col-12 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="header-title">Books</h4>
+                            <div class="table-responsive datatable-primary">
+                                <table id="dataTable2" class="text-center">
+                                    <thead class="text-capitalize">
+                                    <tr>
+                                        <th>Book_Pic</th>
+                                        <th>Book Name</th>
+                                    
+                               
+                                        <th scope="col">action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                     
+                                    <% if(book){ %>
+                                        <% book.forEach(function(c,i){%>
+                                            <tr>
+                                                <td>
+                                                    <div class="img_pic">
+                                                        <img src="/<%= c.book_pic %>" alt="book">
+                                                    </div>
+                                                    
+                                                </td>
+                                                <td><%= c.book_name%></td>
+                                              
+                                              
+                                                <td>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li class="mr-3"><button type="button" class="btn btn-secondary"><i class="fa fa-edit"></i></button></li>
+                                                        <a href="/books-delete/<%= c._id %>">    <li><button type="button" class="btn btn-danger"><i class="ti-trash"></i></button></li></a> 
+                                                    </ul>
+                                                </td>
+                                            
+                                            </tr>
+                                            <%}) %>
+                                        <% } %>
+                                   
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Primary table -->
+            </div>
+        </div>
+        <!--==================================*
+                   End Main Section
+        *====================================-->
+
+                    <!--==================================*
+                Main Section start
+        *====================================-->
+    <div class="main-content-inner">
+        <div class="row">
+            <!-- Textual inputs -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="header-title">Books Add Form</h4>
+
+
+                        <form action="/book-add" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label">Book </label>
+                                <input class="form-control" type="text" name="book_name" placeholder="Book name" id="example-text-input">
+                            </div>
+
+                        
+
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label">Book Pic</label>
+                                <input class="form-control" type="file" name="book_pic" placeholder="Book Pic" id="example-text-input">
+                            </div>
+
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+
+                          
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Textual inputs -->
+        </div>
+
+    </div>
+    <!--==================================*
+                   End Main Section
+        *====================================-->
+
+            <!-- footer -->
+    <%- include('include/footer.ejs') %>
+    <!-- footer -->

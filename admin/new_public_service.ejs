@@ -1,0 +1,172 @@
+
+<!-- heder -->
+<%- include('include/header.ejs') %>
+    <!-- header -->
+    <!--=========================*
+     <==================================*
+                   Main Section
+        *====================================-->
+    <div class="main-content-inner">
+
+        <div class="row">
+            <!-- Primary table -->
+            <div class="col-12 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="header-title">Public Services</h4>
+                        <div class="table-responsive datatable-primary">
+                            <table id="dataTable2" class="text-center">
+                                <thead class="text-capitalize">
+                                    <tr>
+                                        <th>ICON</th>
+                                        <th>Service contact No</th>
+                                        <th>Service Name</th>
+                                        <th>Service Address</th>
+                                        <th>Service city</th>
+                                        <th>Service Area Pincode</th>
+                                        <th>E-mail</th>
+                                        <th scope="col">action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+
+                                    <% if(pub){ %>
+                                        <% pub.forEach(function(c,i){%>
+                                            <tr>
+                                                <td>
+                                                    <div class="img_pic">
+                                                        <img src="/<%= c.service_pic %>" alt="public service pic">
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <%= c.service_no%>
+                                                </td>
+                                                <td>
+                                                    <%= c.service_name%>
+                                                </td>
+                                                <td>
+                                                    <%= c.service_address%>
+                                                </td>
+                                                <td>
+                                                    <%= c.service_city%>
+                                                </td>
+                                                <td>
+                                                    <%= c.service_pincode%>
+                                                </td>
+                                                <td>
+                                                    <%= c.service_email%>
+                                                </td>
+
+
+                                                <td>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li class="mr-3"><button type="button"
+                                                                class="btn btn-secondary"><i
+                                                                    class="fa fa-edit"></i></button></li>
+                                                                    <a href="/public-delete/<%= c._id %>"  onclick="return confirm('Are you sure you want to delete this public service?');">    <li><button type="button" class="btn btn-danger"><i class="ti-trash"></i></button></li></a> 
+                                                    </ul>
+                                                </td>
+
+                                            </tr>
+                                            <%}) %>
+                                                <% } %>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Primary table -->
+        </div>
+    </div>
+    <!--==================================*
+                   End Main Section
+        *====================================-->
+
+
+    <!--==================================*
+                Main Section start
+        *====================================-->
+    <div class="main-content-inner">
+        <div class="row">
+            <!-- Textual inputs -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="header-title">Public Services Add Form</h4>
+
+
+                        <form action="/public-services-add" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label">Public Service Number </label>
+                                <input class="form-control" type="text" name="service_no" placeholder="Public Service Number"
+                                    id="example-text-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label"> Service Name </label>
+                                <input class="form-control" type="text" name="service_name" placeholder=" Service Name"
+                                    id="example-text-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label"> Service Address </label>
+                                <input class="form-control" type="text" name="service_address" placeholder=" Service address"
+                                    id="example-text-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label"> City </label>
+                                <input class="form-control" type="text" name="service_city" placeholder=" city"
+                                    id="example-text-input" required>
+                            </div>
+
+                            
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label"> E-mail </label>
+                                <input class="form-control" type="text" name="service_email" placeholder=" E-mail"
+                                    id="example-text-input" required>
+                            </div>
+
+
+                        
+
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label"> Service Area Pincode </label>
+                                <input class="form-control" type="text" name="service_pincode" placeholder="Public Service Number"
+                                    id="example-text-input" required>
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label"> Public Service Pic</label>
+                                <input class="form-control" type="file" name="service_pic" placeholder="service pic"
+                                    id="example-text-input" required>
+                            </div>
+
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Textual inputs -->
+        </div>
+
+    </div>
+    <!--==================================*
+                   End Main Section
+        *====================================-->
+
+    <!-- footer -->
+    <%- include('include/footer.ejs') %>
+        <!-- footer -->

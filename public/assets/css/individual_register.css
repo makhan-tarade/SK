@@ -1,0 +1,95 @@
+body {
+    background-color: #F1EFF0;
+}
+
+.span_vector {
+    text-align: justify;
+}
+
+.img_reg {
+    /* margin-left: 145px; */
+    margin-left: 20%;
+}
+input[type=date] {
+    font-family: 'Inter';
+    text-transform: uppercase !important;
+    font-style: normal;
+    /* font-size: 14px; */
+    font-weight: 500;
+    color: #949494;
+    /* text-transform: capitalize; */
+}
+.already_acc {
+    /* text-decoration: none; */
+    text-align: center;
+    /* margin-left: 35%; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 82px;
+
+    color: #444444;
+
+    text-decoration: none;
+    padding-bottom: 20px;
+
+}
+
+.account {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #222222;
+    margin-left: 9px;
+    margin-top: 20px !important;
+}
+
+.single_input {
+    position: relative;
+}
+
+.label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    color: #666666;
+    padding: 8px;
+
+}
+
+.icon {
+    padding: 188px;
+    min-width: 40px;
+
+    top: -145px;
+
+}
+
+input[type="radio"]:checked+label {
+    color: #999999;
+}
+
+.register_btn {
+
+    width: 225px;
+    height: 48px;
+    margin-left: 25%;
+}
+
+.register_phn_btn {
+    width: 225px;
+    height: 48px;
+    margin-left: 15%;
+
+}
+
+input {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}

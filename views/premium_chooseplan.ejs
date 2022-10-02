@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior-konnect || Premium_Chooseplan</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/premium_chooseplan.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        .active {
+            color: #225C7B !important;
+            text-decoration: underline !important;
+            text-underline-offset: 17px;
+            text-decoration-thickness: 4px !important;
+        }
+
+        .btn:focus {
+            box-shadow: none !important;
+        }
+
+        .camera {
+            background: #414040 0% 0% no-repeat padding-box;
+            border-radius: 50%;
+            font-size: 20px;
+            margin-right: 2%;
+            margin-top: 2% !important;
+            color: #fff;
+            padding: 12px 13px;
+            font-size: 22px !important;
+            display: inline-block;
+            float: right !important;
+        }
+
+        .rs {
+            color: #225C7B;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 26px;
+            margin-left: 92px !important;
+        }
+
+        .plan-head-p121 {
+            color: #323232;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            padding-bottom: 2px;
+            margin-top: 19px;
+            margin-left: 36%;
+        }
+
+        .profile-btn-menu .hr1 {
+            position: relative;
+            top: 45px;
+            width: 100%;
+            margin: 0% !important;
+            /* padding: 0% !important; */
+            height: 1.5px;
+            margin: auto;
+        }
+
+        @media (min-width: 992px) and (max-width: 1399px) {
+            .plan-head121 {
+                color: #323232;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                margin: 9px 0px 15px 93px;
+            }
+
+            .rs {
+                color: #225C7B;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 26px;
+                margin-left: 69px !important;
+            }
+
+            .plan-head-p121 {
+                color: #323232;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                padding-bottom: 2px;
+                margin-top: 19px;
+                margin-left: 34%;
+            }
+
+            hr {
+                height: 1px;
+                margin: 0px 0;
+            }
+
+            .profile-btn-menu .hr1 {
+                position: relative;
+                padding: 0% !important;
+                margin: 0% !important;
+                top: 45px;
+                width: 90%;
+                height: 1.5px;
+                margin: auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- heder -->
+    <%- include('include/navbar.ejs') %>
+        <!-- header -->
+
+        <!-- Hero section start -->
+        <%- include('include/hero.ejs') %>
+            <!-- Hero section end -->
+
+            <!-- <i class="bi bi-headset support"></i> -->
+
+            <i class="fa-solid fa-people-group  support"></i>
+            <!-- main  -->
+            <!-- Activity navbar start -->
+            <div class="container">
+
+                <!-- Activity navbar start -->
+                <div class="acctivity_navbar">
+
+                    <ul class="activity_nav">
+                        <li><a href="/premium_myaccount">My Accounts</a></li>
+                        <li><a class="active" href="/premium_chooseplan">Choose Plan</a></li>
+                        <li><a href="/premium_currentplans">Current Plans</a></li>
+                        <li><a href="/premium_pendingplans">Pending Plans</a></li>
+                        <li><a href="/premium_billing">Billing Information</a></li>
+                        <li><a href="/premium_invoice">Invoice History</a></li>
+                        <!--<li><a href="intiative.html">Activity</a></li>-->
+                        <!--<li><a href="myprofile.html">About</a></li>-->
+                        <!-- <li><a onclick="activity_more_open()">More <i class="bi bi-chevron-down"></i></a></li> -->
+                        <!-- <li class="nav_more"><a><i class="bi bi-three-dots"></i></a></li> -->
+                    </ul>
+                    <!-- <hr class="activity-hr"> -->
+                </div>
+
+                <!-- Activity navbar end -->
+            </div>
+            <!-- Activity navbar end -->
+
+
+            <section class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="myhub-sec">
+                            <h3 class="plan-head">Billed Annually</h3>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider-plan round"></span>
+                            </label>
+                            <hr>
+                            <p class="plan-head-p">Analitics</p>
+                            <hr>
+                            <p class="plan-head-p">Discussion</p>
+                            <hr>
+                            <p class="plan-head-p">Benefits</p>
+                            <hr>
+                            <p class="plan-head-p">Appriciation</p>
+                            <hr>
+                            <p class="plan-head-p">Followers</p>
+                            <hr>
+                            <p class="plan-head-p">Pillars</p>
+                            <hr>
+                            <p class="plan-head-p">Events/Activities</p>
+                            <hr>
+                            <p class="plan-head-p">Email Support</p>
+                            <hr>
+                            <p class="plan-head-p">Unlimited Comments</p>
+                            <hr>
+                            <p class="plan-head-p">Custom Logo & Colors</p>
+                            <hr>
+                            <p class="plan-head-p">Advance Features </p>
+                            <hr>
+                            <p class="plan-head-p">Password protection </p>
+                            <hr>
+                            <p class="plan-head-p">Enhanced security </p>
+                            <hr>
+                            <p class="plan-head-p">Custom User Report</p>
+                            <hr>
+                            <p class="plan-head-p">Support 24/7</p>
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class=" col-md-3 col-sm-12">
+                        <div class="myhub-sec">
+                            <h3 class="plan-head121">Monthly</h3>
+                            <p class="rs"><i class="fas fa-rupee-sign"></i> 1,000</p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> 30 Days</p>
+                        </div>
+                        <button class="btn1">Get Started</button>
+                    </div>
+
+
+                    <div class="col col-md-3 col-sm-12">
+                        <div class="myhub-sec">
+                            <h3 class="plan-head121">Quaterly</h3>
+                            <p class="rs"><i class="fas fa-rupee-sign"></i> 3,000</p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> 30 Days</p>
+
+
+                        </div>
+                        <button class="btn1">Get Started</button>
+                    </div>
+
+                    <div class="col col-md-3 col-sm-12">
+                        <div class="myhub-sec">
+                            <h3 class="plan-head121">Yearly</h3>
+                            <p class="rs"><i class="fas fa-rupee-sign"></i> 12,000</p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121">Unlimited </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> <i class="bi bi-check"></i> </p>
+                            <hr>
+                            <p class="plan-head-p121"> 30 Days</p>
+
+
+                        </div>
+                        <button class="btn1">Get Started</button>
+                    </div>
+
+
+
+                </div>
+
+
+            </section>
+
+            <!-- main -->
+
+
+            <!-- ==========================================================popup1 start raj ================================================== -->
+            <!-- profile btn popup1 start-->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header pop1-header">
+                            <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Add Health Detail </h5>
+                            <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <form>
+                                <div class="form-group">
+                                    <p class="pop1-p">Title</p>
+
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter Title">
+
+                                </div>
+                                <!-- 
+                        <div class="form-group">
+                            <p class="pop1-p">Role *</p>
+
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Enter Role ">
+
+                        </div>
+
+                        <div class="form-group">
+                            <p class="pop1-p">Cause</p>
+
+                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                id="ddlProducts">
+
+
+                                <option selected class="please-select">Please select</option>
+                                <option value="1">Animal Welfare</option>
+                                <option value="2">Art And Culture</option>
+                                <option value="3">Children</option>
+                                <option value="1">Civil Rights and Social Actions</option>
+                                <option value="2">Economic Empowerment</option>
+                                <option value="3">Education</option>
+                                <option value="1">Environment</option>
+                                <option value="2">Health</option>
+                                <option value="3">Human Rights</option>
+                                <option value="2">Disaster and Humanitarian Relieg</option>
+                                <option value="3">Politics</option>
+                                <option value="1">Poverty Alleviation</option>
+                                <option value="2">Science and Technology </option>
+                                <option value="3">Veteran Support</option>
+                            </select>
+
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label new-p" for="flexCheckChecked">
+                                I am currently volunteering in this role
+                            </label>
+                        </div>
+
+
+                        <div class="form-group" style="margin-top: 1.5%">
+                            <p class="pop1-p">Start Date</p>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="form-group" style="margin-top: 1.5%">
+                            <p class="pop1-p">End Date</p>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div> -->
+
+
+                                <div class="form-group">
+                                    <p class="pop1-p">Description*</p>
+
+
+
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea2" style="height: 100px"></textarea>
+                                        <label for="floatingTextarea2">Enter Description </label>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <p class="pop1-p">Attachment</p>
+
+
+                                    <div class="ABC">
+
+                                        <input type="file" class="form-control-file imgchoose"
+                                            id="exampleFormControlFile1">
+
+
+                                        <!-- <button type="file" class="form-control-file imgchoose" id="exampleFormControlFile1">hello</button> -->
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+
+
+                        </div>
+                        <div class="modal-footer pop1-foot">
+
+                            <button type="button" class="btn btn-secondary pop1-btn2"
+                                data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary pop1-btn1">Add </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- profile btn popup1 edit end-->
+
+
+            <!-- popup2 start -->
+
+            <!-- profile btn popup start-->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header pop1-header">
+                            <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Edit About</h5>
+                            <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body ">
+                            <br>
+                            <p class="pop1-p">Bio*</p>
+
+                            <p class="pop1-p2">I’m a Web Graphic UI/Ux designer based in Ahmedabad, Gujarat, India. I
+                                specialize
+                                in Website Design, Application Design, Banner Design, Logo Design, and Front-End
+                                Development.
+                                I’ve been told I have perseverance and my attention to detail is utmost. I’d love to
+                                stay
+                                updated with any newfangled.</p>
+
+                            <br>
+                        </div>
+                        <div class="modal-footer pop1-foot">
+
+                            <button type="button" class="btn btn-secondary pop1-btn2"
+                                data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary pop1-btn1">Save </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- profile btn popup1 edit end-->
+
+
+
+
+            <!-- popup2 end -->
+
+            <!-- popup3  start-->
+            <!-- profile btn popup1 start-->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header pop1-header">
+                            <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Invite To Senior Konnect </h5>
+                            <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <form>
+
+                                <div class="row">
+                                    <div class="form-group col-5">
+                                        <p class="pop1-p">Email Address</p>
+
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter Email Address">
+
+                                    </div>
+                                    <div class="col-2 OR">
+                                        <span>OR</span>
+
+
+                                    </div>
+
+
+                                    <div class="form-group col-5">
+                                        <p class="pop1-p">Mobile Number</p>
+
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter Mobile Number">
+
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="form-group">
+                                    <p class="pop1-p">Description*</p>
+
+
+
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea2" style="height: 100px"></textarea>
+                                        <label for="floatingTextarea2">Enter Description </label>
+                                    </div>
+
+                                </div>
+
+
+
+                            </form>
+
+
+
+                        </div>
+                        <div class="modal-footer pop1-foot">
+
+                            <button type="button" class="btn btn-secondary pop1-btn2"
+                                data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary pop1-btn1">Save</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- profile btn popup1 edit end-->
+
+            <!-- pop3 end -->
+
+
+
+            <!-- pop4 start -->
+            <!-- profile btn popup1 start-->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header pop1-header">
+                            <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Select Relationship</h5>
+                            <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <form>
+                                <!-- <div class="form-group">
+                            <p class="pop1-p">Title</p>
+
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Enter Title">
+
+                        </div> -->
+                                <!--  
+                        <div class="form-group">
+                            <p class="pop1-p">Role *</p>
+
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Enter Role ">
+
+                        </div> -->
+
+                                <div class="form-group">
+                                    <p class="pop1-p">Relationship</p>
+
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <!-- <option value="1">Animal Welfare</option>
+                                <option value="2">Art And Culture</option>
+                                <option value="3">Children</option>
+                                <option value="1">Civil Rights and Social Actions</option>
+                                <option value="2">Economic Empowerment</option>
+                                <option value="3">Education</option>
+                                <option value="1">Environment</option>
+                                <option value="2">Health</option>
+                                <option value="3">Human Rights</option>
+                                <option value="2">Disaster and Humanitarian Relieg</option>
+                                <option value="3">Politics</option>
+                                <option value="1">Poverty Alleviation</option>
+                                <option value="2">Science and Technology </option>
+                                <option value="3">Veteran Support</option> -->
+                                    </select>
+
+                                </div>
+
+                                <!--             <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label new-p" for="flexCheckChecked">
+                                I am currently volunteering in this role
+                            </label>
+                        </div>
+
+
+                        <div class="form-group" style="margin-top: 1.5%">
+                            <p class="pop1-p">Start Date</p>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="form-group" style="margin-top: 1.5%">
+                            <p class="pop1-p">End Date</p>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div> -->
+
+
+                            </form>
+
+
+
+                        </div>
+                        <div class="modal-footer pop1-foot">
+
+                            <button type="button" class="btn btn-secondary pop1-btn2"
+                                data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary pop1-btn1">Save</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="exampleModalCenter32" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header pop1-header">
+                            <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Doctor’s Details</h5>
+                            <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <form>
+                                <!-- <div class="form-group">
+                        <p class="pop1-p">Title</p>
+
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter Title">
+
+                    </div> -->
+                                <!--  
+                    <div class="form-group">
+                        <p class="pop1-p">Role *</p>
+
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter Role ">
+
+                    </div> -->
+
+                                <div class="form-group">
+                                    <p class="pop1-p">Relationship</p>
+
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <!-- <option value="1">Animal Welfare</option>
+                            <option value="2">Art And Culture</option>
+                            <option value="3">Children</option>
+                            <option value="1">Civil Rights and Social Actions</option>
+                            <option value="2">Economic Empowerment</option>
+                            <option value="3">Education</option>
+                            <option value="1">Environment</option>
+                            <option value="2">Health</option>
+                            <option value="3">Human Rights</option>
+                            <option value="2">Disaster and Humanitarian Relieg</option>
+                            <option value="3">Politics</option>
+                            <option value="1">Poverty Alleviation</option>
+                            <option value="2">Science and Technology </option>
+                            <option value="3">Veteran Support</option> -->
+                                    </select>
+
+                                </div>
+
+                                <!--             <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label new-p" for="flexCheckChecked">
+                            I am currently volunteering in this role
+                        </label>
+                    </div>
+
+
+                    <div class="form-group" style="margin-top: 1.5%">
+                        <p class="pop1-p">Start Date</p>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                    id="ddlProducts">
+
+
+                                    <option selected class="please-select">Please select</option>
+                                    <option value="1">Animal Welfare</option>
+
+                                </select>
+
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                    id="ddlProducts">
+
+
+                                    <option selected class="please-select">Please select</option>
+                                    <option value="1">Animal Welfare</option>
+
+                                </select>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="form-group" style="margin-top: 1.5%">
+                        <p class="pop1-p">End Date</p>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                    id="ddlProducts">
+
+
+                                    <option selected class="please-select">Please select</option>
+                                    <option value="1">Animal Welfare</option>
+
+                                </select>
+
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                    id="ddlProducts">
+
+
+                                    <option selected class="please-select">Please select</option>
+                                    <option value="1">Animal Welfare</option>
+
+                                </select>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div> -->
+
+
+                            </form>
+
+
+
+                        </div>
+                        <div class="modal-footer pop1-foot">
+
+                            <button type="button" class="btn btn-secondary pop1-btn2"
+                                data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary pop1-btn1">Save</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- profile btn popup1 edit end-->
+            <!-- pop4 end -->
+
+
+            <!-- pop 5 start -->
+            <!-- profile btn popup1 start-->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header pop1-header">
+                            <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Select Doctor’s Designation</h5>
+                            <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <form>
+                                <!-- <div class="form-group">
+                            <p class="pop1-p">Title</p>
+
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Enter Title">
+
+                        </div> -->
+                                <!--  
+                        <div class="form-group">
+                            <p class="pop1-p">Role *</p>
+
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Enter Role ">
+
+                        </div> -->
+
+                                <div class="form-group">
+                                    <p class="pop1-p">Relationship</p>
+
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <!-- <option value="1">Animal Welfare</option>
+                                <option value="2">Art And Culture</option>
+                                <option value="3">Children</option>
+                                <option value="1">Civil Rights and Social Actions</option>
+                                <option value="2">Economic Empowerment</option>
+                                <option value="3">Education</option>
+                                <option value="1">Environment</option>
+                                <option value="2">Health</option>
+                                <option value="3">Human Rights</option>
+                                <option value="2">Disaster and Humanitarian Relieg</option>
+                                <option value="3">Politics</option>
+                                <option value="1">Poverty Alleviation</option>
+                                <option value="2">Science and Technology </option>
+                                <option value="3">Veteran Support</option> -->
+                                    </select>
+
+                                </div>
+
+                                <!--             <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label new-p" for="flexCheckChecked">
+                                I am currently volunteering in this role
+                            </label>
+                        </div>
+
+
+                        <div class="form-group" style="margin-top: 1.5%">
+                            <p class="pop1-p">Start Date</p>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="form-group" style="margin-top: 1.5%">
+                            <p class="pop1-p">End Date</p>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        id="ddlProducts">
+
+
+                                        <option selected class="please-select">Please select</option>
+                                        <option value="1">Animal Welfare</option>
+
+                                    </select>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div> -->
+
+
+                            </form>
+
+
+
+                        </div>
+                        <div class="modal-footer pop1-foot">
+
+                            <button type="button" class="btn btn-secondary pop1-btn2"
+                                data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary pop1-btn1">Save</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- profile btn popup1 edit end-->
+            <!-- pop5 end -->
+
+
+
+
+
+
+            <!-- ==================================================================================================================== -->
+            <!-- profile btn popup start-->
+            <div id="profile_opn">
+                <div class="profile-btn-menu">
+                    <div class="profile-btn-menu-r1">
+                        <div>
+                            <img src="assets/img/profile/profile.png" alt="">
+                        </div>
+                        <div>
+                            <h2>Aarav Sexena</h2>
+                            <p>Sr. UI/UX Designer</p>
+                        </div>
+                        <button type="button" class="btn-close" onclick="profile_close()"></button>
+                    </div>
+                    <hr class="hr1">
+                    <div class="profile-btn-menu-r2">
+                        <h2>Account</h2>
+                        <p><i class="bi bi-gear"></i> Settings & Privacy</p>
+                        <p><i class="bi bi-yin-yang"></i> About</p>
+                        <p><i class="bi bi-question-circle"> </i>Help</p>
+                        <p><i class="bi bi-translate"></i> Language</p>
+                    </div>
+                    <hr class="hr2">
+                    <div class="profile-btn-menu-r3">
+                        <h2>Manage</h2>
+                        <p><i class="bi bi-file-richtext"></i> <span>NGO:</span> Posts & Initiative</p>
+                        <p><i class="bi bi-hearts"></i>Smile India Foundation</p>
+                        <p><i class="fa-solid fa-people-group"></i><span>Commercial:</span> Real Estate</p>
+                    </div>
+                    <hr class="hr3">
+                    <div class="profile-btn-menu-r3">
+                        <p><a href="login.html"><i class="bi bi-box-arrow-right"></i> Logout</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- profile btn popup end-->
+
+            <!-- search btn popup start -->
+            <div class="search-popup">
+                <h5 onclick="search_popup_close()">Clear</h5>
+                <h4>Recent</h4>
+                <p class="s-p-h-r"><i class="bi bi-clock"></i> UI Designer</p>
+                <p class="s-p-h-r"><i class="bi bi-clock"></i> UI Designer</p>
+                <p class="s-p-h-r"><i class="bi bi-clock"></i> Web Developer</p>
+                <hr>
+                <h4>Try Searching For</h4>
+                <p class="s-p-h-r"><i class="bi bi-search"></i> UI UX</p>
+                <p class="s-p-h-r"><i class="bi bi-search"></i> Sales</p>
+                <p class="s-p-h-r"><i class="bi bi-search"></i> Graphic Designer</p>
+                <p class="s-p-h-r"><i class="bi bi-search"></i> CEO</p>
+            </div>
+            <!-- search btn popup end -->
+
+            <!-- activity more popup start -->
+            <div class="activity-more-popup" id="more-menu">
+
+
+                <a href="/events" style="text-decoration:none">
+                    <p style="color:#225C7B;">Events</p>
+                </a>
+                <a href="/checks_in" style="text-decoration:none">
+                    <p>Check-Ins</p>
+                </a>
+                <a href="/sport" style="text-decoration:none">
+                    <p>Sports</p>
+                </a>
+                <a href="/music" style="text-decoration:none">
+                    <p>Music</p>
+                </a>
+                <a href="/movies" style="text-decoration:none">
+                    <p>Movies</p>
+                </a>
+                <a href="/tv_show" style="text-decoration:none">
+                    <p style="color:#225C7B;">TV Shows</p>
+                </a>
+                <a href="/books" style="text-decoration:none">
+                    <p>Books</p>
+                </a>
+
+            </div>
+            <!-- activity more popup end -->
+
+
+
+            <!-- ========================================================================================================================= -->
+            <script>
+                // Navbar
+                $(".mobile-navbar").css("display", "none");
+                function open_mobile_menu() {
+                    $(".mobile-navbar").css("display", "block");
+
+                }
+                function close_mobile_menu() {
+                    $(".mobile-navbar").css("display", "none");
+
+                }
+
+                // profile image - profile menu
+                // $("#profile_opn").css("display", "none");
+                function profile_opn() {
+                    $("#profile_opn").css("display", "block");
+
+                }
+                function profile_close() {
+                    $("#profile_opn").css("display", "none");
+
+                }
+
+
+
+                // search popup
+                $(".search-popup").css("display", "none")
+
+                function search_popup_open() {
+                    $(".search-popup").css("display", "block")
+
+                    $(".search-popup").mouseenter(enter);
+                    $(".search-popup").mouseleave(leave);
+                    function enter() {
+                        $(".search-popup").css("display", "block");
+                    }
+                    function leave() {
+                        $(".search-popup").css("display", "none");
+                    }
+                }
+                function search_popup_close() {
+                    // $(".search-popup").css("display", "none");
+                    $(".s-p-h-r").remove();
+                }
+
+                // Activity more popup
+                // $(".activity-more-popup").css("display", "none")
+
+                function activity_more_open() {
+                    $(".activity-more-popup").css("display", "block")
+
+                    $(".activity-more-popup").mouseenter(enter);
+                    $(".activity-more-popup").mouseleave(leave);
+                    function enter() {
+                        $(".activity-more-popup").css("display", "block");
+                    }
+                    function leave() {
+                        $(".activity-more-popup").css("display", "none");
+                    }
+                }
+
+
+                // Myhub tabs
+                // $("#health").css("display", "block");
+                // $("#li1").css("color", "#225c7b");
+
+
+                $("#health").css("display", "none");
+                $("#community-pillar").css("display", "none");
+                $("#family").css("display", "block");
+                $(".li3").addClass('new-active-btn');
+                $("#doctor").css("display", "none");
+                $("#public-service").css("display", "none");
+                $(".li1").removeClass('new-active-btn');
+                $(".li2").removeClass('new-active-btn');
+                $(".li5").removeClass('new-active-btn');
+                $(".li4").removeClass('new-active-btn');
+
+
+
+                function health() {
+                    $("#health").css("display", "block");
+                    $("#community-pillar").css("display", "none");
+                    $("#family").css("display", "none");
+                    $("#doctor").css("display", "none");
+                    $("#public-service").css("display", "none");
+
+                    $(".li1").addClass('new-active-btn');
+                    $(".li5").removeClass('new-active-btn');
+                    $(".li2").removeClass('new-active-btn');
+                    $(".li3").removeClass('new-active-btn');
+                    $(".li4").removeClass('new-active-btn');
+
+
+                }
+
+                function community_pillar() {
+                    $("#health").css("display", "none");
+                    $("#community-pillar").css("display", "block");
+                    $("#family").css("display", "none");
+                    $("#doctor").css("display", "none");
+                    $("#public-service").css("display", "none");
+                    $(".li2").addClass('new-active-btn');
+                    $(".li1").removeClass('new-active-btn');
+                    $(".li5").removeClass('new-active-btn');
+                    $(".li3").removeClass('new-active-btn');
+                    $(".li4").removeClass('new-active-btn');
+
+                }
+
+                function family() {
+                    $("#health").css("display", "none");
+                    $("#community-pillar").css("display", "none");
+                    $("#family").css("display", "block");
+                    $("#doctor").css("display", "none");
+                    $("#public-service").css("display", "none");
+                    $(".li3").addClass('new-active-btn');
+                    $(".li1").removeClass('new-active-btn');
+                    $(".li2").removeClass('new-active-btn');
+                    $(".li5").removeClass('new-active-btn');
+                    $(".li4").removeClass('new-active-btn');
+
+                }
+
+                function doctor() {
+                    $("#health").css("display", "none");
+                    $("#community-pillar").css("display", "none");
+                    $("#family").css("display", "none");
+                    $("#doctor").css("display", "block");
+                    $("#public-service").css("display", "none");
+                    $(".li4").addClass('new-active-btn');
+                    $(".li1").removeClass('new-active-btn');
+                    $(".li2").removeClass('new-active-btn');
+                    $(".li3").removeClass('new-active-btn');
+                    $(".li5").removeClass('new-active-btn');
+
+                }
+
+                function public_service() {
+                    $("#health").css("display", "none");
+                    $("#community-pillar").css("display", "none");
+                    $("#family").css("display", "none");
+                    $("#doctor").css("display", "none");
+                    $("#public-service").css("display", "block");
+                    $(".li5").addClass('new-active-btn');
+                    $(".li1").removeClass('new-active-btn');
+                    $(".li2").removeClass('new-active-btn');
+                    $(".li3").removeClass('new-active-btn');
+                    $(".li4").removeClass('new-active-btn');
+                }
+
+
+
+
+
+
+
+
+            </script>
+            <!-- ========================================================================================================================= -->
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+            <!-- bootstrap js bundle-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
+
+            <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

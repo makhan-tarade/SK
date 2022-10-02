@@ -1,0 +1,463 @@
+<style>
+    /* more */
+    .new-i{
+    border-radius: 50%;
+background: #225C7B !important;
+padding: 8px 10px;
+color: #fff !important;
+font-size: 20px;
+margin-left: 5px;
+}
+    /*  */
+    .background_img {
+
+        background-image: url('<%= user.background_pic%>') !important;
+        background-size: 100% 100%;
+        height: 380px;
+        margin: auto;
+        background-repeat: no-repeat;
+
+    }
+
+    input[type=date] {
+        font-family: 'Inter';
+        text-transform: uppercase !important;
+        font-style: normal;
+        /* font-size: 14px; */
+        font-weight: 500;
+        color: #949494;
+        /* text-transform: capitalize; */
+    }
+
+    .file-upload {
+        display: none;
+    }
+
+    .pop1-btn1 {
+        margin-left: 0% !important;
+
+    }
+
+    .pop-img {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        margin-bottom: 20px;
+        border: 2px solid #949494;
+        border-style: dashed;
+        border-radius: 20px;
+    }
+
+    .pop1-btn1 {
+        /* margin-left: 5%; */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        background: #225C7B;
+        padding: 2% 8%;
+        float: left !important;
+        border: none !important;
+    }
+
+    .pop1-btn1:hover {
+        /* margin-left: 5%; */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        background: #225C7B;
+        padding: 2% 8%;
+        float: left !important;
+        border: none !important;
+    }
+
+    .pop1-btn2 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #323232;
+        border: 2px solid #225C7B;
+        background: none;
+        padding: 2% 7%;
+    }
+
+    .modal-body {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 1rem 2rem !important;
+        border-bottom: none !important;
+    }
+
+    .pop1-header {
+        background: #FFFFFF;
+        /* border: 1px solid #C4C3C7; */
+        box-shadow: none !important;
+    }
+
+    .form-group select {
+        /* background: #FFFFFF !important; */
+        /* border: 1px solid #C4C3C7 !important; */
+        box-shadow: none !important;
+        border-radius: 5px !important;
+        border: 2px solid #225C7B !important;
+    }
+
+    .form-group .form-select {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #212529;
+        /* color: #C4C3C7; */
+    }
+
+
+    .pop1-btn2:hover {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #323232;
+        border: 2px solid #225C7B;
+        background: none;
+        padding: 2% 7%;
+    }
+
+
+    .camera {
+        background: #414040 0% 0% no-repeat padding-box;
+        border-radius: 50%;
+        font-size: 20px;
+        margin-right: 2%;
+        margin-top: 2% !important;
+        color: #fff;
+        padding: 12px 13px;
+        font-size: 22px !important;
+        display: inline-block;
+        float: right !important;
+
+
+    }
+
+    .pop-img {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        margin-bottom: 20px;
+        border: 2px solid #949494;
+        border-style: dashed;
+        border-radius: 100px;
+    }
+
+    .back-pop-img {
+        width: 100%;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+        border: 2px solid #949494;
+        border-style: dashed;
+        border-radius: 20px;
+    }
+</style>
+<!-- Hero section start -->
+<div class="container">
+    <div class=" background_img">
+        <!-- <i class="bi bi-camera camera1"></i> -->
+        <div class="profile_pic">
+            <center>
+                <div class="img-curve">
+                    <% if (profile){%>
+                        <img src="<%= profile.profile_pic  ? profile.profile_pic : 'public/assets/img/avtar.png' %>"
+                            alt="" class="profile-pic">
+                        <%}%>
+                </div>
+            </center>
+
+            <!-- <form id="profile_pic_form" action="/profile_pic_save" method="post" enctype="multipart/form-data">
+                <div class="p-image">
+                    
+                    <input class="file-upload" type="file" name="profile_pic">
+                </div>
+            </form> -->
+
+
+
+            <% if(user._id==myid){ %>
+
+                <i class="fa fa-edit edit_text camera2  upload-button" data-toggle="modal"
+                    data-target="#profileAndDegination"></i>
+                <%} else {%>
+                    <i class="fa fa-edit edit_text camera2  upload-button" data-toggle="modal"
+                        data-target="#profileAndDegination" hidden></i>
+                    <%} %>
+                        <% if(user._id==myid){%>
+                            <h5>
+                                <%=username%>
+                            </h5>
+                            <%} else {%>
+                                <h5 style="margin-top: 2% !important;">
+                                    <%=username%>
+                                </h5>
+                                <%}%>
+
+                                    <% if(profile){%>
+                                        <p>
+                                            <%=profile.degination%>
+                                        </p>
+                                        <%}%>
+                                            <!-- <p>Sr.UI/UX Designer</p> -->
+
+
+                                            <!-- <p class="camera"><i class="bi bi-camera"></i> </p> -->
+                                            <p class="camera" data-toggle="modal" data-target="#background_pic_change">
+                                                <i class="bi bi-camera"></i> </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+<!-- Hero section end -->
+
+
+<!-- modal -->
+<div class="modal fade" id="profileAndDegination" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header pop1-header">
+                <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Edit Profile</h5>
+                <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+
+                <form action="/profile_pic_work" method="post" enctype="multipart/form-data">
+
+                    <div class="row">
+                        <div class="form-group">
+
+                            <div class="pop-img" style="width: 200px; height: 200px;">
+                                <img id="my-profile" src="assets/img/popupvector.png" alt="your image"
+                                    style="border-radius: 50% !important; width: 100%; height: 100%;" />
+                            </div>
+
+                            <p class="pop1-p">Upload A Photo</p>
+
+                            <div class="ABC">
+                                <input type="file" name="profile_pic" class="form-control-file imgchoose"
+                                    id="exampleFormControlFile1" onchange="readURL_a(this);" required>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <p class="pop1-p">Designation</p>
+
+                        <select name="degination" class="form-select form-select-lg mb-3"
+                            aria-label=".form-select-lg example" id="mySelect" onchange="myFunction5()">
+
+
+                            <option selected class="please-select">Please select</option>
+
+                            <option value="Doctor">Doctor</option>
+                            <option value="UI/Ux Designer">UI/Ux Designer</option>
+                            <option value="Developer">Developer</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form-group" id="drop1">
+                        <p class="pop1-p">Doctor</p>
+
+                        <select name="doctor" class="form-select form-select-lg mb-3"
+                            aria-label=".form-select-lg example" id="ddlProducts2">
+
+
+                            <option selected class="please-select">Please select</option>
+
+                            <option value="MBBS">MBBS</option>
+                            <option value="MD">MD</option>
+                            <option value="BDS">BDS</option>
+                        </select>
+
+                    </div>
+                    <div class="form-group" id="drop2">
+                        <p class="pop1-p">UI/Ux Designer</p>
+
+                        <select name="designer" class="form-select form-select-lg mb-3"
+                            aria-label=".form-select-lg example" id="ddlProducts2">
+
+
+                            <option selected class="please-select">Please select</option>
+
+                            <option value="UI/Ux Designer">UI/Ux Designer</option>
+                            <option value="UI/Ux Designer1">UI/Ux Designer1</option>
+                            <option value="UI/Ux Designer2">UI/Ux Designer2</option>
+                        </select>
+
+                    </div>
+                    <div class="form-group" id="drop3">
+                        <p class="pop1-p">Developer</p>
+
+                        <select name="developer" class="form-select form-select-lg mb-3"
+                            aria-label=".form-select-lg example" id="ddlProducts2">
+
+
+                            <option selected class="please-select">Please select</option>
+
+                            <option value="HTML">HTML</option>
+                            <option value="PHP">PHP</option>
+                            <option value="JAVA">JAVA</option>
+                        </select>
+
+                    </div>
+                    <p id="demo1"></p>
+
+                    <Script>
+                        $('#drop1').hide();
+                        $('#drop2').hide();
+                        $('#drop3').hide();
+                        var a = $('#ddlProducts1').val();
+                        function myFunction5() {
+                            var x = $("#mySelect").val();
+
+                            if (x === 'Doctor') {
+                                $('#drop1').show();
+                                $('#drop2').hide();
+                                $('#drop3').hide();
+                            } else if (x === 'UI/Ux Designer') {
+                                $('#drop2').show();
+                                $('#drop1').hide();
+                                $('#drop3').hide();
+                            } else if (x === 'Developer') {
+                                $('#drop3').show();
+                                $('#drop2').hide();
+                                $('#drop1').hide();
+                            }
+                        }
+
+                    </Script>
+
+
+
+                    <div class="modal-footer pop1-foot">
+
+                        <button type="button" class="btn btn-secondary pop1-btn2" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary pop1-btn1">Save</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--  -->
+<!-- modal -->
+<div class="modal fade" id="background_pic_change" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header pop1-header">
+                <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Edit Profile</h5>
+                <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+
+                <form action="/background_pic_work" method="post" enctype="multipart/form-data">
+
+                    <div class="row">
+                        <div class="form-group">
+
+                            <div class="pop-img back-pop-img">
+                                <img id="background" src="assets/img/popupvector.png" alt="your image"
+                                    style=" width: 100%; height: 100%; border-radius: 20px;" />
+                            </div>
+
+                            <p class="pop1-p">Upload A Photo</p>
+
+                            <div class="ABC">
+                                <input type="file" name="background_pic" class="form-control-file imgchoose"
+                                    id="exampleFormControlFile11" onchange="readURL_b(this);" required>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <div class="modal-footer pop1-foot">
+
+                        <button type="button" class="btn btn-secondary pop1-btn2" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary pop1-btn1">Save</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    function readURL_a(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#my-profile')
+                    .attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function readURL_b(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#background')
+                    .attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>

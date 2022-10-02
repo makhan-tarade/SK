@@ -1,0 +1,107 @@
+    <!-- heder -->
+    <%- include('include/header.ejs') %>
+        <!-- header -->
+<!--=========================*
+     <==================================*
+                   Main Section
+        *====================================-->
+        <div class="main-content-inner">
+       
+            <div class="row">
+                <!-- Primary table -->
+                <div class="col-12 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="header-title">Tv-Shows</h4>
+                            <div class="table-responsive datatable-primary">
+                                <table id="dataTable2" class="text-center">
+                                    <thead class="text-capitalize">
+                                    <tr>
+                                        <th>tvshow_Pic</th>
+                                        <th>tvshow Name</th>
+                                        <th>action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                     
+                                    <% if(tvshow){ %>
+                                        <% tvshow.forEach(function(c,i){%>
+                                            <tr>
+                                                <td>
+                                                    <div class="img_pic">
+                                                        <img src="/<%= c.tvshow_pic %>" alt="tvshow">
+                                                    </div>
+                                                    
+                                                </td>
+                                                <td><%= c.tvshow_name%></td>
+                                              
+                                                <td>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li class="mr-3"><button type="button" class="btn btn-secondary"><i class="fa fa-edit"></i></button></li>
+                                                        <a href="/tvshow-delete/<%= c._id %>">    <li><button type="button" class="btn btn-danger"><i class="ti-trash"></i></button></li></a>
+                                                    </ul>
+                                                </td>
+                                            
+                                            </tr>
+                                            <%}) %>
+                                        <% } %>
+                                   
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Primary table -->
+            </div>
+        </div>
+        <!--==================================*
+                   End Main Section
+        *====================================-->
+
+                                    <!--==================================*
+                Main Section start
+        *====================================-->
+    <div class="main-content-inner">
+        <div class="row">
+            <!-- Textual inputs -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="header-title">Tvshows Add Form</h4>
+
+
+                        <form action="/tvshow-add" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label">Tvshows </label>
+                                <input class="form-control" type="text" name="tvshow_name" placeholder="Tv-Shows name" id="example-text-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-form-label">Tvshows Pic</label>
+                                <input class="form-control" type="file" name="tvshow_pic" placeholder="tvshow pic" id="example-text-input">
+                            </div>
+
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+
+                          
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Textual inputs -->
+        </div>
+
+    </div>
+    <!--==================================*
+                   End Main Section
+        *====================================-->
+
+            <!-- footer -->
+    <%- include('include/footer.ejs') %>
+    <!-- footer -->

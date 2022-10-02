@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agora Voice Web SDK Quickstart</title>
+    
+</head>
+
+<body>
+    <% if(callingData) { %>
+        <p>Token: <%= callingData.token %></p>
+        <p>Channel: <%= callingData.channel %></p>
+        <p>Uid: <%= callingData.uid %></p>
+    <input id="agora-token" type="text" value="<%= callingData.token %>" hidden>
+    <input id="agora-channel" type="text" value="<%= callingData.channel %>" hidden>
+    <input id="agora-uid" type="text" value="<%= callingData.uid %>" hidden>
+        <%}%>
+    <h2 class="left-align">Agora Voice Web SDK Quickstart</h2>
+        <div class="row">
+            <div>
+                <button type="button" id="join">JOIN</button>
+                <button type="button" id="leave">LEAVE</button>
+            </div>
+        </div>
+</body>
+
+<script src="https://download.agora.io/sdk/release/AgoraRTC_N-4.14.0.js"></script>
+
+<script src="assets/js/basicVoiceCall.js"></script>
+
+</html>

@@ -1,0 +1,82 @@
+<!-- heder -->
+<%- include('include/header.ejs') %>
+    <!-- header -->
+    <!--=========================*
+     <==================================*
+                   Main Section
+        *====================================-->
+    <div class="main-content-inner">
+
+        <div class="row">
+            <!-- Primary table -->
+            <div class="col-12 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="header-title">Events Discussion</h4>
+                        <div class="table-responsive datatable-primary">
+                            <table id="dataTable2" class="text-center">
+                                <thead class="text-capitalize">
+                                    <tr>
+                                        <th>User</th>
+                                        <th>Post type</th>
+                                        <th>Post text</th>
+                                        <th>Post Image</th>
+                                      
+                                        <th>created</th>
+                                       
+                                        <th scope="col">action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+
+                                    <% if(eventdiscussion){ %>
+                                        <% eventdiscussion.forEach(function(c,i){%>
+                                            <tr>
+                                                <td>
+                                                    <%= c.user %>
+                                                </td>
+
+                                                <td>
+                                                    <%= c.post_type %>
+                                                </td>
+
+                                                <td>
+                                                    <%= c.post_image %>
+                                                </td>
+
+                                                <td>
+                                                    <%= c.post_text %>
+                                                </td>
+                                            
+                                                <td>
+                                                    <%= c.created %>
+                                                </td>
+                                              
+                                                <td>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li class="mr-3"><button type="button" class="btn btn-secondary"><i class="fa fa-edit"></i></button></li>
+                                                        <li><button type="button" class="btn btn-danger"><i class="ti-trash"></i></button></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <%}) %>
+                                                <% } %>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Primary table -->
+        </div>
+    </div>
+    <!--==================================*
+                   End Main Section
+        *====================================-->
+
+    <!-- footer -->
+    <%- include('include/footer.ejs') %>
+        <!-- footer -->

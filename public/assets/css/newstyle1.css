@@ -1,0 +1,686 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Inter:400,700,500|Rubik:400");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+  }
+.nav-r {
+    margin-left: 650px;
+
+}
+
+/* .navbar {
+    background: linear-gradient(90deg, #CCD7B5 0%, #ABB497 68.5%, #5B9092 100%);
+} */
+input[type=date] {
+    font-family: 'Inter';
+    text-transform: uppercase !important;
+    font-style: normal;
+    /* font-size: 14px; */
+    font-weight: 500;
+    color: #949494;
+    /* text-transform: capitalize; */
+}
+.navbar div ul li a {
+    color: #fff !important;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+/* .navbar-brand {
+    margin-left: 30px !important;
+} */
+
+/* .navbar-brand img {
+    width: 110px;
+    height: 32px;
+} */
+
+.nav-link {
+    margin-left: 30px;
+    font-weight: 600;
+}
+
+.signin-btn {
+    width: 80px;
+    margin-left: 50px;
+    border: 1px solid #fff;
+
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+h3 {
+    margin-top: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ABB497;
+    /* text-transform: uppercase; */
+}
+
+h1 {
+    margin-top: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    color: #225C7B;
+}
+
+p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8D8D8D;
+}
+
+.getstarted-btn {
+    font-family: 'Inter';
+    font-style: normal;
+
+    background: #225C7B;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 700;
+    padding: 12px 30px;
+}
+
+.pera-l {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #225C7B;
+}
+
+.pera-r {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000;
+}
+
+.about-img img {
+    position: relative;
+    top: 100px;
+
+    width: 100%;
+    height: 75%;
+}
+
+.card {
+    padding: 20px 10px 0px 50px;
+    border-radius: 10px;
+}
+
+.card i {
+    font-size: 50px;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+}
+
+.card h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ABB497;
+    margin-left: 10px;
+    margin-top: -3px;
+    color: #225C7B;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    color: #225C7B;
+}
+
+.card2 {
+    /* border: 1px solid #000; */
+    /* margin-bottom: 100px; */
+    height: 125px;
+    margin-bottom: -30px;
+}
+
+.card2 img {
+    position: relative;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.card2 h3 {
+    position: relative;
+    top: -40px;
+    left: -45px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.card2 p {
+    position: relative;
+    top: -70px;
+    left: -45px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.cta {
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
+    background-color: #225c7b;
+    border-radius: 10px;
+}
+
+.card3 {
+    margin: 30px 0;
+    border-right: 2px solid #fff;
+}
+
+.card3 div img {
+    position: relative;
+    top: 15px;
+}
+
+.card3 div h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    color: #fff;
+    position: relative;
+    top: 25px;
+    left: 50px;
+}
+
+.card3 div p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    position: relative;
+    top: 0px;
+    left: 50px;
+}
+
+.card3-br {
+    border: none;
+}
+
+.btn-al {
+    border-radius: 50%;
+}
+
+.b-box {
+
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+}
+
+.card4 {
+    border: 1px solid #abb497;
+    border-radius: 10px;
+    position: relative;
+    top: -70px;
+    /* width: 100%; */
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.card4 div img {
+    position: relative;
+    top: 60px;
+    left: 0px;
+}
+
+.card4 div h3 {
+    position: relative;
+    left: 40px;
+}
+
+.card4 div p {
+    position: relative;
+    left: 40px;
+    top: -20px;
+}
+
+/* Advantages */
+.advantages h3,
+.advantages h2 {
+    text-align: center;
+}
+
+.card5 {
+    border: 1px solid #abb497;
+    border-radius: 10px;
+    /* row-gap: 10px;
+    column-gap: 10px; */
+    /* margin: 10px;
+    width: 30%; */
+    width: 32%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/* .card5:hover {
+    border: 5px solid #abb497;
+} */
+
+.card5 img {
+    position: relative;
+    top: 25px;
+    left: 160px;
+}
+
+.card5 h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 400;
+    position: relative;
+    top: 30px;
+    left: 125px;
+}
+
+/* testimonials */
+.testimonials {
+    margin-top: 100px !important;
+}
+
+.btn-t-l,
+.btn-t-r {
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.btn-t-l {
+    position: absolute;
+    right: 160px;
+}
+
+.btn-t-r {
+    position: absolute;
+    right: 110px;
+}
+
+/* footer */
+.footer-t-box {
+    margin-top: 150px !important;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #f1eff0;
+
+}
+
+.footer-t-box div div button {
+    position: relative;
+    top: 90px;
+    width: 200px;
+    height: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer-t-box div div h2 {
+    position: relative;
+    top: 30px;
+    left: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.footer-t-box div div p {
+    position: relative;
+    top: 0px;
+    left: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 25px;
+    color: #000;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 30px;
+}
+
+.footer-pera {
+    color: #444444;
+}
+
+.footer-pera b {
+    color: #444444;
+    font-weight: 700;
+}
+
+.social-media li i {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #225c7b;
+}
+
+.footer-links {
+    margin-top: 50px;
+}
+
+.footer-links li a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #8D8D8D;
+    line-height: 25px;
+}
+
+.footer-links-head {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 25px;
+    color: #225c7b;
+    font-weight: 400;
+}
+
+
+
+
+
+@media(max-width:576px) {
+    .nav-r {
+        margin-left: 0px;
+
+    }
+
+    .navbar-brand {
+        margin-left: 10px !important;
+    }
+
+    .signin-btn {
+        width: 80px;
+        margin-left: 22px;
+        border: 1px solid #fff;
+    }
+
+    h3 {
+        margin-top: 20px;
+    }
+
+    h1 {
+        margin-top: 10;
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .about-img img {
+        position: relative;
+        top: 50px;
+
+        width: 100%;
+        height: 90%;
+    }
+
+    .card2 h3 {
+        left: 10px;
+        top: -30px;
+
+    }
+
+    .card2 p {
+        left: 10px;
+    }
+
+    .card2 img {
+        top: 0px;
+    }
+
+    .card2 p {
+        top: -45px;
+    }
+
+    /* .card3 {
+        border-right: none;
+        border-bottom: 2px solid #fff;
+        position: relative;
+        top: 50px;
+    }
+*/
+    .card3-br {
+        border-right: 1px solid #fff;
+    }
+
+    .card4 {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .card5 {
+        width: 100%;
+    }
+
+    .footer-t-box {
+        width: 100% !important;
+    }
+
+    .footer-t-box div div button {
+        top: 0;
+        left: 20px;
+        margin-bottom: 50px;
+    }
+
+    .card5 img {
+        top: 25px;
+        left: 125px;
+    }
+
+    .card5 h4 {
+        left: 90px;
+        margin-bottom: 40px;
+    }
+
+    .footer-t-box {
+        border-radius: 0;
+    }
+
+
+}
+
+
+
+.footer1
+{
+    position: absolute;
+left: 0%;
+right: 0%;
+top: 90.19%;
+bottom: 0%;
+background: #FFFFFF;
+}
+.copyright
+{ 
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #666666;
+
+}
+
+
+
+.reet{
+    padding-top: 7%;
+
+
+}
+.row{
+    background: #FFFFFF;
+    height: 100%;
+}
+.working{
+    height: 100%;
+}
+
+
+.already_acc
+{
+    /* text-decoration: none; */
+    text-align: center;
+    /* margin-left: 35%; */
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #444444;
+
+text-decoration: none;
+padding-bottom: 20px;
+
+}
+.ind
+{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+
+color: #225C7B;
+
+}
+.span_vector
+{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 22px;
+
+color: #444444;
+}
+.welcome_back 
+{
+  
+ text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  
+  color: #225C7B;
+
+
+}
+.img_welcome
+{
+  /* padding-left: 6%; */
+}
+.email
+{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+  border: 1px solid #C4C3C7;
+
+}
+.div_back
+{
+  position: absolute; 
+left: 0%;
+right: 0%; 
+top: 0%;
+bottom: 10%; 
+background: #F1EFF0;
+} 
+.img_reg
+{
+    height:20%;
+    width:15%;
+    margin-left: 20%;
+}
+.reg_as{
+    text-align: center; 
+   
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+
+color: #225C7B;
+padding-top: 19px;
+}
+.text_here
+{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+color: #444444;
+
+}

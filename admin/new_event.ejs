@@ -1,0 +1,72 @@
+    <!-- heder -->
+    <%- include('include/header.ejs') %>
+        <!-- header -->
+<!--=========================*
+     <==================================*
+                   Main Section
+        *====================================-->
+        <div class="main-content-inner">
+       
+            <div class="row">
+                <!-- Primary table -->
+                <div class="col-12 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="header-title"> Events</h4>
+                            <div class="table-responsive datatable-primary">
+                                <table id="dataTable2" class="text-center">
+                                    <thead class="text-capitalize">
+                                    <tr>
+                                        <th>Event Name</th>
+                                        
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Start time</th>
+                                        <th>End time</th>
+                                        <th>Event Type</th>
+                                        <th scope="col">action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                     
+                                    <% if(event){ %>
+                                        <% event.forEach(function(c,i){%>
+                                            <tr>
+                                                <td><%= c.event_name %></td>
+                                                
+                                                <td><%= c.start_date %></td>
+                                                <td><%= c.end_date %></td>
+                                                
+                                                <td><%= c.start_time %></td>
+                                                <td><%= c.end_time %></td>
+                                                
+                                                <td><%= c.event_type %></td>
+                                                <td>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li class="mr-3"><button type="button" class="btn btn-secondary"><i class="fa fa-edit"></i></button></li>
+                                                        <li><button type="button" class="btn btn-danger"><i class="ti-trash"></i></button></li>
+                                                    </ul>
+                                                </td>
+                                            
+                                            </tr>
+                                            <%}) %>
+                                        <% } %>
+                                   
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Primary table -->
+            </div>
+        </div>
+        <!--==================================*
+                   End Main Section
+        *====================================-->
+
+            <!-- footer -->
+    <%- include('include/footer.ejs') %>
+    <!-- footer -->

@@ -1,0 +1,65 @@
+    <!-- heder -->
+    <%- include('include/header.ejs') %>
+        <!-- header -->
+<!--=========================*
+     <==================================*
+                   Main Section
+        *====================================-->
+        <div class="main-content-inner">
+       
+            <div class="row">
+                <!-- Primary table -->
+                <div class="col-12 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="header-title">Private Groups</h4>
+                            <div class="table-responsive datatable-primary">
+                                <table id="dataTable2" class="text-center">
+                                    <thead class="text-capitalize">
+                                    <tr>
+                                        <th>Group Name</th>
+                                        
+                                        <th>Privacy</th>
+                                        <th scope="col">action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                     
+                                        <% if(community){ %>
+                                            <% community.forEach(function(u,i){%>
+                                   <% if(u.privacy === 'private'){%>
+                                    <tr>
+                                        <td><%= u.group_name %></td>
+                                                
+                                        <td><%= u.privacy %></td>
+                                        <td>
+                                            <ul class="d-flex justify-content-center">
+                                                <li class="mr-3"><button type="button" class="btn btn-secondary"><i class="fa fa-edit"></i></button></li>
+                                                <li><button type="button" class="btn btn-danger"><i class="ti-trash"></i></button></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <%} %>
+                                    <%}) %>
+                                    <%} %>
+
+                           
+                                   
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Primary table -->
+            </div>
+        </div>
+        <!--==================================*
+                   End Main Section
+        *====================================-->
+
+            <!-- footer -->
+    <%- include('include/footer.ejs') %>
+    <!-- footer -->

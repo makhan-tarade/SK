@@ -1,0 +1,142 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var app = require('../app');
+var debug = require('debug')('senoirkonnect:server');
+var http = require('http');
+var path = require('path');
+var dotenv = require('dotenv').config();
+
+
+/**
+ * Get port from environment and store in Express.
+ */
+
+//const PORT = process.env.PORT || 8080
+
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+/**
+ * Create HTTP server.
+ */
+
+var server = http.createServer(app);
+
+
+//  -----------------------------------------------------------------------------------------------------------
+var userOnline = require('../controller/loginRegisterController');
+
+var io = new require("socket.io")(server);
+
+// io.on("connection", (socket) => {
+//   console.log('connected...');
+  
+//   let users = new Array();
+ 
+
+//   socket.on('joined', (user_name) => {
+//     var user = users[socket.id] = user_name.trim();
+//     console.log(user);
+
+//     socket.broadcast.emit("user", user);    
+//   })
+
+
+// });
+
+
+
+var name;
+
+io.on('connection', (socket) => {
+  console.log('new user connected');
+  
+  socket.on('joining msg', (username) => {
+  	name = username;
+    console.log(name)
+  	io.emit('joining msg', `---${name} joined the chat---`);
+  });
+  
+  socket.on('disconnect', () => {
+    console.log('user disconnected');
+    io.emit('chat message', `---${name} left the chat---`);
+    
+  });
+  socket.on('chat message', (msg) => {
+    socket.broadcast.emit('chat message',msg);         //sending message to all except the sender
+  });
+});
+
+// ------------------------------------------------------------------------------------------------------------
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
+}

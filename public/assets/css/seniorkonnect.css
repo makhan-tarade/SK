@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400,700,500");
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button,
+a,
+input,
+textarea {
+    font-family: 'Inter';
+    font-style: normal;
+}
+input[type=date] {
+    font-family: 'Inter';
+    text-transform: uppercase !important;
+    font-style: normal;
+    /* font-size: 14px; */
+    font-weight: 500;
+    color: #949494;
+    /* text-transform: capitalize; */
+}
+input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #C4C3C7;
+
+}
+
+textarea::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #C4C3C7;
+
+}

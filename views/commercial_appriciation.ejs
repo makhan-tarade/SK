@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior-konnect || Commercial-Appriciation</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+
+    <!-- <link rel="stylesheet" href="myhub.css"> -->
+
+    <link rel="stylesheet" href="assets/css/commercial_appriciation.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+           .navbar-brand {
+            margin-left: 6.6% !important;
+        }
+
+        .navbar-nav {
+            position: relative ;
+            left: 54.1% !important;
+        }
+        @media(max-width : 576px) {
+
+            .desktop {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+            }
+
+
+        }
+
+        .camera {
+            background: #414040 0% 0% no-repeat padding-box;
+            border-radius: 50%;
+            font-size: 20px;
+            margin-right: 2%;
+            margin-top: 2% !important;
+            color: #fff;
+            padding: 12px 13px;
+            font-size: 22px !important;
+            display: inline-block;
+            float: right !important;
+        }
+
+        .active {
+            color: #225C7B !important;
+            text-decoration: underline !important;
+            text-underline-offset: 17px;
+            text-decoration-thickness: 4px !important;
+        }
+
+        .btn:focus {
+            box-shadow: none !important;
+        }
+        @media (min-width:992px) and (max-width:1399px) {
+            .navbar-brand {
+                margin-left: 7.8% !important;
+            }
+
+            .navbar-nav {
+                position: relative;
+                left: 45.1% !important;
+            }
+
+            .space-top2 {
+                margin-top: 0 !important;
+            }
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- heder -->
+    <%- include('include/navbar.ejs') %>
+        <!-- header -->
+
+        <!-- Hero section start -->
+        <%- include('include/hero3.ejs') %>
+            <!-- Hero section end -->
+            <!-- Activity navbar start -->
+            <div class="container">
+                <!-- Activity navbar start -->
+                <div class="acctivity_navbar">
+
+                    <ul class="activity_nav">
+                        <li><a href="/commercial_about">About</a></li>
+                        <li><a href="/commercial_analitics">Analitics</a></li>
+                        <li><a href="/commercial_discussion">Discussion</a></li>
+                        <li><a href="/commercial_benefits">Benefits</a></li>
+                        <li><a class="active" href="/commercial_appriciation">Appriciation</a></li>
+                        <li><a href="/commercial_followers">Followers</a></li>
+                        <li><a href="/commercial_pillars">pillars</a></li>
+                        <li><a href="/commercial_events">Events</a></li>
+                        <li class="nav_more" onclick="activity_more_open()"><a><i class="bi bi-three-dots"></i></a></li>
+                    </ul>
+
+                </div>
+
+                <!-- Activity navbar end -->
+            </div>
+            <!-- Activity navbar end -->
+
+            <i class="fa-solid fa-people-group  support"></i>
+
+            <section class="container">
+                <div class="row">
+                    <!-- left section start -->
+                    <div class="col-lg-8">
+                        <div class="initiative-sec">
+                            <div class="sec-heading">
+                                <h4>Appreciations</h4>
+                            </div>
+                            <div class="p-post">
+                                <div class="p-img">
+                                    <% if(user){ %>
+                                        <img src="<%= user.profile_pic  ?  user.profile_pic : 'assets/img/avtar.png' %>"
+                                            alt="" class="profile-pic">
+                                        <%}%>
+                                </div>
+                                <form action="/appreciation-post-text" method="post">
+                                    <div>
+                                        <!-- <input class="placeholder-css" type="text" placeholder="write your thoughts ..." data-toggle="modal"
+                                data-target="#exampleModalCenter" readonly> -->
+                                        <input class="placeholder-css" type="text" name="post_text"
+                                            placeholder="write your thoughts ..." style="padding: 0 20px;">
+                                    </div>
+                                    <div class="post-btn">
+                                        <button type="submit">post</button>
+                                    </div>
+                                </form>
+
+                                <!-- <ul class="p-post-link">
+
+                            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModalCenter"><i
+                                        class="bi bi-arrow-up-right-square-fill"></i>&nbsp; <span> share
+                                        a post</span></a>
+                            </li>
+                            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModalCenter1"><i
+                                        class="fa-solid fa-photo-film"></i> &nbsp; <span> upload a photo</span></a></li>
+
+                            <li class="p-p-l-l"><a href="javascript:void(0)" data-toggle="modal"
+                                    data-target="#exampleModalCenter2"><i class="fa-solid fa-video"></i> &nbsp;<span>
+                                        upload a
+                                        video</span></a>
+                            </li>
+
+                        </ul> -->
+
+                                <ul class="p-post-link">
+
+                                    <li><a href="javascript:void(0)" data-toggle="modal"
+                                            data-target="#uploadaphotomodal"><svg style="    height: 24px;
+                                width: 30px;" id="Image_2" data-name="Image 2" xmlns="http://www.w3.org/2000/svg"
+                                                width="30" height="30" viewBox="0 0 30 30">
+                                                <path id="Image_2-2" data-name="Image 2"
+                                                    d="M8.5,30a8.254,8.254,0,0,1-6.166-2.476A9.069,9.069,0,0,1,0,21.125V8.875a9.065,9.065,0,0,1,2.338-6.4A8.255,8.255,0,0,1,8.5,0h13a8.254,8.254,0,0,1,6.166,2.476A9.069,9.069,0,0,1,30,8.875v12.25a9.069,9.069,0,0,1-2.334,6.4A8.257,8.257,0,0,1,21.5,30Zm0-2.255h13a6.063,6.063,0,0,0,4.558-1.8,6.873,6.873,0,0,0,1.689-4.818V19.972l-.073-.065c-.157-.144-.324-.3-.525-.494L26.1,18.4a12.72,12.72,0,0,0-2.317-1.868A2.407,2.407,0,0,0,20.5,17.4l-.188.252c-.062.088-.126.18-.194.284l-.587.932c-1.107,1.794-1.779,2.612-2.99,3.267a3.8,3.8,0,0,1-4.185-.232l-.657-.414-.552-.358a5.184,5.184,0,0,0-.759-.405c-1.006-.421-1.9.045-3.133,1.508l-2.709,3.31-.454.549A6.114,6.114,0,0,0,8.5,27.745ZM2.255,8.875v12.25a7.989,7.989,0,0,0,.54,3L4.52,22.03l.761-.94c1.92-2.377,3.679-3.4,5.982-2.439a7.083,7.083,0,0,1,1.031.541l.991.64c.99.626,1.461.717,2.184.325a4.928,4.928,0,0,0,1.782-1.891l.45-.717.306-.491a12.512,12.512,0,0,1,.711-1.031A4.633,4.633,0,0,1,24.946,14.6a14.912,14.912,0,0,1,2.8,2.253V8.875a6.861,6.861,0,0,0-1.689-4.817,6.056,6.056,0,0,0-4.556-1.8H8.5C4.706,2.255,2.255,4.853,2.255,8.875ZM6.407,10.2a3.9,3.9,0,1,1,3.9,3.9A3.906,3.906,0,0,1,6.407,10.2Zm2.255,0a1.647,1.647,0,1,0,1.647-1.648A1.649,1.649,0,0,0,8.662,10.2Z"
+                                                    fill="#225c7b" />
+                                            </svg>
+                                            &nbsp; <span> upload a photo</span></a></li>
+
+                                    <li class="p-p-l-l"><a href="javascript:void(0)" data-toggle="modal"
+                                            data-target="#uploadavideomodal"><svg style="height: 22px;
+                                    width: 28px;" id="Iconly_Light-outline_Video"
+                                                data-name="Iconly/Light-outline/Video"
+                                                xmlns="http://www.w3.org/2000/svg" width="34.845" height="26.815"
+                                                viewBox="0 0 34.845 26.815">
+                                                <g id="Video">
+                                                    <path id="Video-2" data-name="Video"
+                                                        d="M7.5,26.815A7.564,7.564,0,0,1,2.073,24.78,7.153,7.153,0,0,1,0,19.519V7.3A7.153,7.153,0,0,1,2.073,2.035,7.564,7.564,0,0,1,7.5,0H18.422a7.56,7.56,0,0,1,5.424,2.035,6.988,6.988,0,0,1,2.047,4.557l4.612-1.885a3.151,3.151,0,0,1,4.331,2.672l.009.246V19.192a3.15,3.15,0,0,1-4.11,3l-.232-.083-4.611-1.885a6.991,6.991,0,0,1-2.049,4.556,7.558,7.558,0,0,1-5.422,2.037ZM2.614,7.3V19.519c0,2.888,1.872,4.682,4.885,4.682H18.422c3.012,0,4.885-1.794,4.885-4.682V18.307c0-.013,0-.027,0-.04V8.561q0-.033,0-.066V7.3c0-2.888-1.872-4.682-4.885-4.682H7.5C4.486,2.614,2.614,4.408,2.614,7.3ZM31.491,19.689a.537.537,0,0,0,.726-.375l.014-.122V7.625a.537.537,0,0,0-.621-.532l-.118.033L25.92,9.406v8Z"
+                                                        fill="#225c7b" />
+                                                </g>
+                                            </svg>
+                                            &nbsp;<span>
+                                                upload a
+                                                video</span></a>
+                                    </li>
+
+                                    <li><a href="javascript:void(0)" data-toggle="modal"
+                                            data-target="#shareapostmodal"><svg style="height: 25px;
+                                width: 31px;" xmlns="http://www.w3.org/2000/svg" width="34.845" height="30.203"
+                                                viewBox="0 0 34.845 30.203">
+                                                <g id="Group_19870" data-name="Group 19870"
+                                                    transform="translate(-794.76 696.301)">
+                                                    <path id="Path_17249" data-name="Path 17249"
+                                                        d="M812.178-675.383a25.158,25.158,0,0,0-8.381,1.409,10.792,10.792,0,0,0-5.629,4.948c-.4.716-.774,1.449-1.157,2.176a1.184,1.184,0,0,1-1.357.714,1.175,1.175,0,0,1-.895-1.246,42.818,42.818,0,0,1,.58-8.02,13.631,13.631,0,0,1,3.253-7,12.831,12.831,0,0,1,5.544-3.376,27.986,27.986,0,0,1,7.639-1.205c.12,0,.239-.014.4-.024v-.4q0-3.811,0-7.621a1.159,1.159,0,0,1,.7-1.166,1.136,1.136,0,0,1,1.329.279c.035.034.072.065.107.1l12.88,11.888c.649.6,1.3,1.194,1.946,1.8a1.161,1.161,0,0,1,0,1.858q-7.477,6.907-14.959,13.808a1.13,1.13,0,0,1-1.3.261,1.158,1.158,0,0,1-.706-1.163q0-3.774,0-7.548Zm2.323,5.467L826.724-681.2,814.5-692.483v.5q0,2.975,0,5.95c0,.914-.435,1.339-1.359,1.357-.8.016-1.6.028-2.393.077a22.189,22.189,0,0,0-6.525,1.238,9.571,9.571,0,0,0-5.37,4.562,15.147,15.147,0,0,0-1.478,5.236c-.068.544-.112,1.09-.177,1.743.118-.128.16-.167.194-.211a13.139,13.139,0,0,1,6.866-4.541,31.1,31.1,0,0,1,9.1-1.133,1.137,1.137,0,0,1,1.137,1.17c.011.713,0,1.427,0,2.141C814.5-672.939,814.5-671.478,814.5-669.916Z"
+                                                        transform="translate(0 0)" fill="#225c7b" fill-rule="evenodd" />
+                                                </g>
+                                            </svg>
+                                            &nbsp; <span> share
+                                                a post</span></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <% var o=[]; post.forEach(function(student, index) { if(userid===student.user){
+                                o[post.length - index]=student; } });%>
+                                <% o.forEach(function(p, index) { %>
+                                    <div class="intiative-post">
+                                        <div class="ini-p-s1">
+                                            <div class="row">
+                                                <!-- <div class="col-lg-10">
+                                    <span>Jordan Smith Like This</span>
+                                </div> -->
+
+                                            </div>
+                                        </div>
+
+                                        <div class="ini-p-s2">
+                                            <div class="row">
+                                                <% if(user){ %>
+                                                    <div class="col-lg-1 new-img">
+
+                                                        <img src="<%= user.profile_pic  ? user.profile_pic : 'assets/img/avtar.png' %>"
+                                                            alt="" class="profile-pic">
+
+                                                    </div>
+                                                    <div class="col-lg-9">
+                                                        <h2>
+                                                            <%= user.fname + ' ' + user.lname %><span
+                                                                    style="margin-left: 3px"><i
+                                                                        class="bi bi-check"></i></span>
+                                                        </h2>
+                                                        <h5>@bsindia · Media/news company</h5>
+                                                    </div>
+                                                    <%}%>
+                                                        <div class="col-lg-2 icon">
+                                                            <i class="bi bi-three-dots"></i>
+                                                        </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="ini-p-s3">
+                                            <div class="post-media">
+                                                <p>
+                                                    <%= p.post_text %>
+                                                </p>
+                                                <% if ('1'===p.post_type) {%>
+                                                    <% } else if ('2'===p.post_type) {%>
+                                                        <img src="<%= p.post_image[0] %>"
+                                                            alt="">
+                                                        <% } else if ('3'===p.post_type) { %>
+                                                            <video width="320" height="240" controls muted>
+                                                                <source
+                                                                    src="<%= p.post_video[0] %>"
+                                                                    type="video/mp4">
+                                                                <source
+                                                                    src="<%= p.post_video[0] %>"
+                                                                    type="video/ogg">
+                                                            </video>
+                                                            <%}%>
+                                            </div>
+
+                                        </div>
+                                        <div class="ini-p-s4">
+                                            <ul>
+                                                <li><i class="bi bi-heart"></i><span class=" bi-heart1"> 512 Like</span>
+                                                </li>
+                                                <li><i class="bi bi-dot"></i></li>
+                                                <li><span class=" bi-heart1">12 Comments</span></li>
+                                                <!-- <li><i class="bi bi-dot"></i></li> -->
+                                                <!-- <li><span class=" bi-heart1">10 Shares</span></li> -->
+                                            </ul>
+                                        </div>
+
+                                        <div class="ini-p-s5">
+                                            <ul>
+                                                <li><a href="#" class="bi2"><i class="bi bi-heart"></i> Like</a></li>
+                                                <li><a href="#" class="bi3"><i class="bi bi-chat-left-text"></i>
+                                                        Comment</a></li>
+                                                <li><a href="#" class="bi3"><i class="bi bi-share"></i> Share</a></li>
+                                                <li><a href="#" class="bi3"><i class="bi bi-send"></i> Send</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <%})%>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <!-- left section end -->
+
+                    <!-- right section start -->
+                    <%- include('include/commercial_right_section.ejs') %>
+                        <!-- right section end -->
+                </div>
+
+            </section>
+
+            <!-- main -->
+
+
+            <!-- main -->
+            <!-- create communities popup end -->
+            <div class="modal fade" id="exampleModalCenterCreateCommunities223" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header pop1-header">
+                            <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Invite To Senior Konnect </h5>
+                            <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <form>
+
+                                <div class="row">
+                                    <div class="form-group col-5">
+                                        <p class="pop1-p">Email Address</p>
+
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter Email Address">
+
+                                    </div>
+                                    <div class="col-2 OR">
+                                        <span>OR</span>
+
+
+                                    </div>
+
+
+                                    <div class="form-group col-5">
+                                        <p class="pop1-p">Mobile Number</p>
+
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter Mobile Number">
+
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="form-group">
+                                    <p class="pop1-p">Description*</p>
+
+
+
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea2" style="height: 100px"></textarea>
+                                        <label for="floatingTextarea2">Enter Description </label>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer pop1-foot">
+
+                                    <button type="button" class="btn btn-secondary pop1-btn2"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary pop1-btn1">Save</button>
+
+                                </div>
+
+                            </form>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ==================================================================================================================== -->
+            <!-- profile btn popup start-->
+            <div id="profile_opn">
+                <div class="profile-btn-menu">
+                    <div class="profile-btn-menu-r1">
+                        <div>
+                            <img src="assets/img/profile/profile.png" alt="">
+                        </div>
+                        <div>
+                            <h2>Aarav Sexena</h2>
+                            <p>Sr. UI/UX Designer</p>
+                        </div>
+                        <button type="button" class="btn-close" onclick="profile_close()"></button>
+                    </div>
+                    <hr class="hr1">
+                    <div class="profile-btn-menu-r2">
+                        <h2>Account</h2>
+                        <p><i class="bi bi-gear"></i> Settings & Privacy</p>
+                        <p><i class="bi bi-yin-yang"></i> About</p>
+                        <p><i class="bi bi-question-circle"> </i>Help</p>
+                        <p><i class="bi bi-translate"></i> Language</p>
+                    </div>
+                    <hr class="hr2">
+                    <div class="profile-btn-menu-r3">
+                        <h2>Manage</h2>
+                        <p><i class="bi bi-file-richtext"></i> <span>NGO:</span> Posts & Initiative</p>
+                        <p><i class="bi bi-hearts"></i>Smile India Foundation</p>
+                        <p><i class="fa-solid fa-people-group"></i><span>Commercial:</span> Real Estate</p>
+                    </div>
+                    <hr class="hr3">
+                    <div class="profile-btn-menu-r3">
+                        <p><a href="login.html"><i class="bi bi-box-arrow-right"></i> Logout</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- profile btn popup end-->
+
+            <!-- search btn popup start -->
+            <div class="search-popup">
+                <h5 onclick="search_popup_close()">Clear</h5>
+                <h4>Recent</h4>
+                <p class="s-p-h-r"><i class="bi bi-clock"></i> UI Designer</p>
+                <p class="s-p-h-r"><i class="bi bi-clock"></i> UI Designer</p>
+                <p class="s-p-h-r"><i class="bi bi-clock"></i> Web Developer</p>
+                <hr>
+                <h4>Try Searching For</h4>
+                <p class="s-p-h-r"><i class="bi bi-search"></i> UI UX</p>
+                <p class="s-p-h-r"><i class="bi bi-search"></i> Sales</p>
+                <p class="s-p-h-r"><i class="bi bi-search"></i> Graphic Designer</p>
+                <p class="s-p-h-r"><i class="bi bi-search"></i> CEO</p>
+            </div>
+            <!-- search btn popup end -->
+            <div class="activity-more-popup" id="more-menu">
+
+
+                <a href="/commercial_media" style="text-decoration:none;color: #323232;">
+                    <p>Media</p>
+                </a>
+                <a href="/commercial_feedback" style="text-decoration:none;color: #323232;">
+                    <p>Feedback</p>
+                </a>
+            </div>
+
+
+            <!-- appreciations post model -->
+            <!-- Modal start-->
+            <div class="modal fade" id="shareapostmodal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header pop1-header">
+                            <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Share a post</h5>
+                            <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <form action="/appreciation-post-text" method="post">
+
+
+                                <div class="form-group">
+                                    <p class="pop1-p">Write your thoughts</p>
+
+                                    <div class="form-floating">
+                                        <textarea name="post_text" class="form-control"
+                                            placeholder="Leave a comment here" id="floatingTextarea2"
+                                            style="height: 100px"></textarea>
+                                        <label for="floatingTextarea2">Write your thoughts... </label>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer pop1-foot pop1-foot1">
+
+                                    <button type="button" class="btn btn-secondary pop1-btn2"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary pop1-btn1"
+                                        onclick="file_upload()">Post</button>
+
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Model end -->
+
+            <!-- Modal1 start-->
+            <div class="modal fade" id="uploadaphotomodal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header pop1-header">
+                            <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Upload A Photo</h5>
+                            <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <form action="/appreciation-post-image" method="post" enctype="multipart/form-data">
+
+
+                                <div class="form-group">
+                                    <p class="pop1-p">Write your thoughts</p>
+
+
+
+                                    <div class="form-floating">
+                                        <textarea name="post_text" class="form-control"
+                                            placeholder="Leave a comment here" id="floatingTextarea2"
+                                            style="height: 100px"></textarea>
+                                        <label for="floatingTextarea2">Write your thoughts... </label>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="pop-img">
+                                        <img id="post-image" src="assets/img/popupvector.png" alt="your image" />
+                                    </div>
+                                    <p class="pop1-p">Upload A Photo</p>
+
+                                    <div class="ABC">
+
+                                        <input type="file" name="post_image" class="form-control-file imgchoose"
+                                            id="exampleFormControlFile1" onchange="readURL_image(this);">
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer pop1-foot">
+
+                                    <button type="button" class="btn btn-secondary pop1-btn2"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary pop1-btn1"
+                                        onclick="file_upload()">Upload</button>
+
+                                </div>
+                            </form>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Model end -->
+
+
+            <!-- Modal 2 start-->
+            <div class="modal fade" id="uploadavideomodal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header pop1-header">
+                            <h5 class="modal-title pop1-h5" id="exampleModalLongTitle">Upload A Video</h5>
+                            <button type="button" class="close pop1-close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <form action="/appreciation-post-video" method="post" enctype="multipart/form-data">
+
+
+                                <div class="form-group">
+                                    <p class="pop1-p">Write your thoughts</p>
+
+                                    <div class="form-floating">
+                                        <textarea name="post_text" class="form-control"
+                                            placeholder="Leave a comment here" id="floatingTextarea2"
+                                            style="height: 100px"></textarea>
+                                        <label for="floatingTextarea2">Write your thoughts...</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="pop-img">
+                                       
+                                        <video id="post-video" width="300" height="300" controls></video>
+                                    </div>
+                                    <p class="pop1-p">Upload A Video</p>
+
+
+                                    <div class="ABC">
+
+                                        <input id="file-input" type="file" accept="video/*" name="post_video"
+                                            class="form-control-file imgchoose" id="exampleFormControlFile2 " onchange="readURL_video(this);">
+                                    </div>
+
+
+                                    <!-- <input id="file-input" type="file" accept="video/*"> -->
+
+
+
+                                </div>
+
+                                <div class="modal-footer pop1-foot pop1-foot1">
+
+                                    <button type="button" class="btn btn-secondary pop1-btn2"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary pop1-btn1">Upload</button>
+
+                                </div>
+
+
+
+                        </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Model end -->
+            <!-- appreciations post model end -->
+
+            <!-- ========================================================================================================================= -->
+            <script>
+
+
+                // pop img upload
+
+                function readURL_image(input) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            $('#post-image')
+                                .attr('src', e.target.result);
+                        };
+
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+
+                function readURL_video(input) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            $('#post-video')
+                                .attr('src', e.target.result);
+                        };
+
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+
+                // Navbar
+                $(".mobile-navbar").css("display", "none");
+                function open_mobile_menu() {
+                    $(".mobile-navbar").css("display", "block");
+
+                }
+                function close_mobile_menu() {
+                    $(".mobile-navbar").css("display", "none");
+
+                }
+
+                // profile image - profile menu
+                // $("#profile_opn").css("display", "none");
+                function profile_opn() {
+                    $("#profile_opn").css("display", "block");
+
+                }
+                function profile_close() {
+                    $("#profile_opn").css("display", "none");
+
+                }
+
+
+
+                // search popup
+                $(".search-popup").css("display", "none")
+
+                function search_popup_open() {
+                    $(".search-popup").css("display", "block")
+
+                    $(".search-popup").mouseenter(enter);
+                    $(".search-popup").mouseleave(leave);
+                    function enter() {
+                        $(".search-popup").css("display", "block");
+                    }
+                    function leave() {
+                        $(".search-popup").css("display", "none");
+                    }
+                }
+                function search_popup_close() {
+                    // $(".search-popup").css("display", "none");
+                    $(".s-p-h-r").remove();
+                }
+
+                // Activity more popup
+                // $(".activity-more-popup").css("display", "none")
+
+                function activity_more_open() {
+                    $(".activity-more-popup").css("display", "block")
+
+                    $(".activity-more-popup").mouseenter(enter);
+                    $(".activity-more-popup").mouseleave(leave);
+                    function enter() {
+                        $(".activity-more-popup").css("display", "block");
+                    }
+                    function leave() {
+                        $(".activity-more-popup").css("display", "none");
+                    }
+                }
+
+
+                // Myhub tabs
+                // $("#health").css("display", "block");
+                // $("#li1").css("color", "#225c7b");
+
+
+                $("#community-pillar").css("display", "none");
+                $("#family").css("display", "none");
+                $("#doctor").css("display", "none");
+                $("#public-service").css("display", "none");
+
+                function health() {
+                    $("#health").css("display", "block");
+                    $("#community-pillar").css("display", "none");
+                    $("#family").css("display", "none");
+                    $("#doctor").css("display", "none");
+                    $("#public-service").css("display", "none");
+
+                    // $("#li1").css("color", "#225c7b");
+                    // $("#li2").css("color", "#999999");
+                    // $("#li3").css("color", "#999999");
+                    // $("#li4").css("color", "#999999");
+                    // $("#li5").css("color", "#999999");
+                }
+
+                function community_pillar() {
+                    $("#health").css("display", "none");
+                    $("#community-pillar").css("display", "block");
+                    $("#family").css("display", "none");
+                    $("#doctor").css("display", "none");
+                    $("#public-service").css("display", "none");
+
+
+                    // $("#li1").css("color", "#999999");
+                    // $("#li2").css("color", "#225c7b");
+                    // $("#li3").css("color", "#999999");
+                    // $("#li4").css("color", "#999999");
+                    // $("#li5").css("color", "#999999");
+                }
+
+                function family() {
+                    $("#health").css("display", "none");
+                    $("#community-pillar").css("display", "none");
+                    $("#family").css("display", "block");
+                    $("#doctor").css("display", "none");
+                    $("#public-service").css("display", "none");
+
+                    // $("#li3").css("color", "#225c7b");
+                    // $("#li2").css("color", "#999999");
+                    // $("#li1").css("color", "#999999");
+                    // $("#li4").css("color", "#999999");
+                    // $("#li5").css("color", "#999999");
+                }
+
+                function doctor() {
+                    $("#health").css("display", "none");
+                    $("#community-pillar").css("display", "none");
+                    $("#family").css("display", "none");
+                    $("#doctor").css("display", "block");
+                    $("#public-service").css("display", "none");
+
+                    // $("#li4").css("color", "#225c7b");
+                    // $("#li2").css("color", "#999999");
+                    // $("#li3").css("color", "#999999");
+                    // $("#li1").css("color", "#999999");
+                    // $("#li5").css("color", "#999999");
+                }
+
+                function public_service() {
+                    $("#health").css("display", "none");
+                    $("#community-pillar").css("display", "none");
+                    $("#family").css("display", "none");
+                    $("#doctor").css("display", "none");
+                    $("#public-service").css("display", "block");
+
+                    // $("#li5").css("color", "#225c7b");
+                    // $("#li2").css("color", "#999999");
+                    // $("#li3").css("color", "#999999");
+                    // $("#li4").css("color", "#999999");
+                    // $("#li1").css("color", "#999999");
+                }
+
+
+
+
+            </script>
+            <!-- ========================================================================================================================= -->
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+            <!-- bootstrap js bundle-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
+
+            <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

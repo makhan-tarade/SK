@@ -1,0 +1,85 @@
+<!-- heder -->
+<%- include('include/header.ejs') %>
+    <!-- header -->
+    <!--=========================*
+     <==================================*
+                   Main Section
+        *====================================-->
+    <div class="main-content-inner">
+
+        <div class="row">
+            <!-- Primary table -->
+            <div class="col-12 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="header-title">Feed Post</h4>
+                        <div class="table-responsive datatable-primary">
+                            <table id="dataTable2" class="text-center">
+                                <thead class="text-capitalize">
+                                    <tr>
+                                        <th>User id</th>
+                                        <th>User Name</th>
+                                        <th>Post type</th>
+                                        <th>Post text</th>
+                                        <th>Pincode</th>
+                             
+                                        <th>created</th>
+                                       
+                                        <th scope="col">action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+
+                                    <% if(post){ %>
+                                        <% post.forEach(function(c,i){%>
+                                            <tr>
+                                                <td>
+                                                    <%= c.user_id %>
+                                                </td>
+
+                                                <td>
+                                                    <%= c.user_name %>
+                                                </td>
+
+                                                <td>
+                                                    <%= c.post_type %>
+                                                </td>
+                                                <td>
+                                                    <%= c.post_text %>
+                                                </td>
+                                                <td>
+                                                    <%= c.pincode %>
+                                                </td>
+                                              
+                                            
+                                                <td>
+                                                    <%= c.createdAt %>
+                                                </td>
+                                                <td>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li class="mr-3"><button type="button" class="btn btn-secondary"><i class="fa fa-edit"></i></button></li>
+                                                        <a href="/feed-post-delete/<%= c._id %>">    <li><button type="button" class="btn btn-danger"><i class="ti-trash"></i></button></li></a> 
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <%}) %>
+                                                <% } %>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Primary table -->
+        </div>
+    </div>
+    <!--==================================*
+                   End Main Section
+        *====================================-->
+
+    <!-- footer -->
+    <%- include('include/footer.ejs') %>
+        <!-- footer -->

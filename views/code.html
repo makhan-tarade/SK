@@ -1,0 +1,35 @@
+<div class="post-tabs">
+    <ul>
+        <li class="p-tab1" onclick="feed_post()">Feed</li>
+        <li class="p-tab2" onclick="close_friends_post()">Close Friends</li>
+        <li class="p-tab3" onclick="news_post()">News & Community</li>
+    </ul>
+    <hr class="tabs-hr">
+</div>
+
+<script>
+    // post tabs
+    $(".p-close-friends").css("display", "none");
+    $(".p-news").css("display", "none");
+
+    function feed_post1() {
+        $(".p-feed").css("display", "block");
+        $(".p-close-friends").css("display", "none");
+        $(".p-news").css("display", "none");
+
+    }
+
+    function close_friends_post1() {
+        $(".p-feed").css("display", "none");
+        $(".p-close-friends").css("display", "block");
+        $(".p-news").css("display", "none");
+
+    }
+
+    function news_post1() {
+        $(".p-feed").css("display", "none");
+        $(".p-close-friend").css("display", "none");
+        $(".p-news").css("display", "block");
+
+    }
+</script>

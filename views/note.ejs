@@ -1,0 +1,465 @@
+<% if (users.length>0){%>                                 
+
+    <% for (var i=0; i < users.length; i++){%>
+
+        <% if (users[i].friends.length===0){ %>
+            <div class="col-lg-4">
+                <div class="c-p-card">
+                    <center>
+                        <div class="img-center">
+                            <img src="<%= users[i].profile_pic  ?'profile_pic/'+ users[i].profile_pic : 'assets/img/avtar.png' %>"
+                                alt="">
+                        </div>
+                    </center>
+
+
+                    <h2>
+                        <%=users[i].fname +' '+ users[i].lname%></h2>
+            <h6><%=users[i].mobile%></h6>
+            <p>Opp New court Gurgaon,</p>
+            <button class="btn btn-primary family-btn family-btn-family"
+                data-toggle="modal" data-target="#<%=users[i]._id%>">Add
+                Family</button>
+
+        </div>
+    </div>
+    <%}%>
+
+    <% if (users[i].friends.length > 0){ %>
+        <% for (var x=0; x < users[i].friends.length; x++){%>                                                
+            <% if( myid === users[i].friends[x].user) {%>
+                 
+                 <div class="col-lg-4">
+                   
+                    <div class="c-p-card">
+                        <center>
+                            <div class="img-center">
+                                <img src="<%= users[i].profile_pic  ?'profile_pic/'+ users[i].profile_pic : 'assets/img/avtar.png' %>"
+                                                " alt="">
+                                    </div>
+                                    </center>
+
+
+                                    <h2>
+                                        <%=users[i].fname +' '+ users[i].lname%></h2>
+                                <h6><%=users[i].mobile%></h6>
+                        <p>Opp New court Gurgaon,</p>
+                 
+                        <div class="btn-sec1">
+                            <button class="btn btn-primary"><i class="bi bi-chat-dots"></i></button>
+                            <button class="btn btn-primary"><i class="bi bi-telephone"></i></button>
+                            <button class="btn btn-primary"><i class="bi bi-camera-video"></i></button>
+                            <form action="/remove-friends/<%=users[i]._id%>" method="post" style="display: inline-block;" >                                                
+                                <button type="submit" class="btn btn-primary new-dlt" onclick="return confirm('Are you sure you want to delete this konnect?');"><i class="bi bi-trash3"></i></button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+                <% }else {%>
+                    <div class="col-lg-4">
+                       
+                        <div class="c-p-card">
+                            <center>
+                                <div class="img-center">
+                                    <img src="<%= users[i].profile_pic  ?'profile_pic/'+ users[i].profile_pic : 'assets/img/avtar.png' %>"
+                                        alt="">
+                                </div>
+                            </center>
+
+
+                            <h2>
+                                <%=users[i].fname +' '+ users[i].lname%></h2>
+                    <h6><%=users[i].mobile%></h6>
+                    <p>Opp New court Gurgaon,</p>
+                    <button class="btn btn-primary family-btn family-btn-family"
+                        data-toggle="modal" data-target="#<%=users[i]._id%>">Add
+                        Family</button>
+
+                </div>
+            </div>
+            
+            <%}}%>
+
+
+    <%}}}%>
+
+
+
+
+    <!-- -->
+    <% f.friends.forEach(function(u,i){ %>
+
+        <% if(u.user === myid){ %>
+            <p>id metched <%= u.user %></p>
+            <div class="btn-sec1">
+                <button class="btn btn-primary"><i class="bi bi-chat-dots"></i></button>
+                <button class="btn btn-primary"><i class="bi bi-telephone"></i></button>
+                <button class="btn btn-primary"><i class="bi bi-camera-video"></i></button>
+                <form action="/remove-friends/<%=f._id%>" method="post" style="display: inline-block;" >                                                
+                    <button type="submit" class="btn btn-primary new-dlt" onclick="return confirm('Are you sure you want to delete this konnect?');"><i class="bi bi-trash3"></i></button>
+                </form>
+            </div>
+
+        <%} else if (u.user !== myid){ %>
+            <p>id not meched <%= u.user %></p>
+    
+    <button class="btn btn-primary family-btn family-btn-family"
+        data-toggle="modal" data-target="#<%=f._id%>">Add
+        Family</button>
+    <%} else {%>
+        <p>else <%= u.user %></p>
+        <button class="btn btn-primary family-btn family-btn-family"
+        data-toggle="modal" data-target="#<%=f._id%>">Add
+        Family</button>
+        <%} }) %>
+
+        <!--  -->
+
+        <% if(users.length>0){ users.forEach(function(f, index){ %>
+            <% if(f._id === myid){ %>
+        <!-- my data hiiden -->
+        <%} else if (f._id != myid){ %>
+            <div class="col-lg-4">
+                <div class="c-p-card">
+                    <center>
+                        <div class="img-center">
+                            <img src="<%= f.profile_pic  ?'profile_pic/'+ f.profile_pic : 'assets/img/avtar.png' %>" alt="">
+                        </div>
+                    </center>
+
+
+                    <h2><%= f.fname+' '+f.lname %></h2>
+                    <h6><%= f.mobile %></h6>
+                    <p><%= f.address %></p>
+                    
+                    <% f.friends.forEach(function(u, i){%>
+                        <% if(u.user === myid){%>
+                            <p> 1 <%= u.user %></p>
+                            <%} else if (u.user !== myid ){%>
+                                <p> 2</p>
+                                <%} else {%>
+                                    <p>3</p>
+                                    <%} %>
+                       
+                        <%}) %>
+                          
+                            <!-- <div class="btn-sec1">
+                                <button class="btn btn-primary"><i class="bi bi-chat-dots"></i></button>
+                                <button class="btn btn-primary"><i class="bi bi-telephone"></i></button>
+                                <button class="btn btn-primary"><i class="bi bi-camera-video"></i></button>
+                                <form action="/remove-friends/<%=f._id%>" method="post" style="display: inline-block;" >                                                
+                                    <button type="submit" class="btn btn-primary new-dlt" onclick="return confirm('Are you sure you want to delete this konnect?');"><i class="bi bi-trash3"></i></button>
+                                </form>
+                            </div>
+                             -->
+
+                      
+                            
+                    
+                    <button class="btn btn-primary family-btn family-btn-family"
+                        data-toggle="modal" data-target="#<%=f._id%>">Add
+                        Family</button>
+
+                       
+                       
+                </div>
+            </div>
+            
+        <% }}) } %>
+
+        <!-- myprofile -->
+        if (req.session.login) {
+
+            //find users info, (profile, contact info, user data)
+            const users_data = await User.findById(req.session.userId).then(
+                (data) => {
+                    return data;
+                }
+            ).catch(
+                (error) => {
+                    res.status(400).json({
+                        error: error
+                    });
+                }
+            );           
+    
+            res.render('myprofile', {  contact: users_data, profile: users_data, myid: req.session.userId, username: req.session.userName });
+    
+        } else {
+            req.session = false;
+            res.redirect('/login');
+        }
+
+        <!-- langauge -->
+        <% if(profile){ profile.language.forEach(function( l, i){%>
+            <div class="col-lg-4">
+                <div class="acm-card">
+                    <h5><%= l.language %> <span><i class="bi bi-pencil-square" data-toggle="modal" data-target="#languageEditModal<%= i %>"></i></span></h5>
+                    <p><%= l.proficiency %></p>
+                </div>
+            </div>
+            <%}) %>
+           <%}%>
+
+
+           <!-- comuunity pillar -->
+           <% if(com_pil.length>0){ com_pil.forEach(function(u,index){  %>
+            <% if (u.degination){%>
+            <% if(u.degination != '' && u.degination !== 'doctor' && u.degination !== 'Doctor'){ %>
+        <div class="col-lg-4">
+            <div class="c-p-card">
+                <center>
+                    <div class="img-center">
+                        <img src="<%= u.profile_pic  ? 'profile_pic/'+ u.profile_pic : 'assets/img/avtar.png' %>" alt="">
+                    </div>
+                </center>
+                <h2><%= u.fname +''+ u.lname %></h2>
+                <h6><%= u.mobile %></h6>
+                <p><%= u.degination %></p>
+               
+                <button class="btn btn-primary family-btn family-btn-family" data-toggle="modal"
+                data-target="#<%= u._id%>">Add Family</button>
+                
+               
+
+            </div>
+        </div>
+        <% }} %>
+       
+        <%})}%>
+
+        <!-- cp -->
+        <% com_pil.forEach(function(cp, i){%>                                       
+                                        
+            <div class="col-lg-4">
+                <div class="c-p-card">
+                    <center>
+                        <div class="img-center">
+                            <img src="<%= cp.profile_pic  ? 'profile_pic/'+ cp.profile_pic : 'assets/img/avtar.png' %>" alt="">
+                        </div>
+                    </center>
+                    <h2><%= cp.fname+' '+cp.lname%></h2>
+                    <h6><%= cp.mobile%></h6>
+                    <p><%= cp.degination%></p>
+                   
+                    <button class="btn btn-primary family-btn family-btn-family" data-toggle="modal"
+                    data-target="#">Add Family</button>                                            
+                   
+
+                </div>
+            </div>
+            <%}) %>
+
+            <!-- events -->
+            events.forEach(function(e,i) {
+                d[i] = {
+                  _id: e._id,
+                  user: e.user,
+                  event_name: e.event_name,
+                  event_image: e.event_image,
+                  start_date: e.start_date,
+                  end_date: e.end_date,
+                  start_time: e.start_time,
+                  end_time: e.end_time,
+                  description: e.description,
+                  visibility: e.visibility,
+                  event_type: e.event_type,
+                  targeted_audience: e.targeted_audience,
+                  reg_or_broad_link: e.reg_or_broad_link,
+                  created: e.created,
+                  // day: date.format(e.start_date, 'dddd'),
+                  // month: date.format(e.start_date, 'mmm'),
+                  // year: date.format(e.start_date, 'YYYY'),
+                  // date: date.format(e.start_date, 'DD'),
+                }
+              });
+
+
+            <!-- multiple photos upload -->
+             <!-- raj new add -->
+
+             <style>
+                .quote-imgs-thumbs {
+                    background: #eee;
+                    border: 1px solid #ccc;
+                    border-radius: 0.25rem;
+                    margin: 1.5rem 0;
+                    padding: 0.75rem;
+                }
+
+                .quote-imgs-thumbs--hidden {
+                    display: none;
+                }
+
+                .img-preview-thumb {
+                    background: #fff;
+                    border: 1px solid #777;
+                    border-radius: 0.25rem;
+                    box-shadow: 0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.12);
+                    margin-right: 1rem;
+                    max-width: 140px;
+                    padding: 0.25rem;
+                }
+            </style>
+
+
+            <section>
+                <div class="grid-x grid-padding-x">
+                    <div class="small-10 small-offset-1 medium-8 medium-offset-2 cell">
+
+                        <form action="" id="img-upload-form" method="post"
+                            enctype="multipart/form-data">
+                            <p>
+                                <label for="upload_imgs" class="button hollow">Select Your Images +</label>
+                                <input class="show-for-sr" type="file" id="upload_imgs" name="upload_imgs[]"
+                                    multiple />
+                            </p>
+                            <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview"
+                                aria-live="polite"></div>
+                            <p>
+                                <input class="button large expanded" type="submit" name="submit"
+                                    value="Upload Images" />
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <script>
+                var imgUpload = document.getElementById('upload_imgs')
+                    , imgPreview = document.getElementById('img_preview')
+                    , imgUploadForm = document.getElementById('img-upload-form')
+                    , totalFiles
+                    , previewTitle
+                    , previewTitleText
+                    , img;
+
+                imgUpload.addEventListener('change', previewImgs, false);
+                imgUploadForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    alert('Images Uploaded! (not really, but it would if this was on your website)');
+                }, false);
+
+                function previewImgs(event) {
+                    totalFiles = imgUpload.files.length;
+
+                    if (!!totalFiles) {
+                        imgPreview.classList.remove('quote-imgs-thumbs--hidden');
+                        previewTitle = document.createElement('p');
+                        previewTitle.style.fontWeight = 'bold';
+                        previewTitleText = document.createTextNode(totalFiles + ' Total Images Selected');
+                        previewTitle.appendChild(previewTitleText);
+                        imgPreview.appendChild(previewTitle);
+                    }
+
+                    for (var i = 0; i < totalFiles; i++) {
+                        img = document.createElement('img');
+                        img.src = URL.createObjectURL(event.target.files[i]);
+                        img.classList.add('img-preview-thumb');
+                        imgPreview.appendChild(img);
+                    }
+                }
+            </script>
+
+            <style>
+                .mySlides1,
+                .mySlides2 {
+                    display: none
+                }
+
+                /* img {
+                    vertical-align: middle;
+                } */
+
+                /* Slideshow container */
+                .slideshow-container {
+                    max-width: 1000px;
+                    position: relative;
+                    margin: auto;
+                }
+
+                /* Next & previous buttons */
+                .prev,
+                .next {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    width: auto;
+                    padding: 16px;
+                    margin-top: -22px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                    user-select: none;
+                }
+
+                /* Position the "next button" to the right */
+                .next {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+
+                /* On hover, add a grey background color */
+                .prev:hover,
+                .next:hover {
+                    background-color: #f1f1f1;
+                    color: black;
+                }
+            </style>
+
+
+
+            <div class="slideshow-container">
+                <div class="mySlides2">
+                    <img src="assets/img/book.webp" style="width:100%">
+                </div>
+
+                <div class="mySlides2">
+                    <img src="assets/img/discount1 - Copy.webp" style="width:100%">
+                </div>
+
+                <div class="mySlides2">
+                    <img src="assets/img/discount2.webp" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+
+
+            <script>
+                let slideIndex = [1, 1];
+                let slideId = ["myslide1" ,"mySlides2"]
+                showSlides(1, 0);
+                showSlides(1, 1);
+
+                function plusSlides(n, no) {
+                    showSlides(slideIndex[no] += n, no);
+                }
+
+                function showSlides(n, no) {
+                    let i;
+                    let x = document.getElementsByClassName(slideId[no]);
+                    if (n > x.length) { slideIndex[no] = 1 }
+                    if (n < 1) { slideIndex[no] = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex[no] - 1].style.display = "block";
+                }
+            </script>
+
+
+            <!-- raj new end-->
+
+            <!-- form -->
+
+            <form action="" method="post" enctype="application/x-www-form-urlencoded">
+                
+            </form>

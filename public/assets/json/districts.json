@@ -1,0 +1,3666 @@
+[{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f7b"
+  },
+  "district": "MON"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f7c"
+  },
+  "district": "24 PARAGANAS NORTH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f7d"
+  },
+  "district": "24 PARAGANAS SOUTH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f7e"
+  },
+  "district": "ADILABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f7f"
+  },
+  "district": "AGAR MALWA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f80"
+  },
+  "district": "AGRA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f81"
+  },
+  "district": "AHMADABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f82"
+  },
+  "district": "AHMEDNAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f83"
+  },
+  "district": "AIZAWL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f84"
+  },
+  "district": "AJMER"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f85"
+  },
+  "district": "AKOLA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f86"
+  },
+  "district": "ALAPPUZHA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f87"
+  },
+  "district": "ALIGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f88"
+  },
+  "district": "Alipurduar"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f89"
+  },
+  "district": "ALIRAJPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f8a"
+  },
+  "district": "ALMORA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f8b"
+  },
+  "district": "ALWAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f8c"
+  },
+  "district": "AMBALA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f8d"
+  },
+  "district": "AMBEDKAR NAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f8e"
+  },
+  "district": "Amethi"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f8f"
+  },
+  "district": "AMRAVATI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f90"
+  },
+  "district": "AMRELI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f91"
+  },
+  "district": "AMRITSAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f92"
+  },
+  "district": "AMROHA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f93"
+  },
+  "district": "ANAND"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f94"
+  },
+  "district": "ANANTAPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f95"
+  },
+  "district": "ANANTNAG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f96"
+  },
+  "district": "ANJAW"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f97"
+  },
+  "district": "ANUGUL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f98"
+  },
+  "district": "ANUPPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f99"
+  },
+  "district": "ARARIA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f9a"
+  },
+  "district": "Ariyalur"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f9b"
+  },
+  "district": "ARVALLI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f9c"
+  },
+  "district": "ARWAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f9d"
+  },
+  "district": "ASHOKNAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f9e"
+  },
+  "district": "AURAIYA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0f9f"
+  },
+  "district": "AURANGABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fa0"
+  },
+  "district": "AYODHYA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fa1"
+  },
+  "district": "AZAMGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fa2"
+  },
+  "district": "BAGALKOTE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fa3"
+  },
+  "district": "BAGESHWAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fa4"
+  },
+  "district": "BAGHPAT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fa5"
+  },
+  "district": "BAHRAICH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fa6"
+  },
+  "district": "BAKSA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fa7"
+  },
+  "district": "BALAGHAT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fa8"
+  },
+  "district": "BALANGIR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fa9"
+  },
+  "district": "BALESHWAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0faa"
+  },
+  "district": "BALLARI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fab"
+  },
+  "district": "BALLIA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fac"
+  },
+  "district": "BALOD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fad"
+  },
+  "district": "BALODA BAZAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fae"
+  },
+  "district": "BALRAMPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0faf"
+  },
+  "district": "BANAS KANTHA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fb0"
+  },
+  "district": "BANDA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fb1"
+  },
+  "district": "BANDIPORA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fb2"
+  },
+  "district": "BANKA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fb3"
+  },
+  "district": "BANKURA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fb4"
+  },
+  "district": "BANSWARA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fb5"
+  },
+  "district": "BARABANKI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fb6"
+  },
+  "district": "BARAMULLA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fb7"
+  },
+  "district": "BARAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fb8"
+  },
+  "district": "BAREILLY"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fb9"
+  },
+  "district": "BARGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fba"
+  },
+  "district": "BARMER"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fbb"
+  },
+  "district": "BARNALA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fbc"
+  },
+  "district": "BARPETA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fbd"
+  },
+  "district": "BARWANI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fbe"
+  },
+  "district": "BASTAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fbf"
+  },
+  "district": "BASTI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fc0"
+  },
+  "district": "BATHINDA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fc1"
+  },
+  "district": "BEED"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fc2"
+  },
+  "district": "BEGUSARAI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fc3"
+  },
+  "district": "BELAGAVI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fc4"
+  },
+  "district": "BEMETARA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fc5"
+  },
+  "district": "BENGALURU RURAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fc6"
+  },
+  "district": "BENGALURU URBAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fc7"
+  },
+  "district": "BETUL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fc8"
+  },
+  "district": "BHADOHI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fc9"
+  },
+  "district": "BHADRADRI KOTHAGUDEM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fca"
+  },
+  "district": "BHADRAK"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fcb"
+  },
+  "district": "BHAGALPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fcc"
+  },
+  "district": "BHANDARA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fcd"
+  },
+  "district": "BHARATPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fce"
+  },
+  "district": "BHARUCH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fcf"
+  },
+  "district": "BHAVNAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fd0"
+  },
+  "district": "BHILWARA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fd1"
+  },
+  "district": "BHIND"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fd2"
+  },
+  "district": "BHIWANI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fd3"
+  },
+  "district": "BHOJPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fd4"
+  },
+  "district": "BHOPAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fd5"
+  },
+  "district": "BIDAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fd6"
+  },
+  "district": "BIJAPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fd7"
+  },
+  "district": "BIJNOR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fd8"
+  },
+  "district": "BIKANER"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fd9"
+  },
+  "district": "BILASPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fda"
+  },
+  "district": "BIRBHUM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fdb"
+  },
+  "district": "BISHNUPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fdc"
+  },
+  "district": "Biswanath"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fdd"
+  },
+  "district": "BOKARO"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fde"
+  },
+  "district": "BONGAIGAON"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fdf"
+  },
+  "district": "BOTAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fe0"
+  },
+  "district": "BOUDH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fe1"
+  },
+  "district": "BUDAUN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fe2"
+  },
+  "district": "Budgam"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fe3"
+  },
+  "district": "BULANDSHAHR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fe4"
+  },
+  "district": "BULDHANA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fe5"
+  },
+  "district": "BUNDI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fe6"
+  },
+  "district": "BURHANPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fe7"
+  },
+  "district": "BUXAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fe8"
+  },
+  "district": "CACHAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fe9"
+  },
+  "district": "CENTRAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fea"
+  },
+  "district": "CHAMARAJANAGARA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0feb"
+  },
+  "district": "CHAMBA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fec"
+  },
+  "district": "CHAMOLI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fed"
+  },
+  "district": "CHAMPAWAT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fee"
+  },
+  "district": "CHAMPHAI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fef"
+  },
+  "district": "CHANDAULI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0ff0"
+  },
+  "district": "CHANDEL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0ff1"
+  },
+  "district": "CHANDIGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0ff2"
+  },
+  "district": "CHANDRAPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0ff3"
+  },
+  "district": "CHANGLANG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0ff4"
+  },
+  "district": "CHARAIDEO"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0ff5"
+  },
+  "district": "CHARKI DADRI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0ff6"
+  },
+  "district": "CHATRA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0ff7"
+  },
+  "district": "CHENGALPATTU"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0ff8"
+  },
+  "district": "CHENNAI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0ff9"
+  },
+  "district": "CHHATARPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0ffa"
+  },
+  "district": "CHHINDWARA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0ffb"
+  },
+  "district": "CHHOTAUDEPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0ffc"
+  },
+  "district": "CHIKKABALLAPURA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0ffd"
+  },
+  "district": "CHIKKAMAGALURU"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0ffe"
+  },
+  "district": "CHIRANG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d0fff"
+  },
+  "district": "CHITRADURGA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1000"
+  },
+  "district": "CHITRAKOOT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1001"
+  },
+  "district": "CHITTOOR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1002"
+  },
+  "district": "CHITTORGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1003"
+  },
+  "district": "CHURACHANDPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1004"
+  },
+  "district": "CHURU"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1005"
+  },
+  "district": "COIMBATORE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1006"
+  },
+  "district": "COOCHBEHAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1007"
+  },
+  "district": "CUDDALORE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1008"
+  },
+  "district": "CUTTACK"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1009"
+  },
+  "district": "DADRA AND NAGAR HAVELI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d100a"
+  },
+  "district": "DAKSHINA KANNADA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d100b"
+  },
+  "district": "DAMAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d100c"
+  },
+  "district": "DAMOH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d100d"
+  },
+  "district": "DANG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d100e"
+  },
+  "district": "DANTEWADA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d100f"
+  },
+  "district": "DARBHANGA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1010"
+  },
+  "district": "DARJEELING"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1011"
+  },
+  "district": "DARRANG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1012"
+  },
+  "district": "DATIA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1013"
+  },
+  "district": "DAUSA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1014"
+  },
+  "district": "DAVANGERE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1015"
+  },
+  "district": "DEHRADUN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1016"
+  },
+  "district": "DEOGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1017"
+  },
+  "district": "DEOGHAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1018"
+  },
+  "district": "DEORIA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1019"
+  },
+  "district": "DEVBHUMI DWARKA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d101a"
+  },
+  "district": "DEWAS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d101b"
+  },
+  "district": "Dhalai"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d101c"
+  },
+  "district": "DHAMTARI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d101d"
+  },
+  "district": "DHANBAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d101e"
+  },
+  "district": "DHAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d101f"
+  },
+  "district": "DHARMAPURI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1020"
+  },
+  "district": "DHARWAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1021"
+  },
+  "district": "DHEMAJI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1022"
+  },
+  "district": "DHENKANAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1023"
+  },
+  "district": "DHOLPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1024"
+  },
+  "district": "DHUBRI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1025"
+  },
+  "district": "DHULE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1026"
+  },
+  "district": "DIBANG VALLEY"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1027"
+  },
+  "district": "DIBRUGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1028"
+  },
+  "district": "DIMA HASAO"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1029"
+  },
+  "district": "DIMAPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d102a"
+  },
+  "district": "DINAJPUR DAKSHIN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d102b"
+  },
+  "district": "DINAJPUR UTTAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d102c"
+  },
+  "district": "DINDIGUL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d102d"
+  },
+  "district": "DINDORI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d102e"
+  },
+  "district": "DIU"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d102f"
+  },
+  "district": "DODA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1030"
+  },
+  "district": "DOHAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1031"
+  },
+  "district": "DUMKA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1032"
+  },
+  "district": "DUNGARPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1033"
+  },
+  "district": "DURG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1034"
+  },
+  "district": "EAST"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1035"
+  },
+  "district": "EAST DISTRICT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1036"
+  },
+  "district": "EAST GARO HILLS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1037"
+  },
+  "district": "EAST GODAVARI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1038"
+  },
+  "district": "EAST JAINTIA HILLS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1039"
+  },
+  "district": "EAST KAMENG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d103a"
+  },
+  "district": "EAST KHASI HILLS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d103b"
+  },
+  "district": "EAST NIMAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d103c"
+  },
+  "district": "EAST SIANG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d103d"
+  },
+  "district": "EAST SINGHBUM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d103e"
+  },
+  "district": "ERNAKULAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d103f"
+  },
+  "district": "ERODE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1040"
+  },
+  "district": "ETAH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1041"
+  },
+  "district": "ETAWAH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1042"
+  },
+  "district": "FARIDABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1043"
+  },
+  "district": "FARIDKOT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1044"
+  },
+  "district": "FARRUKHABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1045"
+  },
+  "district": "FATEHABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1046"
+  },
+  "district": "FATEHGARH SAHIB"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1047"
+  },
+  "district": "FATEHPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1048"
+  },
+  "district": "FAZILKA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1049"
+  },
+  "district": "FIROZABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d104a"
+  },
+  "district": "FIROZEPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d104b"
+  },
+  "district": "GADAG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d104c"
+  },
+  "district": "GADCHIROLI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d104d"
+  },
+  "district": "GAJAPATI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d104e"
+  },
+  "district": "GANDERBAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d104f"
+  },
+  "district": "GANDHINAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1050"
+  },
+  "district": "GANGANAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1051"
+  },
+  "district": "GANJAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1052"
+  },
+  "district": "GARHWA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1053"
+  },
+  "district": "GARIYABAND"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1054"
+  },
+  "district": "Gaurella Pendra Marwahi"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1055"
+  },
+  "district": "GAUTAM BUDDHA NAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1056"
+  },
+  "district": "GAYA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1057"
+  },
+  "district": "GHAZIABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1058"
+  },
+  "district": "GHAZIPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1059"
+  },
+  "district": "GIR SOMNATH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d105a"
+  },
+  "district": "GIRIDIH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d105b"
+  },
+  "district": "GOALPARA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d105c"
+  },
+  "district": "GODDA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d105d"
+  },
+  "district": "GOLAGHAT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d105e"
+  },
+  "district": "Gomati"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d105f"
+  },
+  "district": "GONDA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1060"
+  },
+  "district": "GONDIA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1061"
+  },
+  "district": "GOPALGANJ"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1062"
+  },
+  "district": "GORAKHPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1063"
+  },
+  "district": "GUMLA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1064"
+  },
+  "district": "GUNA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1065"
+  },
+  "district": "GUNTUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1066"
+  },
+  "district": "GURDASPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1067"
+  },
+  "district": "GURUGRAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1068"
+  },
+  "district": "GWALIOR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1069"
+  },
+  "district": "HAILAKANDI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d106a"
+  },
+  "district": "HAMIRPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d106b"
+  },
+  "district": "HANUMANGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d106c"
+  },
+  "district": "HAPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d106d"
+  },
+  "district": "HARDA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d106e"
+  },
+  "district": "HARDOI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d106f"
+  },
+  "district": "HARIDWAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1070"
+  },
+  "district": "HASSAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1071"
+  },
+  "district": "HATHRAS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1072"
+  },
+  "district": "HAVERI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1073"
+  },
+  "district": "HAZARIBAGH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1074"
+  },
+  "district": "HINGOLI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1075"
+  },
+  "district": "HISAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1076"
+  },
+  "district": "Hnahthial"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1077"
+  },
+  "district": "HOJAI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1078"
+  },
+  "district": "HOOGHLY"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1079"
+  },
+  "district": "HOSHANGABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d107a"
+  },
+  "district": "HOSHIARPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d107b"
+  },
+  "district": "HOWRAH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d107c"
+  },
+  "district": "HYDERABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d107d"
+  },
+  "district": "IDUKKI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d107e"
+  },
+  "district": "IMPHAL EAST"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d107f"
+  },
+  "district": "IMPHAL WEST"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1080"
+  },
+  "district": "INDORE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1081"
+  },
+  "district": "JABALPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1082"
+  },
+  "district": "JAGATSINGHAPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1083"
+  },
+  "district": "Jagitial"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1084"
+  },
+  "district": "JAIPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1085"
+  },
+  "district": "JAISALMER"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1086"
+  },
+  "district": "JAJAPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1087"
+  },
+  "district": "JALANDHAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1088"
+  },
+  "district": "JALAUN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1089"
+  },
+  "district": "JALGAON"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d108a"
+  },
+  "district": "JALNA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d108b"
+  },
+  "district": "JALORE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d108c"
+  },
+  "district": "JALPAIGURI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d108d"
+  },
+  "district": "JAMMU"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d108e"
+  },
+  "district": "JAMNAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d108f"
+  },
+  "district": "JAMTARA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1090"
+  },
+  "district": "JAMUI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1091"
+  },
+  "district": "JANGOAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1092"
+  },
+  "district": "JANJGIR-CHAMPA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1093"
+  },
+  "district": "JASHPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1094"
+  },
+  "district": "JAUNPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1095"
+  },
+  "district": "JAYASHANKAR BHUPALAPALLY"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1096"
+  },
+  "district": "JEHANABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1097"
+  },
+  "district": "JHABUA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1098"
+  },
+  "district": "JHAJJAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1099"
+  },
+  "district": "JHALAWAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d109a"
+  },
+  "district": "JHANSI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d109b"
+  },
+  "district": "Jhargram"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d109c"
+  },
+  "district": "JHARSUGUDA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d109d"
+  },
+  "district": "JHUNJHUNU"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d109e"
+  },
+  "district": "JIND"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d109f"
+  },
+  "district": "JIRIBAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10a0"
+  },
+  "district": "JODHPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10a1"
+  },
+  "district": "JOGULAMBA GADWAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10a2"
+  },
+  "district": "JORHAT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10a3"
+  },
+  "district": "JUNAGADH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10a4"
+  },
+  "district": "KABIRDHAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10a5"
+  },
+  "district": "KACHCHH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10a6"
+  },
+  "district": "KAIMUR (BHABUA)"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10a7"
+  },
+  "district": "KAITHAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10a8"
+  },
+  "district": "KAKCHING"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10a9"
+  },
+  "district": "KALABURAGI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10aa"
+  },
+  "district": "KALAHANDI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10ab"
+  },
+  "district": "KALIMPONG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10ac"
+  },
+  "district": "KALLAKURICHI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10ad"
+  },
+  "district": "KAMAREDDY"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10ae"
+  },
+  "district": "KAMJONG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10af"
+  },
+  "district": "KAMLE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10b0"
+  },
+  "district": "KAMRUP"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10b1"
+  },
+  "district": "KAMRUP METRO"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10b2"
+  },
+  "district": "KANCHIPURAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10b3"
+  },
+  "district": "KANDHAMAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10b4"
+  },
+  "district": "KANGPOKPI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10b5"
+  },
+  "district": "KANGRA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10b6"
+  },
+  "district": "KANKER"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10b7"
+  },
+  "district": "KANNAUJ"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10b8"
+  },
+  "district": "KANNIYAKUMARI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10b9"
+  },
+  "district": "KANNUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10ba"
+  },
+  "district": "KANPUR DEHAT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10bb"
+  },
+  "district": "KANPUR NAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10bc"
+  },
+  "district": "KAPURTHALA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10bd"
+  },
+  "district": "KARAIKAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10be"
+  },
+  "district": "KARAULI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10bf"
+  },
+  "district": "KARBI ANGLONG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10c0"
+  },
+  "district": "KARGIL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10c1"
+  },
+  "district": "KARIMGANJ"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10c2"
+  },
+  "district": "KARIMNAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10c3"
+  },
+  "district": "KARNAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10c4"
+  },
+  "district": "KARUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10c5"
+  },
+  "district": "KASARAGOD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10c6"
+  },
+  "district": "Kasganj"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10c7"
+  },
+  "district": "KATHUA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10c8"
+  },
+  "district": "KATIHAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10c9"
+  },
+  "district": "KATNI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10ca"
+  },
+  "district": "KAUSHAMBI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10cb"
+  },
+  "district": "KENDRAPARA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10cc"
+  },
+  "district": "KENDUJHAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10cd"
+  },
+  "district": "KHAGARIA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10ce"
+  },
+  "district": "KHAMMAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10cf"
+  },
+  "district": "KHARGONE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10d0"
+  },
+  "district": "KHAWZAWL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10d1"
+  },
+  "district": "KHEDA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10d2"
+  },
+  "district": "KHERI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10d3"
+  },
+  "district": "KHORDHA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10d4"
+  },
+  "district": "Khowai"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10d5"
+  },
+  "district": "KHUNTI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10d6"
+  },
+  "district": "KINNAUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10d7"
+  },
+  "district": "KIPHIRE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10d8"
+  },
+  "district": "KISHANGANJ"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10d9"
+  },
+  "district": "KISHTWAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10da"
+  },
+  "district": "KODAGU"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10db"
+  },
+  "district": "KODERMA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10dc"
+  },
+  "district": "KOHIMA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10dd"
+  },
+  "district": "KOKRAJHAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10de"
+  },
+  "district": "KOLAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10df"
+  },
+  "district": "KOLASIB"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10e0"
+  },
+  "district": "KOLHAPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10e1"
+  },
+  "district": "KOLKATA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10e2"
+  },
+  "district": "KOLLAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10e3"
+  },
+  "district": "KONDAGAON"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10e4"
+  },
+  "district": "KOPPAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10e5"
+  },
+  "district": "KORAPUT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10e6"
+  },
+  "district": "KORBA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10e7"
+  },
+  "district": "KOREA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10e8"
+  },
+  "district": "KOTA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10e9"
+  },
+  "district": "KOTTAYAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10ea"
+  },
+  "district": "KOZHIKODE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10eb"
+  },
+  "district": "KRA DAADI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10ec"
+  },
+  "district": "KRISHNA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10ed"
+  },
+  "district": "KRISHNAGIRI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10ee"
+  },
+  "district": "KULGAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10ef"
+  },
+  "district": "KULLU"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10f0"
+  },
+  "district": "KUMURAM BHEEM ASIFABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10f1"
+  },
+  "district": "KUPWARA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10f2"
+  },
+  "district": "KURNOOL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10f3"
+  },
+  "district": "KURUKSHETRA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10f4"
+  },
+  "district": "KURUNG KUMEY"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10f5"
+  },
+  "district": "KUSHI NAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10f6"
+  },
+  "district": "LAHUL AND SPITI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10f7"
+  },
+  "district": "LAKHIMPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10f8"
+  },
+  "district": "LAKHISARAI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10f9"
+  },
+  "district": "LAKSHADWEEP DISTRICT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10fa"
+  },
+  "district": "LALITPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10fb"
+  },
+  "district": "LATEHAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10fc"
+  },
+  "district": "LATUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10fd"
+  },
+  "district": "LAWNGTLAI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10fe"
+  },
+  "district": "LEH LADAKH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d10ff"
+  },
+  "district": "LEPARADA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1100"
+  },
+  "district": "LOHARDAGA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1101"
+  },
+  "district": "LOHIT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1102"
+  },
+  "district": "LONGDING"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1103"
+  },
+  "district": "LONGLENG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1104"
+  },
+  "district": "LOWER DIBANG VALLEY"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1105"
+  },
+  "district": "LOWER SIANG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1106"
+  },
+  "district": "LOWER SUBANSIRI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1107"
+  },
+  "district": "LUCKNOW"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1108"
+  },
+  "district": "LUDHIANA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1109"
+  },
+  "district": "LUNGLEI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d110a"
+  },
+  "district": "MADHEPURA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d110b"
+  },
+  "district": "MADHUBANI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d110c"
+  },
+  "district": "MADURAI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d110d"
+  },
+  "district": "MAHABUBABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d110e"
+  },
+  "district": "MAHABUBNAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d110f"
+  },
+  "district": "MAHARAJGANJ"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1110"
+  },
+  "district": "MAHASAMUND"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1111"
+  },
+  "district": "MAHE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1112"
+  },
+  "district": "MAHENDRAGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1113"
+  },
+  "district": "MAHESANA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1114"
+  },
+  "district": "Mahisagar"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1115"
+  },
+  "district": "MAHOBA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1116"
+  },
+  "district": "MAINPURI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1117"
+  },
+  "district": "MAJULI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1118"
+  },
+  "district": "MALAPPURAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1119"
+  },
+  "district": "MALDAH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d111a"
+  },
+  "district": "MALERKOTLA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d111b"
+  },
+  "district": "MALKANGIRI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d111c"
+  },
+  "district": "MAMIT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d111d"
+  },
+  "district": "MANCHERIAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d111e"
+  },
+  "district": "MANDI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d111f"
+  },
+  "district": "MANDLA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1120"
+  },
+  "district": "MANDSAUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1121"
+  },
+  "district": "MANDYA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1122"
+  },
+  "district": "MANSA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1123"
+  },
+  "district": "MARIGAON"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1124"
+  },
+  "district": "MATHURA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1125"
+  },
+  "district": "MAU"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1126"
+  },
+  "district": "MAYILADUTHURAI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1127"
+  },
+  "district": "MAYURBHANJ"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1128"
+  },
+  "district": "MEDAK"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1129"
+  },
+  "district": "MEDCHAL MALKAJGIRI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d112a"
+  },
+  "district": "MEDINIPUR EAST"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d112b"
+  },
+  "district": "MEDINIPUR WEST"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d112c"
+  },
+  "district": "MEERUT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d112d"
+  },
+  "district": "MIRZAPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d112e"
+  },
+  "district": "MOGA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d112f"
+  },
+  "district": "MOKOKCHUNG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1130"
+  },
+  "district": "MORADABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1131"
+  },
+  "district": "MORBI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1132"
+  },
+  "district": "MORENA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1133"
+  },
+  "district": "Mulugu"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1134"
+  },
+  "district": "MUMBAI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1135"
+  },
+  "district": "MUMBAI SUBURBAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1136"
+  },
+  "district": "MUNGELI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1137"
+  },
+  "district": "MUNGER"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1138"
+  },
+  "district": "MURSHIDABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1139"
+  },
+  "district": "MUZAFFARNAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d113a"
+  },
+  "district": "MUZAFFARPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d113b"
+  },
+  "district": "MYSURU"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d113c"
+  },
+  "district": "NABARANGPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d113d"
+  },
+  "district": "NADIA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d113e"
+  },
+  "district": "NAGAON"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d113f"
+  },
+  "district": "NAGAPATTINAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1140"
+  },
+  "district": "NAGARKURNOOL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1141"
+  },
+  "district": "NAGAUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1142"
+  },
+  "district": "NAGPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1143"
+  },
+  "district": "NAINITAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1144"
+  },
+  "district": "NALANDA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1145"
+  },
+  "district": "NALBARI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1146"
+  },
+  "district": "NALGONDA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1147"
+  },
+  "district": "NAMAKKAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1148"
+  },
+  "district": "NAMSAI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1149"
+  },
+  "district": "NANDED"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d114a"
+  },
+  "district": "NANDURBAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d114b"
+  },
+  "district": "Narayanpet"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d114c"
+  },
+  "district": "NARAYANPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d114d"
+  },
+  "district": "NARMADA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d114e"
+  },
+  "district": "NARSINGHPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d114f"
+  },
+  "district": "NASHIK"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1150"
+  },
+  "district": "NAVSARI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1151"
+  },
+  "district": "NAWADA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1152"
+  },
+  "district": "NAYAGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1153"
+  },
+  "district": "NEEMUCH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1154"
+  },
+  "district": "NEW DELHI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1155"
+  },
+  "district": "NICOBARS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1156"
+  },
+  "district": "Nirmal"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1157"
+  },
+  "district": "Niwari"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1158"
+  },
+  "district": "NIZAMABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1159"
+  },
+  "district": "Noklak"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d115a"
+  },
+  "district": "NONEY"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d115b"
+  },
+  "district": "NORTH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d115c"
+  },
+  "district": "NORTH AND MIDDLE ANDAMAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d115d"
+  },
+  "district": "NORTH DISTRICT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d115e"
+  },
+  "district": "NORTH EAST"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d115f"
+  },
+  "district": "NORTH GARO HILLS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1160"
+  },
+  "district": "NORTH GOA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1161"
+  },
+  "district": "North Tripura"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1162"
+  },
+  "district": "NORTH WEST"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1163"
+  },
+  "district": "NUAPADA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1164"
+  },
+  "district": "NUH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1165"
+  },
+  "district": "OSMANABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1166"
+  },
+  "district": "PAKKE KESSANG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1167"
+  },
+  "district": "PAKUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1168"
+  },
+  "district": "PALAKKAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1169"
+  },
+  "district": "PALAMU"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d116a"
+  },
+  "district": "PALGHAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d116b"
+  },
+  "district": "PALI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d116c"
+  },
+  "district": "PALWAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d116d"
+  },
+  "district": "PANCH MAHALS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d116e"
+  },
+  "district": "PANCHKULA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d116f"
+  },
+  "district": "PANIPAT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1170"
+  },
+  "district": "PANNA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1171"
+  },
+  "district": "PAPUM PARE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1172"
+  },
+  "district": "PARBHANI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1173"
+  },
+  "district": "PASCHIM BARDHAMAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1174"
+  },
+  "district": "PASHCHIM CHAMPARAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1175"
+  },
+  "district": "PATAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1176"
+  },
+  "district": "PATHANAMTHITTA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1177"
+  },
+  "district": "PATHANKOT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1178"
+  },
+  "district": "PATIALA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1179"
+  },
+  "district": "PATNA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d117a"
+  },
+  "district": "PAURI GARHWAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d117b"
+  },
+  "district": "PEDDAPALLI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d117c"
+  },
+  "district": "PERAMBALUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d117d"
+  },
+  "district": "PEREN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d117e"
+  },
+  "district": "PHEK"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d117f"
+  },
+  "district": "PHERZAWL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1180"
+  },
+  "district": "PILIBHIT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1181"
+  },
+  "district": "PITHORAGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1182"
+  },
+  "district": "PONDICHERRY"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1183"
+  },
+  "district": "POONCH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1184"
+  },
+  "district": "PORBANDAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1185"
+  },
+  "district": "PRAKASAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1186"
+  },
+  "district": "PRATAPGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1187"
+  },
+  "district": "PRAYAGRAJ"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1188"
+  },
+  "district": "PUDUKKOTTAI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1189"
+  },
+  "district": "PULWAMA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d118a"
+  },
+  "district": "PUNE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d118b"
+  },
+  "district": "PURBA BARDHAMAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d118c"
+  },
+  "district": "PURBI CHAMPARAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d118d"
+  },
+  "district": "PURI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d118e"
+  },
+  "district": "PURNIA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d118f"
+  },
+  "district": "PURULIA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1190"
+  },
+  "district": "RAE BARELI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1191"
+  },
+  "district": "RAICHUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1192"
+  },
+  "district": "RAIGAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1193"
+  },
+  "district": "RAIGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1194"
+  },
+  "district": "RAIPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1195"
+  },
+  "district": "RAISEN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1196"
+  },
+  "district": "RAJANNA SIRCILLA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1197"
+  },
+  "district": "RAJGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1198"
+  },
+  "district": "RAJKOT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1199"
+  },
+  "district": "RAJNANDGAON"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d119a"
+  },
+  "district": "RAJOURI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d119b"
+  },
+  "district": "RAJSAMAND"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d119c"
+  },
+  "district": "RAMANAGARA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d119d"
+  },
+  "district": "RAMANATHAPURAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d119e"
+  },
+  "district": "RAMBAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d119f"
+  },
+  "district": "RAMGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11a0"
+  },
+  "district": "RAMPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11a1"
+  },
+  "district": "RANCHI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11a2"
+  },
+  "district": "RANGA REDDY"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11a3"
+  },
+  "district": "Ranipet"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11a4"
+  },
+  "district": "RATLAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11a5"
+  },
+  "district": "RATNAGIRI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11a6"
+  },
+  "district": "RAYAGADA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11a7"
+  },
+  "district": "REASI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11a8"
+  },
+  "district": "REWA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11a9"
+  },
+  "district": "REWARI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11aa"
+  },
+  "district": "RI BHOI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11ab"
+  },
+  "district": "ROHTAK"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11ac"
+  },
+  "district": "ROHTAS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11ad"
+  },
+  "district": "RUDRA PRAYAG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11ae"
+  },
+  "district": "RUPNAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11af"
+  },
+  "district": "S.A.S Nagar"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11b0"
+  },
+  "district": "SABAR KANTHA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11b1"
+  },
+  "district": "SAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11b2"
+  },
+  "district": "SAHARANPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11b3"
+  },
+  "district": "SAHARSA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11b4"
+  },
+  "district": "SAHEBGANJ"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11b5"
+  },
+  "district": "SAIHA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11b6"
+  },
+  "district": "SAITUAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11b7"
+  },
+  "district": "SALEM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11b8"
+  },
+  "district": "SAMASTIPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11b9"
+  },
+  "district": "SAMBA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11ba"
+  },
+  "district": "SAMBALPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11bb"
+  },
+  "district": "SAMBHAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11bc"
+  },
+  "district": "SANGAREDDY"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11bd"
+  },
+  "district": "SANGLI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11be"
+  },
+  "district": "SANGRUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11bf"
+  },
+  "district": "SANT KABEER NAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11c0"
+  },
+  "district": "SARAIKELA KHARSAWAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11c1"
+  },
+  "district": "SARAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11c2"
+  },
+  "district": "SATARA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11c3"
+  },
+  "district": "SATNA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11c4"
+  },
+  "district": "SAWAI MADHOPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11c5"
+  },
+  "district": "SEHORE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11c6"
+  },
+  "district": "SENAPATI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11c7"
+  },
+  "district": "SEONI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11c8"
+  },
+  "district": "Sepahijala"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11c9"
+  },
+  "district": "SERCHHIP"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11ca"
+  },
+  "district": "SHAHDARA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11cb"
+  },
+  "district": "SHAHDOL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11cc"
+  },
+  "district": "Shahid Bhagat Singh Nagar"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11cd"
+  },
+  "district": "SHAHJAHANPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11ce"
+  },
+  "district": "SHAJAPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11cf"
+  },
+  "district": "SHAMLI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11d0"
+  },
+  "district": "SHEIKHPURA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11d1"
+  },
+  "district": "SHEOHAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11d2"
+  },
+  "district": "SHEOPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11d3"
+  },
+  "district": "SHI YOMI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11d4"
+  },
+  "district": "SHIMLA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11d5"
+  },
+  "district": "SHIVAMOGGA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11d6"
+  },
+  "district": "SHIVPURI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11d7"
+  },
+  "district": "SHOPIAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11d8"
+  },
+  "district": "SHRAVASTI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11d9"
+  },
+  "district": "SIANG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11da"
+  },
+  "district": "SIDDHARTH NAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11db"
+  },
+  "district": "SIDDIPET"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11dc"
+  },
+  "district": "SIDHI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11dd"
+  },
+  "district": "SIKAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11de"
+  },
+  "district": "SIMDEGA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11df"
+  },
+  "district": "SINDHUDURG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11e0"
+  },
+  "district": "SINGRAULI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11e1"
+  },
+  "district": "SIRMAUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11e2"
+  },
+  "district": "SIROHI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11e3"
+  },
+  "district": "SIRSA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11e4"
+  },
+  "district": "SITAMARHI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11e5"
+  },
+  "district": "SITAPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11e6"
+  },
+  "district": "SIVAGANGA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11e7"
+  },
+  "district": "SIVASAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11e8"
+  },
+  "district": "SIWAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11e9"
+  },
+  "district": "SOLAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11ea"
+  },
+  "district": "SOLAPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11eb"
+  },
+  "district": "SONBHADRA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11ec"
+  },
+  "district": "SONEPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11ed"
+  },
+  "district": "SONIPAT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11ee"
+  },
+  "district": "SONITPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11ef"
+  },
+  "district": "SOUTH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11f0"
+  },
+  "district": "SOUTH ANDAMANS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11f1"
+  },
+  "district": "SOUTH DISTRICT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11f2"
+  },
+  "district": "South East"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11f3"
+  },
+  "district": "SOUTH GARO HILLS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11f4"
+  },
+  "district": "SOUTH GOA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11f5"
+  },
+  "district": "SOUTH SALMARA MANCACHAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11f6"
+  },
+  "district": "South Tripura"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11f7"
+  },
+  "district": "SOUTH WEST"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11f8"
+  },
+  "district": "SOUTH WEST GARO HILLS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11f9"
+  },
+  "district": "SOUTH WEST KHASI HILLS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11fa"
+  },
+  "district": "SPSR NELLORE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11fb"
+  },
+  "district": "SRI MUKTSAR SAHIB"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11fc"
+  },
+  "district": "SRIKAKULAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11fd"
+  },
+  "district": "SRINAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11fe"
+  },
+  "district": "SUKMA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d11ff"
+  },
+  "district": "SULTANPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1200"
+  },
+  "district": "SUNDARGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1201"
+  },
+  "district": "SUPAUL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1202"
+  },
+  "district": "SURAJPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1203"
+  },
+  "district": "SURAT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1204"
+  },
+  "district": "SURENDRANAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1205"
+  },
+  "district": "SURGUJA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1206"
+  },
+  "district": "SURYAPET"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1207"
+  },
+  "district": "TAMENGLONG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1208"
+  },
+  "district": "TAPI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1209"
+  },
+  "district": "Tarn Taran"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d120a"
+  },
+  "district": "TAWANG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d120b"
+  },
+  "district": "TEHRI GARHWAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d120c"
+  },
+  "district": "TENGNOUPAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d120d"
+  },
+  "district": "TENKASI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d120e"
+  },
+  "district": "THANE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d120f"
+  },
+  "district": "THANJAVUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1210"
+  },
+  "district": "THE NILGIRIS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1211"
+  },
+  "district": "THENI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1212"
+  },
+  "district": "THIRUVALLUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1213"
+  },
+  "district": "THIRUVANANTHAPURAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1214"
+  },
+  "district": "THIRUVARUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1215"
+  },
+  "district": "THOUBAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1216"
+  },
+  "district": "THRISSUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1217"
+  },
+  "district": "TIKAMGARH"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1218"
+  },
+  "district": "TINSUKIA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1219"
+  },
+  "district": "TIRAP"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d121a"
+  },
+  "district": "TIRUCHIRAPPALLI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d121b"
+  },
+  "district": "TIRUNELVELI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d121c"
+  },
+  "district": "Tirupathur"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d121d"
+  },
+  "district": "TIRUPPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d121e"
+  },
+  "district": "TIRUVANNAMALAI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d121f"
+  },
+  "district": "TONK"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1220"
+  },
+  "district": "TUENSANG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1221"
+  },
+  "district": "TUMAKURU"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1222"
+  },
+  "district": "TUTICORIN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1223"
+  },
+  "district": "UDAIPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1224"
+  },
+  "district": "UDALGURI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1225"
+  },
+  "district": "UDAM SINGH NAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1226"
+  },
+  "district": "UDHAMPUR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1227"
+  },
+  "district": "UDUPI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1228"
+  },
+  "district": "UJJAIN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1229"
+  },
+  "district": "UKHRUL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d122a"
+  },
+  "district": "UMARIA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d122b"
+  },
+  "district": "UNA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d122c"
+  },
+  "district": "Unakoti"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d122d"
+  },
+  "district": "UNNAO"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d122e"
+  },
+  "district": "UPPER SIANG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d122f"
+  },
+  "district": "UPPER SUBANSIRI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1230"
+  },
+  "district": "UTTAR KASHI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1231"
+  },
+  "district": "UTTARA KANNADA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1232"
+  },
+  "district": "VADODARA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1233"
+  },
+  "district": "VAISHALI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1234"
+  },
+  "district": "VALSAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1235"
+  },
+  "district": "VARANASI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1236"
+  },
+  "district": "VELLORE"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1237"
+  },
+  "district": "VIDISHA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1238"
+  },
+  "district": "VIJAYAPURA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1239"
+  },
+  "district": "VIKARABAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d123a"
+  },
+  "district": "VILLUPURAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d123b"
+  },
+  "district": "VIRUDHUNAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d123c"
+  },
+  "district": "VISAKHAPATANAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d123d"
+  },
+  "district": "VIZIANAGARAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d123e"
+  },
+  "district": "WANAPARTHY"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d123f"
+  },
+  "district": "WARANGAL RURAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1240"
+  },
+  "district": "WARANGAL URBAN"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1241"
+  },
+  "district": "WARDHA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1242"
+  },
+  "district": "WASHIM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1243"
+  },
+  "district": "WAYANAD"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1244"
+  },
+  "district": "WEST"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1245"
+  },
+  "district": "WEST DISTRICT"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1246"
+  },
+  "district": "WEST GARO HILLS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1247"
+  },
+  "district": "WEST GODAVARI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1248"
+  },
+  "district": "WEST JAINTIA HILLS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1249"
+  },
+  "district": "WEST KAMENG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d124a"
+  },
+  "district": "WEST KARBI ANGLONG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d124b"
+  },
+  "district": "WEST KHASI HILLS"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d124c"
+  },
+  "district": "WEST SIANG"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d124d"
+  },
+  "district": "WEST SINGHBHUM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d124e"
+  },
+  "district": "West Tripura"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d124f"
+  },
+  "district": "WOKHA"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1250"
+  },
+  "district": "Y.S.R."
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1251"
+  },
+  "district": "YADADRI BHUVANAGIRI"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1252"
+  },
+  "district": "YADGIR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1253"
+  },
+  "district": "YAMUNANAGAR"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1254"
+  },
+  "district": "YANAM"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1255"
+  },
+  "district": "YAVATMAL"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1256"
+  },
+  "district": "ZUNHEBOTO"
+},{
+  "_id": {
+    "$oid": "63186cb6223e04fa954d1257"
+  },
+  "district": "(blank)"
+}]

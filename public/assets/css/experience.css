@@ -1,0 +1,265 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Inter:700,500");
+
+:root {
+  --tundora: #444444;
+  --black: #000000;
+  --blumine: #225c7b;
+  --granite-gray: #666666;
+  --white: #ffffff;
+  --font-size-l2: 18px;
+  --font-size-m2: 16px;
+  --font-size-xxxl: 30px;
+  --font-family-inter: "Inter", Helvetica;
+}
+
+.experience-senior-konnect-business {
+  align-items: flex-start;
+  display: flex;
+  width: 1366px;
+}
+input[type=date] {
+  font-family: 'Inter';
+  text-transform: uppercase !important;
+  font-style: normal;
+  /* font-size: 14px; */
+  font-weight: 500;
+  color: #949494;
+  /* text-transform: capitalize; */
+}
+* {
+  box-sizing: border-box;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.k {
+  align-items: flex-start;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/623d7d54ecf12f908cda0d4a/releases/623d9efcd05a58909a653609/img/vector-1@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  min-width: 1366px;
+}
+
+.overlap-group5 {
+  height: 768px;
+  position: relative;
+  width: 1369px;
+}
+
+.overlap-group4 {
+  align-items: flex-start;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/623d7d54ecf12f908cda0d4a/releases/623d9efcd05a58909a653609/img/group-10@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 60px;
+  left: 3px;
+  min-width: 1366px;
+  padding: 20px 461.3px;
+  position: absolute;
+  top: 708px;
+}
+
+.inter-medium-granite-gray-16px {
+  color: var(--granite-gray);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m2);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.copyright-2021-sen {
+  letter-spacing: 0;
+  min-height: 19px;
+}
+
+.span1 {
+  color: var(--blumine);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m2);
+  font-weight: 500;
+}
+
+.group-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 113px;
+  min-height: 648px;
+  position: absolute;
+  top: 30px;
+  width: 1140px;
+}
+
+.overlap-group3 {
+  align-items: flex-end;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/623d7d54ecf12f908cda0d4a/releases/623d9efcd05a58909a653609/img/vector-3@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 75px;
+  min-width: 1140px;
+  padding: 13px 30px;
+}
+
+.senior_-konnect_-logo_2-2 {
+  height: 45px;
+  object-fit: cover;
+  width: 153px;
+}
+
+.overlap-group1 {
+  align-items: center;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/623d7d54ecf12f908cda0d4a/releases/623eba825ba322aa7c899699/img/group-1@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+  min-height: 573px;
+  padding: 26px 21px;
+  width: 1140px;
+}
+
+.title {
+  letter-spacing: 0;
+  margin-right: 18.04px;
+  min-height: 36px;
+  min-width: 397px;
+}
+
+.inter-bold-blumine-30px {
+  color: var(--blumine);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.group-container {
+  align-items: flex-start;
+  display: flex;
+  height: 418px;
+  margin-right: 47px;
+  margin-top: 34px;
+  min-width: 1051px;
+}
+
+.overlap-group2 {
+  height: 309px;
+  position: relative;
+  width: 528px;
+}
+
+.group-2 {
+  height: 287px;
+  left: 9px;
+  position: absolute;
+  top: 0;
+  width: 510px;
+}
+
+.x1616934713274-1 {
+  height: 305px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 4px;
+  width: 528px;
+}
+
+.group-3 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 21px;
+  min-height: 414px;
+  width: 502px;
+}
+
+.group-4 {
+  align-items: flex-start;
+  display: flex;
+  height: 44px;
+  margin-left: 2px;
+  min-width: 504px;
+  padding: 0 0px;
+}
+
+.lorem-ipsum-is-simpl {
+  letter-spacing: 0;
+  margin-left: 15px;
+  min-height: 44px;
+  width: 463px;
+}
+
+.inter-medium-tundora-18px {
+  color: var(--tundora);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-l2);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.vector {
+  height: 14px;
+  margin-top: 5.71px;
+  width: 24px;
+}
+
+.group {
+  align-items: flex-start;
+  display: flex;
+  height: 44px;
+  margin-left: 2px;
+  margin-top: 27px;
+  min-width: 504px;
+  padding: 0 0px;
+}
+
+.overlap-group {
+  align-items: flex-start;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/623d7d54ecf12f908cda0d4a/releases/623eba825ba322aa7c899699/img/group-3@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 48px;
+  margin-left: 38px;
+  margin-top: 41px;
+  min-width: 154px;
+  padding: 11px 39.7px;
+}
+
+.continue {
+  letter-spacing: 0;
+  min-height: 19px;
+}
+
+.continue-button {
+  position: absolute;
+  left: 64.13%;
+  right: 24.6%;
+  top: 81.74%;
+  bottom: 12.01%;
+  background: #225C7B;
+  color: #ffffff;
+}
+
+.inter-bold-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m2);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.vector-1 {
+  height: 768px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1366px;
+}
